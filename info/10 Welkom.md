@@ -48,9 +48,9 @@ Een laatste verwachting van ons is dat je *buiten* de practicumuren de videocoll
 
 Relevante links naar hoofdstukken staan telkens bij de verschillende opdrachten. Daarbij vind je hier de complete PDF-bestanden van drie Python-boeken die gebruikt worden:
 
-* Allen Downey et.al., [How to think like a computer scientist](http://staff.science.uva.nl/~mstgeman/progwis/CompleteBook.pdf), Green Tea Press
-* [Python programming](http://staff.science.uva.nl/~mstgeman/progwis/PythonProgramming.pdf), Wikibooks
-* Guido van Rossum, [Python tutorial](PythonTutorial), Python software foundation
+* Allen Downey et.al., [How to think like a computer scientist](ThinkPython), Green Tea Press
+* [Python programming](PythonProgramming.pdf), Wikibooks
+* Guido van Rossum, [Python tutorial](PythonTutorial.pdf), Python software foundation
 
 ## Wekelijkse roostering
 
