@@ -34,11 +34,13 @@ Dit vak bestaat uit videocolleges, 11 computerpractica en één tentamen. Om de 
 
 We verwachten dat je 12 uur per week aanwezig bent bij de computerpractica. In verband met ziekte is het mogelijk computerpractica de volgende week in te halen. Dit kan alleen als ziekte direct is gemeld.
 
-We verwachten dat je alle 13 problem sets maakt, elke problem set in de betreffende week afhebt en voor elke problem set om feedback vraagt bij de assistenten. Na geven van de feedback wordt de opdracht afgetekend.
+We verwachten dat je alle 13 problem sets maakt, elke problem set in de betreffende week afhebt en inlevert.
 
-We verwachten dat je uiterlijk vrijdagavond 23:55 je computerpracticum van de week inlevert. Elke week wordt één van de opdrachten aangewezen voor inleveren.
+Alle opdrachten moeten uiterlijk vrijdagavond 23:55 ingeleverd zijn. Elke week wordt één van de opdrachten aangewezen voor beoordeling. De assistent kijkt deze na en geeft de volgende week feedback.
 
 Mocht je in de problemen komen met het vak en het tempo, zorg dan dat je meteen contact opneemt. We zijn altijd bereid te zoeken naar oplossingen voor zover mogelijk met de hoeveelheid studenten in het vak.
+
+Spaar in ieder geval de opdrachten niet op gedurende de week, maar lever ze in zodra je klaar bent. De docenten kunnen het ingeleverde werk dan tussendoor met je bespreken en suggesties doen.
 
 Een laatste verwachting van ons is dat je *buiten* de practicumuren de videocolleges bekijkt.
 
@@ -52,11 +54,11 @@ Relevante links naar hoofdstukken staan telkens bij de verschillende opdrachten.
 
 ## Wekelijkse roostering
 
-Dit ben je per week kwijt aan dit vak:
+Dit is de hoeveelheid tijd die je ongeveer per week kwijt bent aan dit vak:
 
-* 3 videocolleges van 1 uur
+* 2 uur voorbereiding met behulp van video's en leeswerk
 * 3 computerpractica van 4 uur
-* eventueel thuis programmeren
+* eventueel thuis de programma's verder afmaken
 
 Hou er rekening mee dat je vooral in de eerste weken best wat meer tijd kwijt kan zijn. Als je nog niet eerder geprogrammeerd hebt moet je even over een drempel heen voordat je het begint te begrijpen.
 
@@ -68,11 +70,11 @@ Je krijgt een eindcijfer voor dit vak als je:
 * alle benodigde programma's op tijd hebt ingeleverd;
 * een voldoende hebt gehaald voor het tentamen.
 
-Als je niet aan deze voorwaarden voldoet, krijg je geen cijfer voor het vak. Heb je niet alle practica ingeleverd, of het tentamen niet gehaald, dan krijg je een `NAV`. Niettemin denken we dat elke student deze cursus kan halen.
+Als je niet aan deze voorwaarden voldoet, krijg je geen cijfer voor het vak. Heb je niet alle practica ingeleverd, of het tentamen niet gehaald, dan krijg je een `NAV`. De ervaring leert dat we dat elke student deze cursus kan halen.
 
 ### Computerpractica
 
-Voor elk computerpracticum moet je minimaal een 4 gehaald hebben. Gemiddeld moet je een 5.5 halen. Practica zijn helaas niet te herkansen in verband met de tijd die dit kost.
+Voor elk computerpracticum moet je minimaal een 5 gehaald hebben. Practica zijn helaas niet te herkansen.
 
 Elk ingeleverd programma wordt beoordeeld op de volgende factoren;
 
@@ -91,17 +93,22 @@ Omdat het mogelijk is bijna ongemerkt mee te liften met een medestudent tijdens 
 
 ### Eindcijfer
 
-Het eindcijfer is het gemiddelde van de problem sets met een zwaardere weging voor de problem sets van week 3 en 4. Het tentamen telt dus niet mee in de berekening, maar moet wel voldoende gemaakt worden.
+Het eindcijfer is een gewogen gemiddelde van de problem sets. Het tentamen telt dus niet mee in de berekening, maar moet wel voldoende gemaakt worden.
+
+De weging:
+
+* problem set 3: factor 2
+* problem set 7: factor 2
+* problem set 9: factor 3
+* problem set 13: factor 3
 
 ## Samenwerken, fraude en plagiaat
 
-Samenwerken tijdens dit vak is niet toegestaan. Dit vak heeft als doel jouw persoonlijke programmeervaardigheid te ontwikkelen. Bij vervolgvakken is het vaak wél mogelijk om samen te programmeren.
+Samenwerken is niet toegestaan bij de Problem Sets 3, 7, 9 en 13, die individueel beoordeeld worden.
 
-Tijdens de practica is het natuurlijk prima als je de opgave bespreekt met de student die naast je zit. Het is echter **niet toegestaan** om delen van code van je medestudenten, of van internet, over te nemen.
+Tijdens de practica is het natuurlijk prima als je de opgave bespreekt met de student die naast je zit. Het is echter **niet de bedoeling** om delen van code van je medestudenten, of van internet, over te nemen.
 
-Een belangrijk verschil dus: je kunt discussiëren over de manier waarop je een probleem aanpakt, maar je kopieert nooit code van anderen. Om het jezelf moeilijk te maken kun je dus doorgaans ook niet op het scherm van een ander.
-
-Als je merkt dat je zodanig aan het overleggen bent dat je dezelfde code krijgt als de student die naast je zit, wordt het tijd om te stoppen en de assistent om hulp te vragen. Als dit teveel gebeurt gaan we je vragen niet meer bij elkaar te zitten.
+Dit vak heeft immers als doel jouw persoonlijke programmeervaardigheid te ontwikkelen. Een belangrijk verschil dus: je kunt discussiëren over de manier waarop je een probleem aanpakt, maar kopieer geen code van anderen. Zet bij elke opdracht even met wie je de opdracht hebt besproken.
 
 Kom je in tijdnood? Bespreek het even met de docent. We willen het graag zo oplossen dat je het vak zelfstandig kunt halen.
 
@@ -115,9 +122,9 @@ We gebruiken bij de beoordeling van de opdrachten plagiaatdetectie. Als blijkt d
 
 * Er is geen bronvermelding: in dat geval rapporteren we aan de examencommissie welke inzendingen overeenkomen, waarna de commissie beslist over te nemen maatregelen.
 
-Vorig jaar is één student uitgesloten van deelname na het kopiëren van een practicumopdracht. Andere studenten hebben een waarschuwing gekregen.
+Vorig jaar is één student uitgesloten van deelname na het kopiëren van een practicumopdracht. Andere studenten hebben een waarschuwing gekregen. Bij ernstige fraude of plagiaat kun je voor langere tijd uitgesloten worden van examens.
 
 Zie ook:
 
-* de [fraude- en plagiaatwebsite](http://studentenserviceplein.uva.nl/serviceplein/content/fraude-plagiaat-en-bronvermelding/plagiaat-volgens-de-uva/plagiaat-volgens-de-uva.html) van de universiteit;
-* de onderwijs- en examenregeling van Informatiekunde.
+* de [fraude- en plagiaatwebsite](http://student.uva.nl/wis/az/item/fraude-en-plagiaatregeling.html) van de universiteit;
+* de onderwijs- en examenregeling van de opleiding Wiskunde.
