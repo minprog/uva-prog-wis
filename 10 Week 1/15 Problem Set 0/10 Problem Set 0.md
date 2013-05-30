@@ -10,8 +10,8 @@ IDLE is the [integrated development environment](http://en.wikipedia.org/wiki/In
 
 To be able to program a solution to this problem set, you need to read up on the follow documentation:
 
-* [Introduction](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap01.html) from *How to think like a Computer Scientist* ([PDF](http://staff.science.uva.nl/~mstgeman/progwis/Chapter1.pdf))
-* [Variables and statements](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap02.html) from *How to think like a Computer Scientist* ([PDF](http://staff.science.uva.nl/~mstgeman/progwis/Chapter2.pdf))
+* [Introduction](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap01.html) from *How to think like a Computer Scientist*
+* [Variables and statements](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap02.html) from *How to think like a Computer Scientist*
 * [Variables and strings](http://en.wikibooks.org/wiki/Python_Programming/Variables_and_Strings) from *Python Programming*
 * [Input and output](http://en.wikibooks.org/wiki/Python_Programming/Input_and_output) from *Python Programming*
 

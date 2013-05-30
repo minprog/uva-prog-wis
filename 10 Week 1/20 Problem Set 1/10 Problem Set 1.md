@@ -8,7 +8,7 @@ You may work with other students. However, each student should write up and hand
 
 To be able to program a solution to this problem set, you will need to read up on the follow documentation:
 
-* [Conditionals](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap04.html) up to section 4.8 from *How to think like a Computer Scientist* ([PDF](http://staff.science.uva.nl/~mstgeman/progwis/Chapter4.pdf))
+* [Conditionals](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap04.html) up to section 4.8 from *How to think like a Computer Scientist*
 * [Conditional statements](http://en.wikibooks.org/wiki/Python_Programming/Conditional_Statements) from *Python Programming*
 * [Loops](http://en.wikibooks.org/wiki/Python_Programming/Loops) from *Python Programming*
 

@@ -10,7 +10,7 @@ To be able to program a solution to this problem set, you need to read up on the
 
 * [Loops](http://en.wikibooks.org/wiki/Python_Programming/Loops) from *Python Programming*
 * Tuples: [Tuples and sequences](http://docs.python.org/tutorial/datastructures.html) section of the Python Tutorial
-* More on traversing and slicing strings: [Chapter 7](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap07.html) of How to Think Like a Computer Scientist ([PDF](http://staff.science.uva.nl/~mstgeman/progwis/Chapter7.pdf))
+* More on traversing and slicing strings: [Chapter 7](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap07.html) of How to Think Like a Computer Scientist
 
 ## The problem
 
@@ -72,7 +72,7 @@ Assume that the variable `packages` is bound to a tuple of length 3, the values 
 
 We limit the number to be less than 200 (although this is an arbitrary choice) because in some cases there is no largest value that cannot be bought in exact quantity, and we don’t want to search forever. 
 
-Please use [ps2b_template.py](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/assignments/ps2b.py) to structure your code. Have your code print out its result in the following format:
+Please use [ps2b_template.py](ps2b_template.py) to structure your code. Have your code print out its result in the following format:
 
     Given package sizes x, y, and z, the largest number of McNuggets that cannot be bought in exact quantity is: n
 

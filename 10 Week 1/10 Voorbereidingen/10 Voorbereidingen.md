@@ -17,10 +17,10 @@ Kijk dan het eerste college om een indruk te krijgen van de ideeën die belangri
 
 En daarna ga je de volgende materialen lezen. Natuurlijk is de tekst nog erg theoretisch als je niet aan het programmeren slaat, maar dat komt in de loop van komende weken wel.
 
-* [Introduction](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap01.html) uit *How to think like a Computer Scientist* ([PDF](http://staff.science.uva.nl/~mstgeman/progwis/Chapter1.pdf))
-* [Variables and statements](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap02.html) uit *How to think like a Computer Scientist* ([PDF](http://staff.science.uva.nl/~mstgeman/progwis/Chapter2.pdf))
+* [Introduction](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap01.html) uit *How to think like a Computer Scientist*
+* [Variables and statements](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap02.html) uit *How to think like a Computer Scientist*
 * [Variables and strings](http://en.wikibooks.org/wiki/Python_Programming/Variables_and_Strings) uit *Python Programming*
 * [Input and output](http://en.wikibooks.org/wiki/Python_Programming/Input_and_output) uit *Python Programming*
-* [Conditionals](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap04.html) (t/m paragraaf 4.8) uit *How to think like a Computer Scientist* ([PDF](http://staff.science.uva.nl/~mstgeman/progwis/Chapter4.pdf))
+* [Conditionals](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap04.html) (t/m paragraaf 4.8) uit *How to think like a Computer Scientist*
 * [Conditional statements](http://en.wikibooks.org/wiki/Python_Programming/Conditional_Statements) uit *Python Programming*
 * [Loops](http://en.wikibooks.org/wiki/Python_Programming/Loops) uit *Python Programming*
