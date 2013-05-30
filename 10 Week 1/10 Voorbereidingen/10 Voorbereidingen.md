@@ -11,6 +11,10 @@ Voor echte beginners is het goed om de volgende twee korte pagina's even door te
 * [What is a programming language?](http://livecode.byu.edu/programmingconcepts/programmingIntro.php)
 * [Basic programming concepts](http://livecode.byu.edu/programmingconcepts/ControlStruct.php)
 
+Kijk dan het eerste college om een indruk te krijgen van de ideeën die belangrijk zijn bij het leren programmeren.
+
+<iframe width="480" height="360" src="http://www.youtube.com/embed/bX3jvD7XFPs?rel=0" frameborder="0" allowfullscreen></iframe>
+
 En daarna ga je de volgende materialen lezen. Natuurlijk is de tekst nog erg theoretisch als je niet aan het programmeren slaat, maar dat komt in de loop van komende weken wel.
 
 * [Introduction](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap01.html) uit *How to think like a Computer Scientist* ([PDF](http://staff.science.uva.nl/~mstgeman/progwis/Chapter1.pdf))

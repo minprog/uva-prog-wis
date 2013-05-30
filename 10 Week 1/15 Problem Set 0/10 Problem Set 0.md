@@ -8,7 +8,7 @@ IDLE is the [integrated development environment](http://en.wikipedia.org/wiki/In
 
 ## Preparation
 
-To be able to program a solution to this problem set, you may need to view [lecture 1](http://videolectures.net/mit600f08_grimson_lec01/) and read up on the follow documentation:
+To be able to program a solution to this problem set, you need to read up on the follow documentation:
 
 * [Introduction](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap01.html) from *How to think like a Computer Scientist* ([PDF](http://staff.science.uva.nl/~mstgeman/progwis/Chapter1.pdf))
 * [Variables and statements](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap02.html) from *How to think like a Computer Scientist* ([PDF](http://staff.science.uva.nl/~mstgeman/progwis/Chapter2.pdf))
@@ -17,7 +17,7 @@ To be able to program a solution to this problem set, you may need to view [lect
 
 ## A Very Simple Program: Entering and Printing Your Name
 
-The goal of this programming exercise is simply to get you more comfortable with using IDLE, and to begin using simple elements of Python. Standard elements of a program include the ability to print out results (using the print operation), the ability to read input from a user at the console (for example using the `raw_input` operation), and the ability to store values in a variable, so that the program can access that value as needed.
+The goal of this programming exercise is simply to get you more comfortable with using IDLE, and to begin using simple elements of Python. Standard elements of a program include the ability to print out results (using the `print` operation), the ability to read input from a user at the console (for example using the `raw_input` operation), and the ability to store values in a variable, so that the program can access that value as needed.
 
 ## Assignment
 
