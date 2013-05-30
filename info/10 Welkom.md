@@ -34,7 +34,9 @@ Dit vak bestaat uit videocolleges, 13 computerpractica en één tentamen. Om de 
 
 We verwachten dat je 12 uur per week aanwezig bent bij de computerpractica. In verband met ziekte is het mogelijk computerpractica de volgende week in te halen. Dit kan alleen als ziekte direct is gemeld.
 
-We verwachten dat je uiterlijk vrijdagavond je computerpracticum van de week inlevert.
+We verwachten dat je alle 13 problem sets maakt, elke problem sets in de betreffende week afhebt en voor elke problem set om feedback vraagt bij de assistenten. Na geven van de feedback wordt de opdracht afgetekend.
+
+We verwachten dat je uiterlijk vrijdagavond je computerpracticum van de week inlevert. Elke week wordt één van de opdrachten aangewezen voor inleveren.
 
 Mocht je in de problemen komen met het vak en het tempo, zorg dan dat je meteen contact opneemt. We zijn altijd bereid te zoeken naar oplossingen voor zover mogelijk met de hoeveelheid studenten in het vak.
 
@@ -89,7 +91,7 @@ Omdat het mogelijk is bijna ongemerkt mee te liften met een medestudent tijdens 
 
 ### Eindcijfer
 
-Het eindcijfer is het gemiddelde van de problem sets. Het tentamen telt dus niet mee in de berekening, maar moet wel voldoende gemaakt worden.
+Het eindcijfer is het gemiddelde van de problem sets met een zwaardere weging voor de problem sets van week 3 en 4. Het tentamen telt dus niet mee in de berekening, maar moet wel voldoende gemaakt worden.
 
 ## Samenwerken, fraude en plagiaat
 
