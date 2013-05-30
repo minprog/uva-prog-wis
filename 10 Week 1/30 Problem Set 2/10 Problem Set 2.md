@@ -6,7 +6,7 @@ You may work with other students. However, each student should write up and hand
 
 ## Preparation
 
-To be able to program a solution to this problem set, you need to view [lecture 3](http://videolectures.net/mit600f08_grimson_lec03/) ([handout](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/video-lectures/lecture-3/lec3.pdf)) and read up on the follow documentation:
+To be able to program a solution to this problem set, you need to read up on the follow documentation:
 
 * [Loops](http://en.wikibooks.org/wiki/Python_Programming/Loops) from *Python Programming*
 * Tuples: [Tuples and sequences](http://docs.python.org/tutorial/datastructures.html) section of the Python Tutorial
@@ -16,28 +16,27 @@ To be able to program a solution to this problem set, you need to view [lecture 
 
 In mathematics, a Diophantine equation (named for Diophantus of Alexandria, a third century Greek mathematician) is a polynomial equation where the variables can only take on integer values. Although you may not realize it, you have seen Diophantine equations before: one of the most famous Diophantine equations is:
 
-*x*<sup>*n*</sup> + *y*<sup>*n*</sup> = *z*<sup>*n*</sup>.
+$$x^n+y^n=z^n$$.
 
-For *n*=2, there are infinitely many solutions (values for *x*, *y* and *z*) called the Pythagorean triples, e.g. 3<sup>2</sup> + 4<sup>2</sup> = 5<sup>2</sup>. For larger values of *n*, Fermat's famous "last theorem" states that there do not exist any positive integer solutions for *x*, *y* and *z* that satisfy this equation. 
+For $$n=2$$, there are infinitely many solutions (values for $$x$$, $$y$$ and $$z$$) called the Pythagorean triples, e.g. $$3^2+4^2=5^2$$. For larger values of $$n$$, Fermat's famous "last theorem" states that there do not exist any positive integer solutions for $$x$$, $$y$$ and $$z$$ that satisfy this equation.
 
 For centuries, mathematicians have studied different Diophantine equations; besides Fermat's last theorem, some famous ones include Pell's equation, and the Erdos-Strauss conjecture. For more information on this intriguing branch of mathematics, you may find the [Wikipedia article](http://en.wikipedia.org/wiki/Diophantine_equation) of interest.
 
-We are not certain that McDonald's knows about Diophantine equations (actually we doubt that they do), but they use them! McDonald's sells Chicken McNuggets in packages of 6, 9 or 20 McNuggets. Thus, it is possible, for example, to buy exactly 15 McNuggets (with one package of 6 and a second package of 9), but it is not possible to buy exactly 16 nuggets, since no non-negative integer combination of 6's, 9's and 20's adds up to 16. To determine if it is possible to buy exactly *n* McNuggets, one has to solve a Diophantine equation: find non-negative integer values of *a*, *b*, and *c*, such that 6*a* + 9*b* + 20*c* = *n*.
+We are not certain that McDonald's knows about Diophantine equations (actually we doubt that they do), but they use them! McDonald's sells Chicken McNuggets in packages of 6, 9 or 20 McNuggets. Thus, it is possible, for example, to buy exactly 15 McNuggets (with one package of 6 and a second package of 9), but it is not possible to buy exactly 16 nuggets, since no non-negative integer combination of 6's, 9's and 20's adds up to 16. To determine if it is possible to buy exactly $$n$$ McNuggets, one has to solve a Diophantine equation: find non-negative integer values of $$a$$, $$b$$, and $$c$$, such that $$6*a+9*b+20*c=n$$.
 
-### Problem A
+## Problem A
 
-> Show that it is possible to buy exactly 50, 51, 52, 53, 54, and 55 McNuggets, by finding solutions to the Diophantine equation. You can solve this in your head, using paper and pencil, or writing a program. However you chose to solve this problem, list the combinations of 6, 9 and 20 packs of McNuggets you need to buy in order to get each of the exact amounts.
+Show that it is possible to buy exactly 50, 51, 52, 53, 54, and 55 McNuggets, by finding solutions to the Diophantine equation. You can solve this in your head, using paper and pencil, or writing a program. However you chose to solve this problem, list the combinations of 6, 9 and 20 packs of McNuggets you need to buy in order to get each of the exact amounts.
 
-> Given that it is possible to buy sets of 50, 51, 52, 53, 54 or 55 McNuggets by combinations of 6, 9 and 20 packs, show that it is possible to buy 56, 57,..., 65 McNuggets. In other words, show how, given solutions for 50-55, one can derive solutions for 56-65.
+Given that it is possible to buy sets of 50, 51, 52, 53, 54 or 55 McNuggets by combinations of 6, 9 and 20 packs, show that it is possible to buy 56, 57,..., 65 McNuggets. In other words, show how, given solutions for $$50-55$$, one can derive solutions for $$56-65$$.
 
-**Theorem**: If it is possible to buy *x*, *x*+1, ..., *x* + 5 sets of McNuggets, for some *x*, then it is possible to buy any number of McNuggets >= *x*, given that McNuggets come in 6, 9 and 20 packs.
+**Theorem**: If it is possible to buy $$x, x+1, ..., x+5$$ sets of McNuggets, for some $$x$$, then it is possible to buy any number of McNuggets $$>= x$$, given that McNuggets come in 6, 9 and 20 packs.
 
-### Problem B
+## Problem B
 
-> Explain, in English or Dutch, why this theorem is true.
-Save your answers for problems 1 and 2 as `ps2.txt`.
+Explain, in English or Dutch, why this theorem is true. Save your answers for problems A and B as `ps2.txt`.
 
-## Solving a Diophantine Equation
+## Problem C: Solving a Diophantine Equation
 
 Using this theorem, we can write an exhaustive search to find the largest number of McNuggets that cannot be bought in exact quantity. The format of the search should probably follow this outline:
 
@@ -56,8 +55,6 @@ Using this theorem, we can write an exhaustive search to find the largest number
       you know by the theorem that any amount larger can also be bought in 
       exact quantity
 
-### Problem C
-
 Write an iterative program that finds the largest number of McNuggets that cannot be bought in exact quantity. Your program should print the answer in the following format (where the correct number is provided in place of `n`):
 
     Largest number of McNuggets that cannot be bought in exact quantity: n
@@ -65,44 +62,20 @@ Write an iterative program that finds the largest number of McNuggets that canno
 Hint: your program should follow the outline above.
 
 Hint: think about what information you need to keep track of as you loop through possible ways of buying exactly `n` McNuggets. This will guide you in deciding what state variables you will need to utilize.
-Save your code for Problem 3 in `ps2a.py`.
+Save your code for Problem C in `ps2a.py`.
 
-## Generalize
+## Problem D: Generalize
 
 We can generalize this idea to work with any size packages of McNuggets, not just 6, 9, and 20. For simplicity, however, we will assume that McDonald's still provides McNuggets in three different sized packages.
-
-### Problem D
 
 Assume that the variable `packages` is bound to a tuple of length 3, the values of which specify the sizes of the packages, ordered from smallest to largest. Write a program that uses exhaustive search to find the largest number (less than 200) of McNuggets that cannot be bought in exact quantity.
 
 We limit the number to be less than 200 (although this is an arbitrary choice) because in some cases there is no largest value that cannot be bought in exact quantity, and we don’t want to search forever. 
 
-Please use [`ps2b_template.py`](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/assignments/ps2b.py) to structure your code. Have your code print out its result in the following format:
+Please use [ps2b_template.py](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/assignments/ps2b.py) to structure your code. Have your code print out its result in the following format:
 
     Given package sizes x, y, and z, the largest number of McNuggets that cannot be bought in exact quantity is: n
 
 Test your program on a variety of choices, by changing the value for packages. Include the case (6, 9, 20), as well as some other test cases of your own choosing.
 
-Save your code for Problem 4 in `ps2b.py`.
-
-## Hand-In Procedure
-
-### 1. Save
-
-Save your written answer in ps2.txt and your code in `ps2a.py` and `ps2b.py`. Do not ignore this step or save your file(s) with different names.
-
-### 2. Time and Collaboration Info
-
-At the start of each file, in a comment, write down the number of hours (roughly) you spent on the problems in that part, and the names of the people you collaborated with. For example:
-
-    # Problem Set 2
-    # Name: Jane Lee
-    # Collaborators: John Doe
-    # Time: 3:30
-
-### 3. Upload to Blackboard
-
-Go to [blackboard.ic.uva.nl](http://blackboard.ic.uva.nl/) and upload your assignment at *pset2*. It will be graded!
-
-<small>Problem set is based on the [MIT 6.00 course](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/assignments/) and [available](http://ocw.mit.edu/terms/) under the Creative Commons BY-NC-SA 3.0 license.</small>
-
+Save your code for Problem D in `ps2b.py`.

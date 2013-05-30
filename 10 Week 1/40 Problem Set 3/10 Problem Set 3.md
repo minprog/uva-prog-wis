@@ -6,7 +6,7 @@ You may work with other students. However, each student should write up and hand
 
 ## Preparation
 
-To be able to program a solution to this problem set, you need to view [lecture 4](http://videolectures.net/mit600f08_grimson_lec04/) ([handout](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/video-lectures/lecture-4/lec4.pdf)) and read up on the follow documentation:
+To be able to program a solution to this problem set, you need to read up on the follow documentation:
 
 * Functions, type conversion, and stack diagrams: [Chapter 3](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap03.html) of How to Think Like a Computer Scientist
 * More about functions: [Chapter 5](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap05.html) of How to Think Like a Computer Scientist (through section 5.4)
@@ -28,7 +28,9 @@ To get started, we are going to use some built-in Python functions. To use these
 
     from string import *
 
-at the beginning of your file. This will allow you to use Python string functions. In particular, if you want to find the starting point of the first match of a keyword string key in a target string target you could use the find function. Try running find on some examples, such as `find("atgacatgcacaagtatgcat","atgc")`.
+at the beginning of your file. This will allow you to use Python string functions. In particular, if you want to find the starting point of the first match of a keyword string key in a target string target you could use the find function. Try running find on some examples, such as 
+
+	find("atgacatgcacaagtatgcat","atgc")
 
 Note how it returns the index of the first instance of the key in the target. Also note that if no instance of the key exists in the target, e.g, 
 
@@ -54,51 +56,45 @@ returns the value 15, meaning that by starting the search at index 6, the next m
 
 For the recursive version, you will want to think about how to use your function on a smaller version of the same problem (e.g., on a smaller target string) and then how to combine the result of that computation to solve the original problem. For example, given you can find the first instance of a key string in a target string, how would you combine that result with invocation of the same function on a smaller target string. You may find the string slicing operation useful in getting substrings of a string.
 
-### Problem A
+## Problem A
 
-> Write two functions, called `countSubStringMatch` and `countSubStringMatchRecursive` that take two arguments, a key string and a target string. These functions iteratively and recursively count the number of instances of the key in the target string. You should complete definitions for
-> 
->     def countSubStringMatch(target,key):
-> 
-> and
-> 
->     def countSubStringMatchRecursive (target, key):
-> 
-> Place your answer in a file named `ps3a.py`
+Write two functions, called `countSubStringMatch` and `countSubStringMatchRecursive` that take two arguments, a key string and a target string. These functions iteratively and recursively count the number of instances of the key in the target string. You should complete definitions for
+
+	def countSubStringMatch(target,key):
+
+and
+
+	def countSubStringMatchRecursive (target, key):
+
+Place your answer in a file named `ps3a.py`
 
 For the remainder of this problem set, we are going to explore other substring matching ideas. These problems can be solved with either an iterative function or a recursive one. You are welcome to use either approach, though you may find iterative approaches more intuitive in these cases of matching linear structures.
 
 The next thing we want to do is write a function that generalizes find so that it returns a tuple of all starting points of a match of a key string in a target string, not just the first instance.
 
-
 ### Problem B
 
-> Write the function subStringMatchExact. This function takes two 
-> arguments: a `target` string, and a `key` string. It should return a 
-> tuple of the starting points of matches of the key string in the target 
-> string, when indexing starts at 0. Complete the definition for
->
->     def subStringMatchExact(target,key):
-> 
-> For example, `subStringMatchExact("atgacatgcacaagtatgcat","atgc")`
-> would return the tuple (5, 15). The file ps3_template.py
-> ([download](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/assignments/ps3_template.py)) includes some 
-> test strings that you can use to test your function. In particular, we 
-> provide two target strings:
-> 
->     target1 = 'atgacatgcacaagtatgcat'
->     target2 = 'atgaatgcatggatgtaaatgcag'
-> 
-> and four key strings:
->
->     key10 = 'a'
->     key11 = 'atg'
->     key12 = 'atgc'
->     key13 = 'atgca'
-> 
-> Test your function on each combination of key and target string, as well
-> as other examples that you create. Place your answer in a file named 
-> `ps3b.py`.
+Write the function subStringMatchExact. This function takes two 
+arguments: a `target` string, and a `key` string. It should return a 
+tuple of the starting points of matches of the key string in the target 
+string, when indexing starts at 0. Complete the definition for
+
+	def subStringMatchExact(target,key):
+
+For example, `subStringMatchExact("atgacatgcacaagtatgcat","atgc")`
+would return the tuple (5, 15). The file `ps3_template.py` ([download](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/assignments/ps3_template.py)) includes some test strings that you can use to test your function. In particular, we provide two target strings:
+
+	target1 = 'atgacatgcacaagtatgcat'
+	target2 = 'atgaatgcatggatgtaaatgcag'
+
+and four key strings:
+
+	key10 = 'a'
+	key11 = 'atg'
+	key12 = 'atgc'
+	key13 = 'atgca'
+
+Test your function on each combination of key and target string, as well as other examples that you create. Place your answer in a file named `ps3b.py`.
 
 The function you wrote in Problem 2 will find exact matches of a key 
 string in a target string. It is often also useful to find near matches, 
@@ -112,7 +108,7 @@ at 15. However, there is another match starting at 0, in which the element
 the target. Similarly, the key `ATTA` matches this target starting at 0, 
 if we allow a substitution of `G` for the second `T` in the key string.
 
-We can build on your function from Problem 2 to solve this problem. In 
+We can build on your function from Problem B to solve this problem. In 
 particular, consider the following steps. First, break the key string 
 into two parts (where one of the parts could be an empty string). Let's
 call them `key1` and `key2`. For each part, use your function from 
@@ -144,67 +140,44 @@ point of the match of the first substring is *n* (which would be an
 element of starts1), and that the length of the first substring is *m*. 
 Then if *k* is an element of starts2, denoting the index of the starting 
 point of a match of the second substring, there is a valid match with 
-one substitution starting at *n*, if *n* + *m* + 1 = *k*, since this 
+one substitution starting at *n*, if $$n+m+1=k$$, since this 
 means that the second substring match starts one element beyond the 
 end of the first substring.
 
-### Problem C
+## Problem C
 
-> Write a function called `constrainedMatchPair` which takes three 
-> arguments: a tuple representing starting points for the first 
-> substring, a tuple representing starting points for the second
-> substring, and the length of the first substring. The function should 
-> return a tuple of all members (call it `n`) of the first tuple for 
-> which there is an element in the second tuple (call it `k`) such 
-> that `n+m+1 == k`, where `m` is the length of the first substring. 
-> 
-> Complete the definition
-> 
->     def constrainedMatchPair(firstMatch,secondMatch,length):
-> 
-> To test this function, we have provided a function called 
-> `subStringMatchOneSub`, which takes two arguments: a target string 
-> and a key string. This function will return a tuple of all starting 
-> points of matches of the key to the target, such that at most 
-> one element of the key is incorrectly matched to the target. 
-> This function is provided for you in the file `ps3_template.py` ([download](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/assignments/ps3_template.py)) 
-> and invokes the function you are to write.
-> 
-> Save your answers in a file named `ps3c.py`.
+Write a function called `constrainedMatchPair` which takes three 
+arguments: a tuple representing starting points for the first 
+substring, a tuple representing starting points for the second
+substring, and the length of the first substring. The function should 
+return a tuple of all members (call it `n`) of the first tuple for 
+which there is an element in the second tuple (call it `k`) such 
+that `n + m + 1 == k`, where `m` is the length of the first substring. 
 
-You will have noticed in your tests for Problem 3, that this approach will find matches with one substitution but will also find matches with no substitutions, that is, exact matches of the key to the target. Suppose we want to find only those matches with exactly one substitution. One easy way to do this is to use the functions from both Problem 2 and Problem 3. These functions will give you a tuple representing starting points for exact matches, and matches with up to one substitution, respectively. If we keep only those elements of the second tuple that don’t occur in the first tuple, we will have the matches with exactly one substitution.
+Complete the definition
 
-### Problem D
+	def constrainedMatchPair(firstMatch,secondMatch,length):
 
-> Write a function called `subStringMatchExactlyOneSub` which takes two 
-> arguments: a `target` string and a `key` string. This function 
-> should return a tuple of all starting points of matches of the
-> key to the target, such that at exactly one element of the key is 
-> incorrectly matched to the target. Complete the definition
-> 
->     def subStringMatchExactlyOneSub(target,key):
-> 
-> Save your answers in a file named `ps3d.py`.
+To test this function, we have provided a function called 
+`subStringMatchOneSub`, which takes two arguments: a target string 
+and a key string. This function will return a tuple of all starting 
+points of matches of the key to the target, such that at most 
+one element of the key is incorrectly matched to the target. 
 
+This function is provided for you in the file `ps3_template.py` ([download](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/assignments/ps3_template.py)) and invokes the function you are to write.
 
+Save your answers in a file named `ps3c.py`.
 
-## Hand-In Procedure
+You will have noticed in your tests for Problem C, that this approach will find matches with one substitution but will also find matches with no substitutions, that is, exact matches of the key to the target. Suppose we want to find only those matches with exactly one substitution. One easy way to do this is to use the functions from both Problem B and Problem C. These functions will give you a tuple representing starting points for exact matches, and matches with up to one substitution, respectively. If we keep only those elements of the second tuple that don't occur in the first tuple, we will have the matches with exactly one substitution.
 
-### 1. Save
+## Problem D
 
-Save your code in the specific file name indicated for each problem. Do not ignore this step or save your file(s) with different names.
+Write a function called `subStringMatchExactlyOneSub` which takes two 
+arguments: a `target` string and a `key` string. This function 
+should return a tuple of all starting points of matches of the
+key to the target, such that at exactly one element of the key is 
+incorrectly matched to the target. Complete the definition
 
-### 2. Time and Collaboration Info
+	def subStringMatchExactlyOneSub(target,key):
 
-At the start of each file, in a comment, write down the number of hours (roughly) you spent on the problems in that part, and the names of the people you collaborated with. For example:
-
-    # Problem Set 3a
-    # Name: Jane Lee
-    # Collaborators: John Doe
-    # Time: 1:30
-
-### 3. Upload to Blackboard
-
-Go to [blackboard.ic.uva.nl](http://blackboard.ic.uva.nl/) and upload your assignment at *pset3*.
-
-<small>Problem set is based on the [MIT 6.00 course](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/assignments/) and [available](http://ocw.mit.edu/terms/) under the Creative Commons BY-NC-SA 3.0 license.</small>
+Save your answers in a file named `ps3d.py`.

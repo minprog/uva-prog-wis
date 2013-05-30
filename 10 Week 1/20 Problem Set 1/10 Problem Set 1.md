@@ -6,7 +6,7 @@ You may work with other students. However, each student should write up and hand
 
 ## Preparation
 
-To be able to program a solution to this problem set, you may need to view [lecture 2](http://videolectures.net/mit600f08_grimson_lec02/) ([handout](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/video-lectures/lecture-2/lec2.pdf)) and read up on the follow documentation:
+To be able to program a solution to this problem set, you will need to read up on the follow documentation:
 
 * [Conditionals](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap04.html) up to section 4.8 from *How to think like a Computer Scientist* ([PDF](http://staff.science.uva.nl/~mstgeman/progwis/Chapter4.pdf))
 * [Conditional statements](http://en.wikibooks.org/wiki/Python_Programming/Conditional_Statements) from *Python Programming*
@@ -18,11 +18,11 @@ A common type of computation is the generate-and-test method, in which one syste
 
 While one could in principle (and under some circumstances one must) generate potential solutions randomly or according to some probability distribution, often it is more efficient to devise a systematic method for generating all candidate solutions.
 
-### Problem a
+## Problem a
 
-> Write a program that computes and prints the 1000th prime number.
+Write a program that computes and prints the 1000th prime number.
 
-### Hints
+## Hints
 
 To help you get started, here is a rough outline of the stages you should probably follow in writing your code:
 
@@ -51,10 +51,9 @@ To help you get started, here is a rough outline of the stages you should probab
 
 Use these ideas to guide the creation of your code. If you want to check that your code is correctly finding primes, you can find a list of primes [just about anywhere](http://primes.utm.edu/lists/small/1000.txt).
 
-
 ## The Product of the Primes
 
-There is a cute result from number theory that states that for sufficiently large *n* the product of the primes less than *n* is less than or equal to *e\*\*n* and that as *n* grows, this becomes a tight bound (that is, the ratio of the product of the primes to *e\*\*n* gets close to 1 as *n* grows).
+There is a cute result from number theory that states that for sufficiently large $$n$$ the product of the primes less than $$n$$ is less than or equal to $$e^n$$ and that as $$n$$ grows, this becomes a tight bound (that is, the ratio of the product of the primes to $$e^n$$ gets close to 1 as $$n$$ grows).
 
 Computing a product of a large number of prime numbers can result in a very large number, which can potentially cause problems with our computation. (We will be talking about how computers deal with numbers a bit later in the term.)
 
@@ -66,34 +65,12 @@ To compute a logarithm, we can use a built in mathematical functions from Python
 
 statement at the beginning of your file. This will allow you to use the function `log` in your code, e.g. `log(2)` will return the logarithm base e of the number 2.
 
-### Problem b
+## Problem b
 
-> Write a program that computes the sum of the logarithms of all the primes from 2 to some number *n*, and print out the sum of the logs of the primes, the number *n*, and the ratio of these two quantities. Test this for different values of *n*.
+Write a program that computes the sum of the logarithms of all the primes from 2 to some number $$n$$, and print out the sum of the logs of the primes, the number $$n$$, and the ratio of these two quantities. Test this for different values of $$n$$.
 
 You should be able to make only some small changes to your solution to Problem 1 to solve this problem as well.
 
-### Hints
+## Hints
 
 While you should see the ratio of the sum of the logs of the primes to the value *n* slowly get closer to 1, it does not approach this limit monotonically.
-
-
-## Hand-In Procedure
-
-### 1. Save
-
-Save your solution to Problem A as `ps1a.py` and your solution to Problem B as `ps1b.py`. Do not ignore this step or save your file(s) with different names.
-
-### 2. Time and Collaboration Info
-
-At the start of each file, in a comment, write down the number of hours (roughly) you spent on the problems in that part, and the names of the people you collaborated with. For example:
-
-    # Problem Set 1
-    # Name: Jane Lee
-    # Collaborators: John Doe
-    # Time: 2:30
-
-### 3. Upload to Blackboard
-
-Go to [blackboard.ic.uva.nl](http://blackboard.ic.uva.nl/) and upload your assignment at *pset1*. It will probably not be graded, but more on this as we go.
-
-<small>Problem set is based on the [MIT 6.00 course](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/assignments/) and [available](http://ocw.mit.edu/terms/) under the Creative Commons BY-NC-SA 3.0 license.</small>
