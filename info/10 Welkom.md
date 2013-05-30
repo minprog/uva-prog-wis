@@ -28,19 +28,19 @@ telefoon 525 5235
 
 ## Onderwijsvorm
 
-Dit vak bestaat uit videocolleges, 13 computerpractica en één tentamen. Om de leerdoelen te kunnen halen is het bovenal belangrijk om heel veel te oefenen met programmeren.
+Dit vak bestaat uit videocolleges, 11 computerpractica en één tentamen. Om de leerdoelen te kunnen halen is het bovenal belangrijk om heel veel te oefenen met programmeren.
 
 ## Verwachtingen: aanwezigheid en deadlines
 
 We verwachten dat je 12 uur per week aanwezig bent bij de computerpractica. In verband met ziekte is het mogelijk computerpractica de volgende week in te halen. Dit kan alleen als ziekte direct is gemeld.
 
-We verwachten dat je alle 13 problem sets maakt, elke problem sets in de betreffende week afhebt en voor elke problem set om feedback vraagt bij de assistenten. Na geven van de feedback wordt de opdracht afgetekend.
+We verwachten dat je alle 13 problem sets maakt, elke problem set in de betreffende week afhebt en voor elke problem set om feedback vraagt bij de assistenten. Na geven van de feedback wordt de opdracht afgetekend.
 
-We verwachten dat je uiterlijk vrijdagavond je computerpracticum van de week inlevert. Elke week wordt één van de opdrachten aangewezen voor inleveren.
+We verwachten dat je uiterlijk vrijdagavond 23:55 je computerpracticum van de week inlevert. Elke week wordt één van de opdrachten aangewezen voor inleveren.
 
 Mocht je in de problemen komen met het vak en het tempo, zorg dan dat je meteen contact opneemt. We zijn altijd bereid te zoeken naar oplossingen voor zover mogelijk met de hoeveelheid studenten in het vak.
 
-Een laatste verwachting van ons is dat je *buiten* de practicumuren de videocolleges kijkt.
+Een laatste verwachting van ons is dat je *buiten* de practicumuren de videocolleges bekijkt.
 
 ## Literatuur
 
