@@ -1,0 +1,4 @@
+name: pset2
+required:
+    - ps2a.py
+    - ps2b.py

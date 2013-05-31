@@ -1,0 +1,6 @@
+name: pset5
+required:
+    - ps5a.py
+    - ps5b.py
+    - ps5c.py
+    - ps5d.py

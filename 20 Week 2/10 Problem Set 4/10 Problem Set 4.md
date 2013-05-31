@@ -10,12 +10,7 @@ In this problem set, you will write functions that do not form a complete progra
 
 ## Preparation
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/Pfo7r6bjSqI" frameborder="0" allowfullscreen></iframe>
-
-<iframe width="420" height="315" src="http://www.youtube.com/embed/hVHqs38fPe8" frameborder="0" allowfullscreen></iframe>
-
-
-To be able to program a solution to this problem set, you need to view lecture 5 and lecture 6 and read up on the follow documentation:
+To be able to program a solution to this problem set, you need to read up on the follow documentation:
 
 * Numbers: [Floating point arithmetic: issues and limitations](http://docs.python.org/tut/node16.html) from the Python Tutorial
 * Successive approximation: Wikipedia article on [Newton's method](http://en.wikipedia.org/wiki/Newton-Raphson_method)
@@ -37,89 +32,65 @@ We can model a retirement fund with some simple equations. Assume your starting 
 
 This process continues each year, with your retirement fund growing both by new contributions and by growth of the principal. Throughout this problem set, growth rates will always be positive (this is not true in the real world, alas!).
 
-### Problem a.
+## Problem a.
 
-> Write a function, called nestEggFixed, which takes four arguments: a salary, a percentage of your salary to save in an investment account, an annual growth percentage for the investment account, and a number of years to work. This function should return a list, whose values are the size of your retirement account at the end of each year, with the most recent year’s value at the end of the list.
+Write a function, called nestEggFixed, which takes four arguments: a salary, a percentage of your salary to save in an investment account, an annual growth percentage for the investment account, and a number of years to work. This function should return a list, whose values are the size of your retirement account at the end of each year, with the most recent year’s value at the end of the list.
 
-> Complete the implementation of:
+Complete the implementation of:
 
->     def nestEggFixed (salary, save, growthRate, years):
+	def nestEggFixed (salary, save, growthRate, years):
 
-> Write your code in the appropriate place in the ps4.py template ([download](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/assignments/ps4.py)). To test your function, run the test cases in the test function testNestEggFixed(). You should add add
+Write your code in the appropriate place in the `ps4.py` template ([download](ps4_template.py)). To test your function, run the test cases in the test function `testNestEggFixed()`. You should add add
 
 This first model is pretty simple. Clearly, the market does not grow at a constant rate. So a better model would be to account for variations in growth percentage each year.
 
-### ?Problem b.
+## Problem b.
 
-> Write a function, called nestEggVariable, which takes three arguments: a salary (salary), a percentage of your salary to save (save), and a list of annual growth percentages on investments (growthRates). The length of the last argument defines the number of years you plan to work; growthRates[0] is the growth rate of the first year, growthRates[1] is the growth rate of the second year, etc. (Note that because the retirement fund’s initial value is 0, growthRates[0] is, in fact, irrelevant.) This function should return a list, whose values are the size of your retirement account at the end of each year.
+Write a function, called `nestEggVariable`, which takes three arguments: a salary (`salary`), a percentage of your salary to save (`save`), and a list of annual growth percentages on investments (`growthRates`). The length of the last argument defines the number of years you plan to work; `growthRates[0]` is the growth rate of the first year, `growthRates[1]` is the growth rate of the second year, etc. (Note that because the retirement fund's initial value is 0, `growthRates[0]` is, in fact, irrelevant.) This function should return a list, whose values are the size of your retirement account at the end of each year.
 
-> Complete the implementation of:
+Complete the implementation of:
 
->     def nestEggVariable(salary, save, growthRates):
+	def nestEggVariable(salary, save, growthRates):
 
-> Write your code in the appropriate place in the ps4.py template. To test your function, run the test cases in the test function testNestEggVariable(). You should add additional test cases to this function to further test your code.
+Write your code in the appropriate place in the ps4.py template. To test your function, run the test cases in the test function `testNestEggVariable()`. You should add additional test cases to this function to further test your code.
 
 Of course, once you retire you will want to be able to withdraw some amount of money each year for living expenses. You can use your previous code to get the size of your retirement fund when you stop working. Now we want to model how much you can withdraw to spend each year after retirement.
 
 Suppose that, after retirement, your retirement fund continues to grow according to a list of annual growth percentages on investments (growthRates), while your annual expenses are constant (wouldn’t zero percent inflation be nice?), called expenses.
 
-To see how your retirement fund will change after retirement, we can use the following chart, where we let F represent the size of the retirement fund at the time of retirement, and we let expenses represent the amount of money we withdraw in the first year to cover our living costs:
+To see how your retirement fund will change after retirement, we can use the following chart, where we let `F` represent the size of the retirement fund at the time of retirement, and we let expenses represent the amount of money we withdraw in the first year to cover our living costs:
 
 |Time|Funds|
 |---|---|
-|End of year 1|F[0] = savings * (1 + 0.01 * growthRates[0]) – expenses|
-|End of year 2|F[1] = F[0] * (1 + 0.01 * growthRates[1]) – expenses|
-|End of year 3|F[2] = F[1] * (1 + 0.01 * growthRates[2]) – expenses|
+|End of year 1|`F[0] = savings * (1 + 0.01 * growthRates[0]) – expenses`|
+|End of year 2|`F[1] = F[0] * (1 + 0.01 * growthRates[1]) – expenses`|
+|End of year 3|`F[2] = F[1] * (1 + 0.01 * growthRates[2]) – expenses`|
 
-### Problem c.
+## Problem c.
 
-> Write a function, called `postRetirement`, which takes three arguments: an initial amount of money in your retirement fund (savings), a list of annual growth percentages on investments while you are retired (growthRates), and your annual expenses (expenses). Assume that the increase in the investment account savings is calculated before subtracting the annual expenditures (as shown in the above table). Your function should return a list of fund sizes after each year of retirement, accounting for annual expenses and the growth of the retirement fund. Like problem 2, the length of the growthRates argument defines the number of years you plan to be retired.
+Write a function, called `postRetirement`, which takes three arguments: an initial amount of money in your retirement fund (savings), a list of annual growth percentages on investments while you are retired (growthRates), and your annual expenses (expenses). Assume that the increase in the investment account savings is calculated before subtracting the annual expenditures (as shown in the above table). Your function should return a list of fund sizes after each year of retirement, accounting for annual expenses and the growth of the retirement fund. Like problem 2, the length of the growthRates argument defines the number of years you plan to be retired.
 
-> Note that if the retirement fund balance becomes negative, expenditures should continue to be subtracted, and the growth rate comes to represent the interest rate on the debt (i.e. the formulas in the above table still apply).
+Note that if the retirement fund balance becomes negative, expenditures should continue to be subtracted, and the growth rate comes to represent the interest rate on the debt (i.e. the formulas in the above table still apply).
 
-> Complete the definition for:
+Complete the definition for:
 
->     def postRetirement(savings, growthRates, expenses):
+	def postRetirement(savings, growthRates, expenses):
 
-> Write your code in the appropriate place in the ps4.py template. To test your function, run the test cases in the test function testPostRetirement(). You should add additional test cases to this function to further test your code.
+Write your code in the appropriate place in the `ps4.py` template. To test your function, run the test cases in the test function `testPostRetirement()`. You must add additional test cases to this function to further test your code.
 
-Suppose you would like to budget your annual expenses such that by the time you pass on, you will have no retirement funds left (you plan to follow the Andrew Carnegie model and leave no money for your children). One way to determine what your expense budget should be is to try feeding different values of expenses to postRetirement(). You can automate this by using the idea of successive approximation introduced in lecture.
+Suppose you would like to budget your annual expenses such that by the time you pass on, you will have no retirement funds left (you plan to follow the Andrew Carnegie model and leave no money for your children). One way to determine what your expense budget should be is to try feeding different values of expenses to `postRetirement()`. You can automate this by using the idea of successive approximation introduced in lecture.
 
 Remember that in lecture, we saw the idea of binary search. In that example, we were trying to find the square root of a number, and we did this by picking a high and low value that we knew bounded the answer (i.e. the answer lay between low and high), and then testing the average of high and low to see how close it was to the right answer (within epsilon absolute difference).
 
-If it was close enough, we stopped; if not, we changed the range of values, either making our new low value be the average of the previous low and high, and keeping the old
-high, or making our new high value the average of the previous low and high, and keeping the old low, depending on the result of our test. You can use the same idea here.
+If it was close enough, we stopped; if not, we changed the range of values, either making our new low value be the average of the previous low and high, and keeping the old high, or making our new high value the average of the previous low and high, and keeping the old low, depending on the result of our test. You can use the same idea here.
 
-### Problem d.
+## Problem d.
 
-> Write a function, called findMaxExpenses, which takes five arguments: a salary
-(salary), a percentage of your salary to save (save), a list of annual growth percentages on investments while you are still working (preRetireGrowthRates), a list of annual growth percentages on investments while you are retired (postRetireGrowthRates), and a value for epsilon (epsilon). As with problems 2 and 3, the lengths of preRetireGrowthRates and postRetireGrowthRates determine the number of years you plan to be working and retired, respectively.
+Write a function, called `findMaxExpenses`, which takes five arguments: a salary
+(`salary`), a percentage of your salary to save (`save`), a list of annual growth percentages on investments while you are still working (`preRetireGrowthRates`), a list of annual growth percentages on investments while you are retired (`postRetireGrowthRates`), and a value for epsilon (`epsilon`). As with problems 2 and 3, the lengths of `preRetireGrowthRates` and `postRetireGrowthRates` determine the number of years you plan to be working and retired, respectively.
 
-> Use the idea of binary search to find a value for the amount of expenses you can withdraw each year from your retirement fund, such that at the end of your retirement, the absolute value of the amount remaining in your retirement fund is less than epsilon (note that you can overdraw by a small amount). Start with a range of possible values for your annual expenses between 0 and your savings at the start of your retirement (HINT #1: this can be determined by utilizing your solution to problem 2). Your function should print out the current estimate for the amount of expenses on each iteration through the binary search (HINT #2: your binary search should make use of your solution to problem 3), and should return the estimate for the amount of expenses to withdraw. (HINT #3: the answer should lie between zero and the initial value of the savings + epsilon.) Complete the implementation of:
+Use the idea of binary search to find a value for the amount of expenses you can withdraw each year from your retirement fund, such that at the end of your retirement, the absolute value of the amount remaining in your retirement fund is less than epsilon (note that you can overdraw by a small amount). Start with a range of possible values for your annual expenses between 0 and your savings at the start of your retirement (HINT #1: this can be determined by utilizing your solution to problem 2). Your function should print out the current estimate for the amount of expenses on each iteration through the binary search (HINT #2: your binary search should make use of your solution to problem 3), and should return the estimate for the amount of expenses to withdraw. (HINT #3: the answer should lie between zero and the initial value of the savings + epsilon.) Complete the implementation of:
 
->     def findMaxExpenses(salary, save, preRetireGrowthRates, postRetireGrowthRates, epsilon):
+	def findMaxExpenses(salary, save, preRetireGrowthRates, postRetireGrowthRates, epsilon):
 
-> Write your code in the appropriate place in the ps4.py template. To test your function, run the test cases in the test function testFindMaxExpenses(). You should add additional test cases to this function to further test your code.
-
-
-
-## Hand-In Procedure
-
-### 1. Save
-
-Save your code in the specific file name indicated for each problem. Do not ignore this step or save your file(s) with different names.
-
-### 2. Time and Collaboration Info
-
-At the start of each file, in a comment, write down the number of hours (roughly) you spent on the problems in that part, and the names of the people you collaborated with. For example:
-
-    # Problem Set 3a
-    # Name: Jane Lee
-    # Collaborators: John Doe
-    # Time: 1:30
-
-### 3. Upload to Blackboard
-
-Go to [blackboard.ic.uva.nl](http://blackboard.ic.uva.nl/) and upload your assignment at *pset4*.
-
-<small>Problem set is based on the [MIT 6.00 course](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/assignments/) and [available](http://ocw.mit.edu/terms/) under the Creative Commons BY-NC-SA 3.0 license.</small>
+Write your code in the appropriate place in the `ps4.py` template. To test your function, run the test cases in the test function `testFindMaxExpenses()`. You should add additional test cases to this function to further test your code.
