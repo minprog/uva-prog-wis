@@ -37,7 +37,7 @@ Gebruik deze code als basis:
 
 	# test de functie permute_and_print
 	print "opgave b:"
-	M = [[’European’, ’African’], [’swallow’, ’coconut’]]
+	M = [['European', 'African'], ['swallow', 'coconut']]
 	permute_and_print(M)
 
 
