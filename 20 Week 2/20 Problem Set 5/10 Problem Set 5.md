@@ -76,9 +76,9 @@ coins, respectively
 * What is the chance that Sarah wins?  Answer: $$n/(m+n)$$
 * What is the average length of games won by Sarah when she 
   starts with 10 coins and John with 5 coins? 
-  Answer: $$125 / 3 ~ 41.666...$$
+  Answer: $$125 / 3 ~~ 41.666...$$
 * What is the average length of games won by John when he 
   starts with 5 coins and Sarah with 10 coins? 
-  Answer: $$200 / 3 ~ 66.666...$$
+  Answer: $$200 / 3 ~~ 66.666...$$
 
 Is your code sufficiently efficient to work well for as many as 100,000 games?
