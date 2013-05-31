@@ -31,8 +31,7 @@ random number to her current amount.
 
 There are many ways to randomly generate numbers in Python, but the following
 one seems appropriate: import the module `random` and then use
-`random.randint(start,end)` to generate a random integer $$n$$ with $$a <= n <=
-b$$.
+`random.randint(start,end)` to generate a random integer $$n$$ with $$a<=n<=b$$.
 
 ### Problem a: getting started
 
