@@ -4,6 +4,15 @@ In week 1 behandelen we de basiselementen van het programmeren: functies, variab
 
 **Let op:** Het is zeker niet de bedoeling dat je de practicumtijd gebruikt om de video's te kijken of het leeswerk te doen. Doe dit van te voren. Je hoeft daarentegen nog niet alles te begrijpen van de video's en het leeswerk. Je leert door de afwisseling met zelf programmeren.
 
+## Maar nu eerst ##
+
+Van <a href="http://learnpython.org">Learn Python</a>:
+
+- Hello, World!
+- Variables and types
+- Conditions
+- Loops
+
 ## Doen!
 
 Voor echte beginners is het goed om de volgende twee korte pagina's even door te lezen:
