@@ -10,7 +10,7 @@ In this problem set only methods for the solution of a single nonlinear equation
 
 The Bisection Method is a special case of a bracketing method. In a such method, one starts with the knowledge that a zero lies in some interval, so that it is only necessary to refine the knowledge of the interval so that the interval containing the zero has a length that is smaller than the required precision for the zero.
 
-The Bisection Method is based on repeated halving of subintervals of $$[a, b]$$ and, at each step, locating the half containing $r$. One starts with the given interval $$[a, b]$$ and first determines whether the number $r$ happens to be equal to $$(a+b)/2$$ and, if not, can be found in the subinterval $$[a, (a+b)/2]$$ or $$[(a+b)/2, b]$$. The choice depends on the value of $$f((a+b)/2)$$. One stops  the process of halving subintervals whenever a zero has been found or the length of the interval has become less than a specified tolerance. In the latter case, one takes the midpoint of the last found subinterval as an approximated value for the zero $$r$$.
+The Bisection Method is based on repeated halving of subintervals of $$[a, b]$$ and, at each step, locating the half containing $$r$$. One starts with the given interval $$[a, b]$$ and first determines whether the number $$r$$ happens to be equal to $$(a+b)/2$$ and, if not, can be found in the subinterval $$[a, (a+b)/2]$$ or $$[(a+b)/2, b]$$. The choice depends on the value of $$f((a+b)/2)$$. One stops  the process of halving subintervals whenever a zero has been found or the length of the interval has become less than a specified tolerance. In the latter case, one takes the midpoint of the last found subinterval as an approximated value for the zero $$r$$.
 
 ### Problem a
 
@@ -33,7 +33,7 @@ Adjust your function so it also returns the number of iterations used to arrive 
 
 The Biection Method is very simple, but generally quite inefficient, in part because it only makes use of the sign of the function *f* (*x*) at each evaluation, while ignoring its magnitude. Thus it ignores significant information which could be used accelerate the finding of the root. A method based on interpolation makes use of this information by approximating the function on the interval $$[x_1, x_2]$$ by the chord joining the points $$(x_1,f(x_1)$$ and $$(x_2,f(x_2)$$, which is the straight line:
 
-$(y-y_1)/(x-x_1) = (y_2-y_1)/(x_2-x_1)$
+$$(y-y_1)/(x-x_1) = (y_2-y_1)/(x_2-x_1)$$
 
 Solving this linear equation for $$y=0$$ yields the new interval endpoint within the interval $$[x_1, x_2]$$:
 
@@ -62,13 +62,13 @@ In the secant method, the function $$f(x)$$ is being approximated by a straight 
 
 $$y-f_1 = (x-x_1)(f_1-f_0)/(x_1-x_0)$$.
 
-Solving for the value of $x$ for which $y=0$ for this line, gives the two-point iteration formula
+Solving for the value of $$x$$ for which $$y=0$$ for this line, gives the two-point iteration formula
 
 $$x_(k+1)=x_k-f(x_k)(x_k-x_(k-1))/(f(x_k)-f(x_(k-1))$$.
 
 Thus, starting with the two initial approximations $$x_0$$ and $$x_1$$, the approximation $$x_2$$ is the $$x$$-intercept of the line joining $$(x_0, f(x_0))$$ and $$(x_1, f(x_1))$$. The approximation $$x_3$$ is the $$x$$-intercept of the line joining $$(x_1, f(x_1))$$ and $$(x_2, f(x_2))$$, and so on.
 
-While both the regula falsi and secant methods use the idea of a linear approximation to the function based on its values at two points, the regula falsi method depends on the fact that those two points enclose a zero, with the consequent sign change for $$f(x)$$, while the secant method simply extrapolates using these two points to find the next approximation to the zero. The regula falsi method is sure to find the zero, since it keeps it bracketed, while the secant method can sometimes fail to find a zero that does exist. The secant method has the advantage that we do not need to have prior knowledge of the interval in $x$ in which each zero of $$f(x)$$ lies.
+While both the regula falsi and secant methods use the idea of a linear approximation to the function based on its values at two points, the regula falsi method depends on the fact that those two points enclose a zero, with the consequent sign change for $$f(x)$$, while the secant method simply extrapolates using these two points to find the next approximation to the zero. The regula falsi method is sure to find the zero, since it keeps it bracketed, while the secant method can sometimes fail to find a zero that does exist. The secant method has the advantage that we do not need to have prior knowledge of the interval in $$x$$ in which each zero of $$f(x)$$ lies.
 
 ### Problem d
 
@@ -89,7 +89,7 @@ Bracketing methods are useful when one has a well-established interval in which 
 
 Suppose one has reason to believe that there is a zero of $$f(x)$$ near the point $$x_0$$. The Taylor expansion for $$f(x)$$ about $$x_0$$ can then be written as
 
-$$f(x)=f(x_0)+f'(x_0)(x-x_0)+(f''(x_0))/2!(x-x_0)^2+...$$.
+$$f(x)=f(x_0)+f'(x_0)(x-x_0)+(f''(x_0))/(2!)(x-x_0)^2+...$$.
 
 Dropping the terms of this expansion beyond the first order term, one gets:
 
@@ -97,11 +97,13 @@ $$f(x)~~f(x_0)+f'(x_0)(x-x_0)$$
 
 Setting $$f(x) = 0$$ to find the next approximation, $$x_1$$, to the zero of $$f(x)$$, one finds
 
-$$x_1 = x_0 - (f(x_0) / f'(x_0))$$.
+$$x_1 = x_0 - f(x_0) / (f'(x_0))$$.
 
 This provides an iteration scheme which may well converge on the zero of $$f(x)$$, under appropriate conditions. It can be shown that the Newton-Raphson method converges in the interval where
 
-$$| (f(x)f''(x)) / (f'(x))^2 | < 1$$.
+$$
+|(f(x)f''(x)) / (f'(x))^2 | < 1
+$$.
 
 The Newton iteration can be motivated geometrically in the following way. Suppose that $$f$$ is a function of which we want to find a zero. Start with an initial guess $$x_0$$ for the zero (see Figure 1).
 
