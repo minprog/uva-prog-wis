@@ -103,7 +103,7 @@ This provides an iteration scheme which may well converge on the zero of $$f(x)$
 
 $$
 |(f(x)f''(x)) / (f'(x))^2 | < 1
-$$.
+$$
 
 The Newton iteration can be motivated geometrically in the following way. Suppose that $$f$$ is a function of which we want to find a zero. Start with an initial guess $$x_0$$ for the zero (see Figure 1).
 
