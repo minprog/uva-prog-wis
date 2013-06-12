@@ -147,7 +147,7 @@ Define your function such that it also returns the number of iterations used to 
 
 In the field that is known as Numerical Mathematics researchers are busy with studying the behavior of approximate methods and smart adaptations of the method of Newton-Raphson have been developed that have a higher order of convergence. Here we mention some formulas of order 3 and 4, i.e., methods in which the number of correct digits triples and quadruples in each iteration steps. Note that the Normal-Raphson method has quadratic order. It is convenient to use the auxiliary function $$h(x) = (f(x)*f''(x)) / (f'(x))^2$$. All formulas are shaped like
 
-$$x_(n+1) = x_n - f(x_n) / (f'(x_n)) * (1 + h(x_n) / (2(1-c(x_n)*h(x_n))))$$
+$$x_(n+1) = x_n - f(x_n) / (f'(x_n)) * (1 + (h(x_n)) / (2(1-c(x_n)*h(x_n))))$$
 
 for some function $$c(x)$$ and we assume that all needed derivatives in the approximated zero of $$f$$ are unequal to zero so that division by zero does not occur in the formulas.
 
