@@ -32,7 +32,7 @@ Taking $dx = (b-a)/n$, the choices correspond with the following formulas, respe
 
 The trapezoidal rule, also known as the trapezoid rule or trapezium rule, can be derived by approximating, as shown in Figure,  the integrand $f(x)$ (in blue) by the linear function $P(x)$ (in red) through the point $(a, f(a))$ and $(b, f(b))$.
 
-> ![Figure 1](http://staff.science.uva.nl/~mstgeman/progwis/pset9/fig1.png)
+> ![Figure 1](fig1.png)
  
 The definite integral of the function $f(x)$ on the interval $[a,b]$ is now approximated by the definite integral of the linear function $P(x)$ on the interval $[a,b]$. The latter definite integral can be computed analytically and leads to the following approximation:
 
@@ -48,7 +48,7 @@ Taking an equidistant partition of the interval $[a,b]$ into $n$ subintervals $d
 
 Simpson's rule can be derived by approximating, as shown in Figure,  the integrand $f(x)$ (in blue) by the quadratic function $P(x)$ (in red) through the point $(a, f(a)), (m, f(m))$ and $(b, f(b))$, where the midpoint $m = (a+b)/2$.
 
-> ![Figure 2](http://staff.science.uva.nl/~mstgeman/progwis/pset9/fig2.png)
+> ![Figure 2](fig2.png)
 
 The definite integral of the function $f(x)$ in the interval $[a,b]$ is now approximated by the definite integral of the quadratic function $P(x)$ in the interval $[a,b]$. The latter definite integral can be computed analytically and leads to the following approximation:
 
@@ -87,7 +87,7 @@ Thus, once the search area $A$ has been chosen, the Monte Carlo method consists 
 * calculate the proportion $p$ of points in the region of interest, i.e. within $A_f$;
 * area under the curve = $ p x * Area of A $.
 
-> ![Figure 3](http://staff.science.uva.nl/~mstgeman/progwis/pset9/fig3.png)
+> ![Figure 3](fig3.png)
 
 The above picture suggest that one chooses a region $A$ as closely around $A_f$ as possible, but this is not necessary. The steps of the algorithm of numerically approximating $int_a^b f(x) dx$ on the interval $[a,b]$ for a nonnegative function can be written down as follows:
 

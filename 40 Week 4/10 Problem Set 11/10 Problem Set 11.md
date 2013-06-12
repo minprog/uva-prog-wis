@@ -79,7 +79,7 @@ To display the figure in a separate window, enter the following command
 
     >>> plt.show()
 
-![plot1](/public/img/course/plot1.svg)
+![plot1](plot1.svg)
 
 The window contains interactive controls: for example, one can pan and zoom in or out, and save the figure. After closing the window, the figure object cannot be accessed anymore (unless it was assigned to a name). One can also immediately save the figure in a file, in various formats, by the savefig command:
 
