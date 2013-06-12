@@ -155,7 +155,7 @@ for some function $$c(x)$$ and we assume that all needed derivatives in the appr
 
 $$c(x) = 0$$: formula of Chebyshev $$x_(n+1) = x_n - f(x_n) / (f'(x_n)) * (1 + (h(x_n)) / 2)$$
 
-$$c(x) = (1/2)$$: formula of Halley $$x_(n+1) = x_n - f(x_n) / ((f'(x_n)) * (1 - (h(x_n)) / 2))$$
+$$c(x) = (1/2)$$: formula of Halley $$x_(n+1) = x_n - f(x_n) / ((f'(x_n) * (1 - (h(x_n)) / 2)))$$
 
 ### Order of convergence $$ = 4$$
 
