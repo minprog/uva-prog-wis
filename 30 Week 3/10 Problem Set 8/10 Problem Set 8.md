@@ -110,22 +110,22 @@ The Newton iteration can be motivated geometrically in the following way. Suppos
 ![eq9](eq9.png)  
 <small>Figure 1. Visualization of the Newton iteration.</small>
 
-Now draw the tangent line to the graph of $$f$$ in the point $$(x_0 / f(x_0))$$.
+Now draw the tangent line to the graph of $$f$$ in the point $$(x_0, f(x_0))$$.
 
 **Exercise.** Prove that the tangent line to the graph of $$f$$ in the point   $$(x_0, f(x_0))$$ intersects the $$x$$-axis in the point
 
-$$(x_0 - f(x_0) / f'(x_0), 0)$$.
+$$(x_0 - f(x_0) / (f'(x_0)), 0)$$.
 
 The $$x$$-coordinate of the intersection point just found we denote by $$x_0$$.
 
-Thus: $$x_1 = x_0 - f(x_0) / f'(x_0)$$. Figure 1 suggests that where $$x$$ is close to a zero of $$f$$, $$x$$ is a much better approximation of the root. When you apply the previous tangent line technique to $$x_1$$ instead of to $$x_0$$,
-then you may expect a much-improved approximation $$x_2 = x_1 - f(x_1) / f'(x_1)$$. And you may continue in this way. In step $$n+1$$ you use the formula
+Thus: $$x_1 = x_0 - f(x_0) / (f'(x_0))$$. Figure 1 suggests that where $$x$$ is close to a zero of $$f$$, $$x$$ is a much better approximation of the root. When you apply the previous tangent line technique to $$x_1$$ instead of to $$x_0$$,
+then you may expect a much-improved approximation $$x_2 = x_1 - f(x_1) / (f'(x_1))$$. And you may continue in this way. In step $$n+1$$ you use the formula
 
-$$x_(n+1) = x_n - f(x_n) / f'(x_n)$$.
+$$x_(n+1) = x_n - f(x_n) / (f'(x_n))$$.
 
 This recursion formula can also be written as follows:
 
-$$x_(n+1) = g(x)$$, with $$g(x) = x - f(x) / f'(x)$$.
+$$x_(n+1) = g(x)$$, with $$g(x) = x - f(x) / (f'(x))$$.
 
 Please note that the Newton-Raphson Method assumes that one has both the function and its derivative at one disposal.
 
@@ -147,15 +147,15 @@ Define your function such that it also returns the number of iterations used to 
 
 In the field that is known as Numerical Mathematics researchers are busy with studying the behavior of approximate methods and smart adaptations of the method of Newton-Raphson have been developed that have a higher order of convergence. Here we mention some formulas of order 3 and 4, i.e., methods in which the number of correct digits triples and quadruples in each iteration steps. Note that the Normal-Raphson method has quadratic order. It is convenient to use the auxiliary function $$h(x) = (f(x)*f''(x)) / (f'(x))^2$$. All formulas are shaped like
 
-$$x_(n+1) = x_n - f(x_n) / f'(x_n) * (1 + h(x_n) / 2(1-c(x_n)*h(x_n)))$$
+$$x_(n+1) = x_n - f(x_n) / (f'(x_n)) * (1 + h(x_n) / (2(1-c(x_n)*h(x_n))))$$
 
 for some function $$c(x)$$ and we assume that all needed derivatives in the approximated zero of $$f$$ are unequal to zero so that division by zero does not occur in the formulas.
 
 ### Order of convergence $$ = 3$$
 
-$$c(x) = 0$$: formula of Chebyshev $$x_(n+1) = x_n - f(x_n) / f'(x_n) * (1 + h(x_n) / 2)$$
+$$c(x) = 0$$: formula of Chebyshev $$x_(n+1) = x_n - f(x_n) / (f'(x_n)) * (1 + (h(x_n)) / 2)$$
 
-$$c(x) = (1/2)$$: formula of Halley $$x_(n+1) = x_n - f(x_n) / (f'(x_n) * (1 - h(x_n) / 2))$$
+$$c(x) = (1/2)$$: formula of Halley $$x_(n+1) = x_n - f(x_n) / ((f'(x_n)) * (1 - (h(x_n)) / 2))$$
 
 ### Order of convergence $$ = 4$$
 
