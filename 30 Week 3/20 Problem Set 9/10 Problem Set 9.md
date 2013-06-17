@@ -51,7 +51,7 @@ This formula corresponds to the so-called closed 2-point Newton-Cotes quadrature
 Taking an equidistant partition of the interval $$[a,b]$$ into $$n$$ subintervals $$dx = (b-a)/n$$, the trapezoidal rule corresponds with the following formula:
 
 $$int_a^b f(x) dx =$$
-$$sum_(i=0)^(n-1) 1/2 dx\*[f(a+i\*dx)+f(a+(i+1)\*dx)] =$$ $$dx\*[1/2f(a)+(sum_(i=1)^(n-2)f(a+i\*dx))+1/2f(b)]$$
+$$sum_(i=0)^(n-1) 1/2 dx*[f(a+i*dx)+f(a+(i+1)*dx)] =$$ $$dx*[1/2f(a)+(sum_(i=1)^(n-2)f(a+i*dx))+1/2f(b)]$$
  
 ## Simpson's Rule
 
@@ -68,8 +68,8 @@ Simpson's rule also corresponds to the so-called closed 3-point Newton-Cotes qua
 Taking an equidistant partition of the interval $$[a,b]$$ into $$n$$ subintervals $$dx = (b-a)/n$$, the trapezoidal rule corresponds with the following formula:
 
 $$int_a^b f(x) dx =$$
-$$sum_(i=0)^(n-1) 1/6 dx\*[f(a+i\*dx)+4f(a+(i+1/2)\*dx) + f(a+(i+1)\*dx)] =$$ 
-$$dx*[1/6f(a)+2/3f(a+1/2dx)+(sum_(i=1)^(n-1) 1/3f(a+i\*dx)+2/3f(a+(i+1/2)\*dx))+1/6 f(b)]$$
+$$sum_(i=0)^(n-1) 1/6 dx*[f(a+i*dx)+4f(a+(i+1/2)*dx) + f(a+(i+1)*dx)] =$$ 
+$$dx*[1/6f(a)+2/3f(a+1/2dx)+(sum_(i=1)^(n-1) 1/3f(a+i*dx)+2/3f(a+(i+1/2)*dx))+1/6 f(b)]$$
  
 ### Problem a
 
