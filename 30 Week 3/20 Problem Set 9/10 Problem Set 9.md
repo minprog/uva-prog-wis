@@ -65,7 +65,7 @@ $$int_a^b f(x) dx ~~ (b-a)/6[f(a)+4f((a+b)/2)+f(b)]$$
 
 Simpson's rule also corresponds to the so-called closed 3-point Newton-Cotes quadrature rule.  
 
-Taking an equidistant partition of the interval $[a,b]$ into $n$ subintervals $$dx = (b-a)/n$$, the trapezoidal rule corresponds with the following formula:
+Taking an equidistant partition of the interval $$[a,b]$$ into $$n$$ subintervals $$dx = (b-a)/n$$, the trapezoidal rule corresponds with the following formula:
 
 $$int_a^b f(x) dx =$$
 $$sum_(i=0)^(n-1) 1/6 dx\*[f(a+i\*dx)+4f(a+(i+1/2)\*dx) + f(a+(i+1)\*dx)] =$$ 
@@ -84,7 +84,7 @@ You can approximate $$pi$$ in your Python program by the floating point number $
 
 1. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$ int_0^1 4/(x^2+1) dx $$ within a precision of 0.1, 0.01, 0.001, and 0.0001.
 
-2. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$ int_0^pi sin(x) dx = 2 $$ within a precision of 1 up to 7 digits after the decimal point.
+2. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$ int_0^pi sin(x) dx$$ within a precision of 1 up to 7 digits after the decimal point.
 
 3. Answer in the comments at the top of your program: which method is certainly most efficient? Which one comes next?
 
@@ -106,11 +106,11 @@ The above picture suggest that one chooses a region $$A$$ as closely around $$A_
 
 2. Uniformly sample points in the chosen rectangular region and determine how many are within the area of interest. The sampling of point is done by repeated random generation of a point $$(x,y)$$ by random generation of $$x$$ in $$[xmin, xmax]$$ and by random generation of $$y$$ in $$[ymin, ymax]$$. The generated point is good, i.e., within the region of interest , when $$y<=f(x)$$.
 
- Note that this definition of goodness of a point depends on the property of being a positive function; for negative functions the definition of goodness is just opposite. One can also implement the general case in which area under the $$x$$-axis is considered negative.
+	Note that this definition of goodness of a point depends on the property of being a positive function; for negative functions the definition of goodness is just opposite. One can also implement the general case in which area under the $$x$$-axis is considered negative.
 
 3. The numerical approximation of the integral $$int_a^b f(x) dx$$ is equal to the fraction of the points in the search region times the area of the search region. In this case:
 
-$$int_a^b f(x) dx = N_\"good\"/(N_\"good\"+N_\"wrong\")(x_max-x_min)(y_max-y_min)$$.
+	$$int_a^b f(x) dx = 	N_\"good\"/(N_\"good\"+N_\"wrong\")(x_max-x_min)(y_max-y_min)$$.
  
 ### Problem c
 
