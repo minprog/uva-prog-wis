@@ -31,7 +31,7 @@ Adjust your function so it also returns the number of iterations used to arrive 
 
 # Regula falsi method
 
-The Biection Method is very simple, but generally quite inefficient, in part because it only makes use of the sign of the function *f* (*x*) at each evaluation, while ignoring its magnitude. Thus it ignores significant information which could be used accelerate the finding of the root. A method based on interpolation makes use of this information by approximating the function on the interval $$[x_1, x_2]$$ by the chord joining the points $$(x_1,f(x_1)$$ and $$(x_2,f(x_2)$$, which is the straight line:
+The Biection Method is very simple, but generally quite inefficient, in part because it only makes use of the sign of the function *f* (*x*) at each evaluation, while ignoring its magnitude. Thus it ignores significant information which could be used accelerate the finding of the root. A method based on interpolation makes use of this information by approximating the function on the interval $$[x_1, x_2]$$ by the chord joining the points $$(x_1,f(x_1))$$ and $$(x_2,f(x_2))$$, which is the straight line:
 
 $$(y-y_1)/(x-x_1) = (y_2-y_1)/(x_2-x_1)$$
 
@@ -60,7 +60,7 @@ The Secant method closely resembles the Regula Falsi method in using a linear ap
 
 In the secant method, the function $$f(x)$$ is being approximated by a straight line which is an extrapolation based on the two points $$x_0$$ and $$x_1$$. The line passing through the points $$(x_0, f(x_0))$$ and $$(x_1, f(x_1))$$ can be seen to be given by
 
-$$y-f_1 = (x-x_1)(f_1-f_0)/(x_1-x_0)$$.
+$$y-f(x_1) = (x-x_1)(f(x_1)-f_0)/(x_1-x_0)$$.
 
 Solving for the value of $$x$$ for which $$y=0$$ for this line, gives the two-point iteration formula
 
