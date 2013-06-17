@@ -10,7 +10,7 @@ The rules of the game are as follows:
 
 ### Dealing
 
-* A player is dealt a hand of n letters chosen at random (assume $n=7$ for now).
+* A player is dealt a hand of n letters chosen at random (assume $$n=7$$ for now).
 * The player arranges the hand into a set of words using each letter at most once.
 * Some letters may remain unused (these won't be scored).
 
