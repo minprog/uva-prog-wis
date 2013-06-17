@@ -32,9 +32,9 @@ The following three choices for selecting  a node in a subinterval are distingui
 
 Taking $$dx = (b-a)/n$$, the choices correspond with the following formulas, respectively:
 
-1. Left Riemann sum: $$sum_(i=0)^(n-1) dx\*f(a+i\*dx)$$
-2. Right Riemann sum: $$sum_(i=1)^(n) dx\*f(a+i\*dx)$$
-3. Middle Riemann sum: $$sum_(i=0)^(n-1) dx\*f(a+(i+1/2)\*dx)$$
+1. Left Riemann sum: $$sum_(i=0)^(n-1) dx*f(a+i*dx)$$
+2. Right Riemann sum: $$sum_(i=1)^(n) dx*f(a+i*dx)$$
+3. Middle Riemann sum: $$sum_(i=0)^(n-1) dx*f(a+(i+1/2)*dx)$$
 
 ## Trapezoidal Rule
 
@@ -110,7 +110,7 @@ The above picture suggest that one chooses a region $$A$$ as closely around $$A_
 
 3. The numerical approximation of the integral $$int_a^b f(x) dx$$ is equal to the fraction of the points in the search region times the area of the search region. In this case:
 
-	$$int_a^b f(x) dx = 	N_\"good\"/(N_\"good\"+N_\"wrong\")(x_max-x_min)(y_max-y_min)$$.
+	$$int_a^b f(x) dx = 	N_"good"/(N_"good"+N_"wrong")(x_max-x_min)(y_max-y_min)$$.
  
 ### Problem c
 
