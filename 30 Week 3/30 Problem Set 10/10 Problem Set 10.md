@@ -32,7 +32,7 @@ You may work with other students. However, each student should write up and hand
 1. Download and save
 
 	* [ps10.py](ps10.py): the skeleton you'll fill in for Problems 1-5
-	* [test_ps5.py](test_ps10.py): Unit tests for some of your code (more on this later)
+	* [test_ps10.py](test_ps10.py): Unit tests for some of your code (more on this later)
 	* [ps10_ghost.py](ps10_ghost.py): the skeleton you'll fill in for Problem 6
 	* [words.txt](words.txt): the list of valid words (all words acceptable in North American Scrabble up to 10 letters long)
 
