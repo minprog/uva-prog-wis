@@ -66,11 +66,11 @@ You may work with other students. However, each student should write up and hand
 
    This problem set is structured so that you will write a number of modular functions and then glue them together to form the complete word playing game. Instead of waiting until the entire game is ready, you should test each function you write, individually, before moving on. This approach is known as unit testing, and it will help you debug your code.
 
-   We have provided several test functions to get you started. As you make progress on the problem set, run `test_ps5.py` as you go.
+   We have provided several test functions to get you started. As you make progress on the problem set, run `test_ps10.py` as you go.
 
    If your code passes the unit tests you will see a SUCCESS message; otherwise you will see a FAILURE message. These tests aren't exhaustive. You may want to test your code in other ways too.
 
-   If you run `test_ps5.py` using the provided `ps5.py` skeleton, you should see that all the tests fail.
+   If you run `test_ps10.py` using the provided `ps10.py` skeleton, you should see that all the tests fail.
 
    These are the provided test functions:
 
@@ -101,7 +101,7 @@ Do not assume that there are always 7 letters in a hand! The parameter n is the 
 
 #### Testing
 
-If this function is implemented properly, and you run `test_ps5.py`, you should see that the `test_get_word_score()` tests pass. Also test your implementation of `get_word_score`, using some reasonable English words.
+If this function is implemented properly, and you run `test_ps10.py`, you should see that the `test_get_word_score()` tests pass. Also test your implementation of `get_word_score`, using some reasonable English words.
 
 #### HINT
 
@@ -284,7 +284,7 @@ Implement a function, `ghost()`, that will start up an interactive Ghost game be
 
 Download and save `ps10_ghost.py` into the same directory as your work for this problem set. This file will provide you with the function to load the word list.
 
-Make sure your file runs properly before editing. You should get the following output when running the unmodified version of ps5_ghost.py.
+Make sure your file runs properly before editing. You should get the following output when running the unmodified version of `ps10_ghost.py`.
 
 	Loading word list from file...
 	   83667 words loaded.
