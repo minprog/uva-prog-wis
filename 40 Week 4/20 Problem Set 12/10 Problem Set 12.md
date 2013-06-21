@@ -68,7 +68,7 @@ NumPy contains a `linalg` subpackage for doing numeric linear algebra computatio
 
 ### Creating Vectors and Matrices
 
-There are some utility functions to create matrices and vectors. A few examples will illustrate constructions of matrices and vectors. The $3 times 4$-matrix $M$ with $M_ij = i^j$ can be created as follows:
+There are some utility functions to create matrices and vectors. A few examples will illustrate constructions of matrices and vectors. The $$3 times 4$$-matrix $$M$$ with $$M_ij = i^j$$ can be created as follows:
 
 	>>> import numpy as np
 	>>> import numpy.linalg as la
@@ -81,7 +81,7 @@ There are some utility functions to create matrices and vectors. A few examples 
 
 One can also define an user-defined indexing function to generate a matrix:
 
->>> def band(i,j): return (0 if abs(i-j)>1 else 1)
+	>>> def band(i,j): return (0 if abs(i-j)>1 else 1)
     >>> N = np.array([band(i,j) for i in range(1,5) \
                   for j in range(1,5)]).reshape(4,4)
     >>> N
@@ -173,9 +173,9 @@ Some utility functions to stack matrices horizontally or vertically:
 
     >>> la.inv(N)
 
-Also the Moore-Penrose inverse $A^+$ of a matrix $A$ can be computed. Recall that the Moore-Penrose inverse is defined as:
+Also the Moore-Penrose inverse $$A^+$$ of a matrix $$A$$ can be computed. Recall that the Moore-Penrose inverse is defined as:
 
-> $A^+ = lim_(x->0)(A^t * A + x^2 I)^-1 * A^t$
+$$A^+ = lim_(x->0)(A^t * A + x^2 I)^-1 * A^t$$
 
 	>>> la.pinv(M)
 	>>> np.dot(M, la.pinv(M))
@@ -183,7 +183,7 @@ Also the Moore-Penrose inverse $A^+$ of a matrix $A$ can be computed. Recall tha
 
 ### Solving linear Equations
 
-The linear system of equations ${x+y+z = 6, 2x-y = 7, 2y-z = 8}$ can be solved as follows:
+The linear system of equations $${x+y+z = 6, 2x-y = 7, 2y-z = 8}$$ can be solved as follows:
 
     >>> A = np.array([[1,1,1], [2,-1,0], [0,2,-1]]); A
     array([[ 1,  1,  1],
@@ -198,9 +198,9 @@ The linear system of equations ${x+y+z = 6, 2x-y = 7, 2y-z = 8}$ can be solved a
 
 ### Standard Forms of Matrices
 
-The singular value decomposition (SVD) of a matrix $A$ is a factorization of $A$ as $A=U*D*V^t$, where $U$ and $V$ are orthogonal matrices and $D$ is a diagonal matrix with non-negative entries. The singular value decomposition of the matrix
+The singular value decomposition (SVD) of a matrix $$A$$ is a factorization of $$A$$ as $$A=U*D*V^t$$, where $$U$$ and $$V$$ are orthogonal matrices and $$D$$ is a diagonal matrix with non-negative entries. The singular value decomposition of the matrix
 
-> $((0,-1,-3),(4,5,1),(1,4,-1))$
+$$((0,-1,-3),(4,5,1),(1,4,-1))$$
 
 can be computed as follows:
 
@@ -230,28 +230,28 @@ can be computed as follows:
            [-0.,  0.,  0.],
            [ 0.,  0., -0.]])
 
-The final check of the answer illustrates that the singular value decomposition implemented in the `numpy.linalg` package strangely enough does not follow the convention to write $V^t$ instead of $V$ in this decomposition. This means that one still has to transpose the computed $V$ to arrive at the result according to the conventional definition of the SVD.
+The final check of the answer illustrates that the singular value decomposition implemented in the `numpy.linalg` package strangely enough does not follow the convention to write $$V^t$$ instead of $$V$$ in this decomposition. This means that one still has to transpose the computed $$V$$ to arrive at the result according to the conventional definition of the SVD.
 
 ### Problem a
 
 Consider the following three matrices:
 
-> $ A = ((-3,-1,0),(4,7,-10),(4,3,-3)), B = ((-2,2,-5),(12,-7,20),(6,-4,11)), C = ((-2,14,8),(-1,10,6),(1,-13,-8)) $
+$$ A = ((-3,-1,0),(4,7,-10),(4,3,-3)), B = ((-2,2,-5),(12,-7,20),(6,-4,11)), C = ((-2,14,8),(-1,10,6),(1,-13,-8)) $$
 
 These matrices have the following properties:
 
-> $ A^(n+4) = A^n, B^n = B, C^(n+2) = 0$, for all $n = 1,2,3,4$
+$$ A^(n+4) = A^n, B^n = B, C^(n+2) = 0$$, for all $$n = 1,2,3,4$$
 
-Verify these properties by computing $M^2, M^3, M^4$ and $M^5$ for $M = A,
-M = B$ and $M = C$.
+Verify these properties by computing $$M^2, M^3, M^4$$ and $$M^5$$ for $$M = A,
+M = B$$ and $$M = C$$.
 
 ### Problem b
 
-The Cholesky decomposition of a positive-definite symmetric matrix $A$ is a factorization of $A$ as $A=L\*L^t$, where $L$ is a lower triangular matrix. The QR decomposition of a matrix $A$ is a factorization of $A$ as $A=Q\*R$, where $Q$ is an orthogonal matrix and $R$ is a upper-triangular.
+The Cholesky decomposition of a positive-definite symmetric matrix $$A$$ is a factorization of $$A$$ as $$A=L*L^t$$, where $$L$$ is a lower triangular matrix. The QR decomposition of a matrix $$A$$ is a factorization of $$A$$ as $$A=Q*R$$, where $$Q$$ is an orthogonal matrix and $$R$$ is a upper-triangular.
 
 Compute with Python the Cholesky and QR decomposition of the following matrix:
 
-> $ A = ((5,-2,2),(-2,5,1),(2,1,2)) $
+$$ A = ((5,-2,2),(-2,5,1),(2,1,2)) $$
 
 
 

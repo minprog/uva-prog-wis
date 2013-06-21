@@ -88,39 +88,39 @@ You can ask yourself many questions about Bernoulli walks:
 
 * What is the expectation value of the position after n steps?
 
-* What is the expectation value of the distance and square distance between the position after $n$ steps and the origin?
+* What is the expectation value of the distance and square distance between the position after $$n$$ steps and the origin?
 
 * What is the probability that the walker returns to the origin as the number of steps approaches infinity?
 
 * and so on.
 
-We only address the first question for the general Bernoulli walk when p is the probability of taking a step to the right and $q$ is the probability of taking a step to the left ($q=1-p$). We shall specialize each time our answers for the symmetric case $p=q=1/2$ and we shall sometimes do a simulation to illustrate a specialized answer. In this way you will see how useful Python is in the analysis of random walks.
+We only address the first question for the general Bernoulli walk when p is the probability of taking a step to the right and $$q$$ is the probability of taking a step to the left ($$q=1-p$$). We shall specialize each time our answers for the symmetric case $$p=q=1/2$$ and we shall sometimes do a simulation to illustrate a specialized answer. In this way you will see how useful Python is in the analysis of random walks.
 
-### Average Position and Square Distance to the Origin after $n$ Steps
+### Average Position and Square Distance to the Origin after $$n$$ Steps
 
-Let $k$ be the number of steps to the right. The probability $P_n(k)$ of taking $k$ such steps out of $n$ is given by the binomial formula
+Let $$k$$ be the number of steps to the right. The probability $$P_n(k)$$ of taking $$k$$ such steps out of $$n$$ is given by the binomial formula
 
-> $P_n(k) = ((n),(k))p^k q^(n-k)$.
+$$P_n(k) = ((n),(k))p^k q^(n-k)$$.
 
 
-If $k$ steps are to the right, then the horizontal position $x$ of this walk is equal to $2k – n$. So, the average horizontal position $(:x:)$ after $n$ steps is
+If $$k$$ steps are to the right, then the horizontal position $$x$$ of this walk is equal to $$2k – n$$. So, the average horizontal position $$(:x:)$$ after $$n$$ steps is
 
-> $(:x:) = sum_(k=0)^n (2k-n)P_n(k)$.
+$$(:x:) = sum_(k=0)^n (2k-n)P_n(k)$$.
 
-This sum can be computed exactly and the result is $(:x:) = n(p-q)$.
+This sum can be computed exactly and the result is $$(:x:) = n(p-q)$$.
 
-In the symmetric case, the expectation value of the horizontal position after $n$ steps is equal to 0. The expectation value of the square distance $(:d^2:)$ of the random walker after n steps to the origin can be determined in a similar way; the result is
+In the symmetric case, the expectation value of the horizontal position after $$n$$ steps is equal to 0. The expectation value of the square distance $$(:d^2:)$$ of the random walker after n steps to the origin can be determined in a similar way; the result is
 
-> $(:d^2:)=4pqn+(p-q)^2n^2$.
+$$(:d^2:)=4pqn+(p-q)^2n^2$$.
 
-The variance in the final position of the random walker after $n$ steps can now be computed and turns out to be equal to $sigma_x^2=4pqn$.
+The variance in the final position of the random walker after $$n$$ steps can now be computed and turns out to be equal to $$sigma_x^2=4pqn$$.
 
 The variance of the square distance can also be determined in the form of an exact formula (we leave out the details and the formula). We only mention that the formula specializes in the symmetric case as follows:
 
-* for the position: $(:x:)=0$ and $sigma_x^2=n$;
-* for the square distance: $(:d^2:) = n$ and $(sigma_(d^2))^2 = 2(n-1)n$.
+* for the position: $$(:x:)=0$$ and $$sigma_x^2=n$$;
+* for the square distance: $$(:d^2:) = n$$ and $$(sigma_(d^2))^2 = 2(n-1)n$$.
 
-Task: Simulate $n$-step symmetric one-dimensional random walks and check what the mean position and the mean square distance from the endpoint of the walk to the origin are in this case. In other words, simulate a number of random walks, say 100 walks, and statistically analyze the results. For example, make a histogram of the computed end position and squared distance to the origin. Compute mean values and variances. Compare your results with the above theoretical results, and *describe the differences in clearly marked comments*.
+Task: Simulate $$n$$-step symmetric one-dimensional random walks and check what the mean position and the mean square distance from the endpoint of the walk to the origin are in this case. In other words, simulate a number of random walks, say 100 walks, and statistically analyze the results. For example, make a histogram of the computed end position and squared distance to the origin. Compute mean values and variances. Compare your results with the above theoretical results, and *describe the differences in clearly marked comments*.
 
 ### A Random Walk with Variable Step Length
 
@@ -146,13 +146,13 @@ The set of possible movements in one step from a lattice point to a neighboring 
 
 * The von Neumann neighborhood
  
- There are 4 directions: north, south, east, west. They correspond with steps $(0,1)$, $(0,-1)$, $(1,0)$, and $(-1,0)$, respectively. For a symmetric random walk steps all probabilities are equal to $1/4$.
+ There are 4 directions: north, south, east, west. They correspond with steps $$(0,1)$$, $$(0,-1)$$, $$(1,0)$$, and $$(-1,0)$$, respectively. For a symmetric random walk steps all probabilities are equal to $$1/4$$.
 
 * The Moore neighborhood
 
- There are 8 directions: north, north, south, east, west, northeast, southeast, southwest, and northwest. They correspond with steps $(0,1)$, $(0,-1)$, $(1,0)$, $(-1,0)$, $(1,1)$, $(1,-1)$, $(-1,-1)$, and $(-1,1)$, respectively.
+ There are 8 directions: north, north, south, east, west, northeast, southeast, southwest, and northwest. They correspond with steps $$(0,1)$$, $$(0,-1)$$, $$(1,0)$$, $$(-1,0)$$, $$(1,1)$$, $$(1,-1)$$, $$(-1,-1)$$, and $$(-1,1)$$, respectively.
 
-Tasks: Write a Python program that can generate and visualize a random lattice walk based on the von Neumann neighborhood. Also run simulations to study the mean square distance from the endpoint of the walk to the origin in an $n$-step symmetric two-dimensional lattice walk using the von Neumann neighborhood. Can you guess from your simulations how the mean square distance depends on the number of steps?
+Tasks: Write a Python program that can generate and visualize a random lattice walk based on the von Neumann neighborhood. Also run simulations to study the mean square distance from the endpoint of the walk to the origin in an $$n$$-step symmetric two-dimensional lattice walk using the von Neumann neighborhood. Can you guess from your simulations how the mean square distance depends on the number of steps?
 
 Repeat the previous task for a 2-D lattice walk based on the Moore neighborhood.
 
