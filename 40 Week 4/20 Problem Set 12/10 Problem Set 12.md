@@ -242,8 +242,8 @@ These matrices have the following properties:
 
 $$ A^(n+4) = A^n, B^n = B, C^(n+2) = 0$$, for all $$n = 1,2,3,4$$
 
-Verify these properties by computing $$M^2, M^3, M^4$$ and $$M^5$$ for $$M = A,
-M = B$$ and $$M = C$$.
+Verify these properties by computing $$M^2, M^3, M^4$$ and $$M^5$$ for
+$$M = A$$, $$M = B$$ and $$M = C$$.
 
 ### Problem b
 
