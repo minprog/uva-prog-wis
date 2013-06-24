@@ -90,7 +90,7 @@ The window contains interactive controls: for example, one can pan and zoom in o
 
 In experimental work, one is often faced with the problem of finding the derivative of a function $$f(x)$$ whose form is only known as a tabulation of data. Suppose that one has a sequence of equally spaced points $$x_0, x_1, x_2, ..., x_n$$ with distance $$dx = x_1 - x_0$$, and function values $$y_0, y_1, y_2, ..., y_n$$. The numerical derivative $$f'(x)$$ of the function $$f(x)$$ can be approximated by a sequence $$y'_0, y'_1, y'_2, ..., y'_n$$ computed via the following central divided difference formula:
 
-$$y_k' = (y_(k+1) - y_(k-1))/(2dx)$$, for $$k=1,3,...,n-1$$.
+$$y_k' = (y_(k+1) - y_(k-1))/(2dx)$$, for $$k=1,2,...,n-1$$.
 
 It is based on averaging the following approximations of $$f(x)$$ for small values of $$h$$:
 
