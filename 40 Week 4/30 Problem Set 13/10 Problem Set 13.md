@@ -71,7 +71,7 @@ The simplest 1-D random walk model is the Bernoulli walk in which a person takes
 In the symmetric case, the probability that a person takes a step to the left is equal to the probability that he or she takes a step to the right. A step to the right we let correspond to a value of 1 (the unit step to the right) and a step to the left corresponds to a value of -1 (the unit step to the left).
 
 These values can be generated randomly in many ways (cf., the gambler's ruin example). The NumPy module provides several functions to generate random number from a variety of probability distributions.
-
+ 
 Task: Use the `random_integers` function of the `numpy.random` subpackage to generate efficiently (i.e. via vectorization of programming code) a random sequence of integers -1 and 1 with sample size equal to 10000. Verify that the random sequence corresponds with a symmetric stochastic process. Then, create a random sequence of -1's and 1's of length 25 to compute further with; give this array the name steps.
 
 An array of the locations of this one-dimensional walk can be calculated as a cumulative sum of the elements of `steps` via the NumPy function `cumsum`. Prepend an array with a single 0 to ensure that the random walk starts in the origin. Each element of this newly created array represents how many steps to the left or right from the origin the walker is away from the origin.
