@@ -26,7 +26,7 @@ One can plot the dataset:
 	<matplotlib.legend.Legend object at 0x040334B0>
 	>>> plt.show()
 
-![plot2](/public/img/course/plot2.svg)
+![Picture 1](pic1.png)
 
 The program below illustrates the create histograms from statistical data:
 
@@ -60,7 +60,7 @@ The program below illustrates the create histograms from statistical data:
     # show figure
     plt.show()
 
-![plot3](/public/img/course/plot3.svg)
+![Picture 2](pic2.png)
 
 ### Problem a: 1-D Walk
 
@@ -78,7 +78,7 @@ An array of the locations of this one-dimensional walk can be calculated as a cu
 
 Task: Visualize the generated one-dimensional random walk by plotting the location of the random walker in number of steps to the right (positive value) or to the left (negative value) against the number of steps made since he or she left the origin. Your picture should be similar to
 
-![plot4](/public/img/course/plot4.png)
+![Picture 3](pic3.png)
 
 You should not upload the plot, only the code to generate the plot.
 
