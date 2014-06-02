@@ -13,6 +13,7 @@ André Heck (coördinator en docent)
 kamer C3.132  
 telefoon 525 8486
 
+
 Thijs Coenen (docent)
 <t.coenen@uva.nl>
 kamer C4.128A 
@@ -124,5 +125,5 @@ Vorig jaar is één student uitgesloten van deelname na het kopiëren van een pr
 
 Zie ook:
 
-* de [fraude- en plagiaatwebsite](http://student.uva.nl/wis/az/item/fraude-en-plagiaatregeling.html) van de universiteit;
+* de [fraude- en plagiaatwebsite](http://student.uva.nl/az/content/fraude-plagiaat-en-bronvermelding/fraude--en-plagiaatregeling.html) van de universiteit;
 * de onderwijs- en examenregeling van de opleiding Wiskunde.
