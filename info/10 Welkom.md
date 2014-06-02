@@ -103,7 +103,7 @@ De weging:
 
 ## Samenwerken, fraude en plagiaat
 
-Samenwerken is niet toegestaan bij de Problem Sets 3, 7, 9 en 13, die individueel beoordeeld worden.
+Samenwerken is niet toegestaan bij de Problem Sets 3, 6, 9 en 13, die individueel beoordeeld worden.
 
 Tijdens de practica is het natuurlijk prima als je de opgave bespreekt met de student die naast je zit. Het is echter **niet de bedoeling** om delen van code van je medestudenten, of van internet, over te nemen.
 
