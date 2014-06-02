@@ -13,10 +13,10 @@ André Heck (coördinator en docent)
 kamer C3.132  
 telefoon 525 8486
 
-Martijn Stegeman (docent)  
-<stegeman@uva.nl>  
-kamer C3.204  
-telefoon 525 5235
+Thijs Coenen (docent)
+<t.coenen@uva.nl>
+kamer C4.128A 
+
 
 ## Leerdoelen
 
