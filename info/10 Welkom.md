@@ -97,7 +97,7 @@ Het eindcijfer is een gewogen gemiddelde van de problem sets. Het tentamen telt 
 De weging:
 
 * problem set 3: factor 2
-* problem set 7: factor 2
+* problem set 6: factor 2
 * problem set 9: factor 3
 * problem set 13: factor 3
 
