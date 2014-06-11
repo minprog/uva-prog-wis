@@ -19,7 +19,7 @@ end result.** Otherwise, your program will not be graded.
 
 To be able to program a solution to this problem set, you need to read up on the follow documentation:
 
-* Numbers: [Floating point arithmetic: issues and limitations](http://docs.python.org/tut/node16.html) from the Python Tutorial
+* Numbers: [Floating point arithmetic: issues and limitations](http://docs.python.org/2/tutorial/floatingpoint.html) from the Python Tutorial
 * Successive approximation: Wikipedia article on [Newton's method](http://en.wikipedia.org/wiki/Newton-Raphson_method)
 * Lists: [Chapter 8](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap08.html) of How to Think Like a Computer Scientist
 
