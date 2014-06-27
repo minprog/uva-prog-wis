@@ -1,6 +1,4 @@
-name: exam
+name: resit
 required:
-    - vraag1.py
-    - vraag2.py
-    - vraag3.py
-    - vraag4.py
+    - hertentamen.py
+
