@@ -101,11 +101,11 @@ De weging:
 
 ## Samenwerken, fraude en plagiaat
 
-Samenwerken is niet toegestaan bij de Problem Sets 3, 6, 9 en 13, die individueel beoordeeld worden.
+Bij het leren van de beginselen van programmeren is het belangrijk dat je zelf ontdekkingen doet en een begrip opbouwt van hoe de programmeertaal werkt. Samenwerken is daarom niet toegestaan.
 
 Tijdens de practica is het natuurlijk prima als je de opgave bespreekt met de student die naast je zit. Het is echter **niet de bedoeling** om delen van code van je medestudenten, of van internet, over te nemen.
 
-Dit vak heeft immers als doel jouw persoonlijke programmeervaardigheid te ontwikkelen. Een belangrijk verschil dus: je kunt discussiëren over de manier waarop je een probleem aanpakt, maar kopieer geen code van anderen. Zet bij elke opdracht even met wie je de opdracht hebt besproken.
+Een belangrijk verschil dus: je kunt discussiëren over de manier waarop je een probleem aanpakt, maar kopieer geen code van anderen.
 
 Kom je in tijdnood? Bespreek het even met de docent. We willen het graag zo oplossen dat je het vak zelfstandig kunt halen.
 
@@ -115,7 +115,7 @@ Fraude volgens de UvA: *"Het handelen of nalaten van een student waardoor een ju
 
 We gebruiken bij de beoordeling van de opdrachten plagiaatdetectie. Als blijkt dat je opgave geheel of gedeeltelijk overeenkomt met een andere inzending of een uitwerking van internet, dan zijn er twee mogelijkheden.
 
-* Er is een bronvermelding: in dat geval voldoe je niet aan de eis van het zelfstandig maken van de opgaven en wordt je inzending afgekeurd. Omdat dit meestal na de deadline is betekent dat doorgaans dat je het vak dit jaar niet kunt afronden.
+* Er is een bronvermelding: in dat geval voldoe je niet aan de eis van het zelfstandig maken van de opgaven en wordt je inzending afgekeurd.
 
 * Er is geen bronvermelding: in dat geval rapporteren we aan de examencommissie welke inzendingen overeenkomen, waarna de commissie beslist over te nemen maatregelen.
 
@@ -123,5 +123,5 @@ Vorig jaar is één student uitgesloten van deelname na het kopiëren van een pr
 
 Zie ook:
 
-* de [fraude- en plagiaatwebsite](http://student.uva.nl/az/content/fraude-plagiaat-en-bronvermelding/fraude--en-plagiaatregeling.html) van de universiteit;
+* de [fraude- en plagiaatwebsite](http://student.uva.nl/az/a-z-lijst/a-z-lijst/content/folder/fraude-plagiaat-en-bronvermelding/plagiaat-en-fraude.html) van de universiteit;
 * de onderwijs- en examenregeling van de opleiding Wiskunde.
