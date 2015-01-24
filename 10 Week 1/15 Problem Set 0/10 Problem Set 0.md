@@ -1,5 +1,18 @@
 # A very simple program
 
+
+
+En daarna ga je de volgende materialen lezen. Natuurlijk is de tekst nog erg theoretisch als je niet aan het programmeren slaat, maar dat komt in de loop van komende weken wel.
+
+* [Introduction](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap01.html) uit *How to think like a Computer Scientist*
+* [Variables and statements](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap02.html) uit *How to think like a Computer Scientist*
+* [Variables and strings](http://en.wikibooks.org/wiki/Python_Programming/Variables_and_Strings) uit *Python Programming*
+* [Input and output](http://en.wikibooks.org/wiki/Python_Programming/Input_and_output) uit *Python Programming*
+* [Conditionals](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap04.html) (t/m paragraaf 4.8) uit *How to think like a Computer Scientist*
+* [Conditional statements](http://en.wikibooks.org/wiki/Python_Programming/Conditional_Statements) uit *Python Programming*
+* [Loops](http://en.wikibooks.org/wiki/Python_Programming/Loops) uit *Python Programming*
+
+
 This problem set will introduce you to the programming environment IDLE and to
 programming in Python, as well as to our general problem set structure. In this
 problem set, you will install IDLE, write a simple Python program, and hand it

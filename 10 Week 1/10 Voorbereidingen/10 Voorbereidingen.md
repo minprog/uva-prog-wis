@@ -2,34 +2,36 @@
 
 In week 1 behandelen we de basiselementen van het programmeren: functies, variabelen, loops, condities. Alles om je programma 'aan te sturen'. In de loop van de week ga je hiermee algoritmen of procedures uitwerken tot een werkend programma.
 
-**Let op:** Het is zeker niet de bedoeling dat je de practicumtijd gebruikt om de video's te kijken of het leeswerk te doen. Doe dit van te voren. Je hoeft daarentegen nog niet alles te begrijpen van de video's en het leeswerk. Je leert door de afwisseling met zelf programmeren.
+## Dropbox
 
-## Maar nu eerst ##
+Gebruik Dropbox of een ander systeem om te zorgen dat de programma's die je gaat schrijven automatisch veilig opgeslagen worden. Programmeren is een frustrerende activiteit, en het laatste dat je wilt is dat je ook nog eens al je werk van afgelopen dag kwijt bent!
 
-Van <a href="http://learnpython.org">Learn Python</a>:
+## Python Installeren
 
-- Hello, World!
-- Variables and types
-- Conditions
-- Loops
+Gebruik *Anaconda* om Python op jouw systeem te installeren. Op sommige systemen staat al Python, maar we gaan later ook grafieken plotten, waarvoor je extra software nodig hebt die waarschijnlijk nog niet op je computer staat. Deze kun je later heel handig met Anaconda installeren.
 
-## Doen!
+> <http://continuum.io/downloads>
 
-Voor echte beginners is het goed om de volgende twee korte pagina's even door te lezen:
+De bedoeling tijdens deze cursus is dat je een heel eenvoudige text-editor gebruikt om je Python-programma's te schrijven, en de *terminal* om je programma's te testen. 
 
-* [What is a programming language?](http://livecode.byu.edu/programmingconcepts/programmingIntro.php)
-* [Basic programming concepts](http://livecode.byu.edu/programmingconcepts/ControlStruct.php)
+Volg de instructies op deze pagina om de juiste text-editor te installeren:
 
-Kijk dan het eerste college om een indruk te krijgen van de ideeën die belangrijk zijn bij het leren programmeren.
+> <http://learnpythonthehardway.org/book/ex0.html>
 
-<iframe width="480" height="360" src="http://www.youtube.com/embed/bX3jvD7XFPs?rel=0" frameborder="0" allowfullscreen></iframe>
+## Gebruik van de terminal
 
-En daarna ga je de volgende materialen lezen. Natuurlijk is de tekst nog erg theoretisch als je niet aan het programmeren slaat, maar dat komt in de loop van komende weken wel.
+Heb je nog helemaal geen ervaring met het beheren van je bestanden via de *Terminal* of *Shell* dan moet je deze korte cursus doorlopen:
 
-* [Introduction](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap01.html) uit *How to think like a Computer Scientist*
-* [Variables and statements](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap02.html) uit *How to think like a Computer Scientist*
-* [Variables and strings](http://en.wikibooks.org/wiki/Python_Programming/Variables_and_Strings) uit *Python Programming*
-* [Input and output](http://en.wikibooks.org/wiki/Python_Programming/Input_and_output) uit *Python Programming*
-* [Conditionals](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap04.html) (t/m paragraaf 4.8) uit *How to think like a Computer Scientist*
-* [Conditional statements](http://en.wikibooks.org/wiki/Python_Programming/Conditional_Statements) uit *Python Programming*
-* [Loops](http://en.wikibooks.org/wiki/Python_Programming/Loops) uit *Python Programming*
+> <http://learnpythonthehardway.org/book/appendixa.html>
+
+## Voorbereiding Python
+
+Waarschijnlijk heb je in eerdere vakken al iets met programmeren gedaan. Dat zal niet precies het zelfde zijn als in Python, maar het geeft je wel al een idee van hoe het gaat werken.
+
+Heb je dus al iets van programmeerervaring? Dan ga je je wekelijks voorbereiden met de materialen uit het boek *Think Python* van Allan Downey. Dit boek bevat meer theorie dan voorbeelden. Lees de hoofdstukken en tik tijdens het lezen de voorbeelden over en probeer ze uit (niet kopiëren en plakken maar echt overtikken, anders leer je veel minder!).
+
+> <http://www.greenteapress.com/thinkpython/html/index.html>
+
+Voel je je nogal een beginner? Dan is het fijner om *Learn Python the hard way* van Zed Shaw the gebruiken. Dit boek bevat meer voorbeelden dan theorie. Lees de hoofdstukken en tik tijdens het lezen de voorbeelden over en probeer ze uit (niet kopiëren en plakken maar echt overtikken, anders leer je veel minder!).
+
+> <http://learnpythonthehardway.org/book/>
