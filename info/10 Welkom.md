@@ -103,23 +103,19 @@ De weging:
 
 Bij het leren van de beginselen van programmeren is het belangrijk dat je zelf ontdekkingen doet en een begrip opbouwt van hoe de programmeertaal werkt. Samenwerken is daarom niet toegestaan.
 
-Tijdens de practica is het natuurlijk prima als je de opgave bespreekt met de student die naast je zit. Het is echter *niet de bedoeling* om delen van code van je medestudenten, of van internet, over te nemen.
-
-Een belangrijk verschil dus: je kunt discussiëren over de manier waarop je een probleem aanpakt, maar kopieer geen code van anderen.
+Tijdens de practica is het natuurlijk prima als je de opgave bespreekt met de student die naast je zit. Het is echter *niet de bedoeling* om delen van code van je medestudenten, of van internet, over te nemen. Een belangrijk verschil dus: je kunt discussiëren over de manier waarop je een probleem aanpakt, maar kopieer geen code van anderen.
 
 Kom je in tijdnood? Bespreek het even met de docent. We willen het graag zo oplossen dat je het vak zelfstandig kunt halen.
 
 ## Plagiaatregeling
 
-Fraude volgens de UvA: *"Het handelen of nalaten van een student waardoor een juist oordeel over zijn kennis, inzicht en vaardigheden geheel of gedeeltelijk onmogelijk wordt."*
-
-We gebruiken bij de beoordeling van de opdrachten plagiaatdetectie. Als blijkt dat je opgave geheel of gedeeltelijk overeenkomt met een andere inzending of een uitwerking van internet, dan zijn er twee mogelijkheden.
+Fraude volgens de UvA: *"Het handelen of nalaten van een student waardoor een juist oordeel over zijn kennis, inzicht en vaardigheden geheel of gedeeltelijk onmogelijk wordt."* We gebruiken bij de beoordeling van de opdrachten plagiaatdetectie. Als blijkt dat je opgave geheel of gedeeltelijk overeenkomt met een andere inzending of een uitwerking van internet, dan zijn er twee mogelijkheden.
 
 * Er is een bronvermelding: in dat geval voldoe je niet aan de eis van het zelfstandig maken van de opgaven en wordt je inzending afgekeurd.
 
 * Er is geen bronvermelding: in dat geval rapporteren we aan de examencommissie welke inzendingen overeenkomen, waarna de commissie beslist over te nemen maatregelen.
 
-Vorig jaar is één student uitgesloten van deelname na het kopiëren van een practicumopdracht. Andere studenten hebben een waarschuwing gekregen. Bij ernstige fraude of plagiaat kun je voor langere tijd uitgesloten worden van examens.
+Jaarlijks worden bij programmeervakken enkele studenten uitgesloten van deelname na het kopiëren van een practicumopdracht. Andere studenten hebben een waarschuwing gekregen van de examencommissie.
 
 Zie ook:
 
