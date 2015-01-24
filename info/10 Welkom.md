@@ -1,6 +1,6 @@
 # Studiewijzer
 
-*Versie: Juni 2013*
+*Versie: Februari 2015* (nog in bewerking)
 
 Welkom bij deze cursus Inleiding Programmeren. We gaan programmeren in Python, een eenvoudige taal met vele mogelijkheden. Je leert over de basis van het programmeren, maar je gaat ook kijken naar toepassingen in andere vakgebieden.
 
@@ -9,15 +9,13 @@ Welkom bij deze cursus Inleiding Programmeren. We gaan programmeren in Python, e
 Voor ziekmelden, overleg over de voortgang en individuele afspraken, neem contact op met de docent van je groep.
 
 André Heck (coördinator en docent)  
-<a.j.p.heck@uva.nl>  
-kamer C3.132  
-telefoon 525 8486
+<a.j.p.heck@uva.nl>
 
+Martijn Stegeman (docent)  
+<m.stegeman@uva.nl>
 
-Thijs Coenen (docent)
+Thijs Coenen (docent)  
 <t.coenen@uva.nl>
-kamer C4.128A 
-
 
 ## Leerdoelen
 
