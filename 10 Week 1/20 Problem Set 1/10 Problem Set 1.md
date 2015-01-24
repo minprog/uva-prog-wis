@@ -22,7 +22,10 @@ and practice using the follow documentation. This will take you at least a coupl
 
 *Learn Python the hard way* (for those less comfortable)
 
-* [Preface](http://learnpythonthehardway.org/book/preface.html), [Introduction](http://learnpythonthehardway.org/book/intro.html), [Exercises 0--12](http://learnpythonthehardway.org/book/) and [Exercises 27--33](http://learnpythonthehardway.org/book/ex27.html).
+* [Preface](http://learnpythonthehardway.org/book/preface.html)
+* [Introduction](http://learnpythonthehardway.org/book/intro.html)
+* [Exercises 0--12](http://learnpythonthehardway.org/book/)
+* [Exercises 27--33](http://learnpythonthehardway.org/book/ex27.html)
 
 ## Calculating primes in order
 
