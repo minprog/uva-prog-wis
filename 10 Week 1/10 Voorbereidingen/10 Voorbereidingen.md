@@ -1,4 +1,3 @@
-# Voorbereiding week 1
 
 In week 1 behandelen we de basiselementen van het programmeren: functies, variabelen, loops, condities. Alles om je programma 'aan te sturen'. In de loop van de week ga je hiermee algoritmen of procedures uitwerken tot een werkend programma.
 
