@@ -43,12 +43,6 @@ Spaar in ieder geval de opdrachten niet op gedurende de week, maar lever ze in z
 
 Een laatste verwachting van ons is dat je *buiten* de practicumuren de videocolleges bekijkt.
 
-## Literatuur
-
-Relevante links naar hoofdstukken staan telkens bij de verschillende opdrachten. Daarbij vind je hier de complete PDF-bestanden van drie Python-boeken die gebruikt worden:
-
-* Allen Downey et.al., [How to think like a computer scientist](ThinkPython.pdf), Green Tea Press
-
 ## Wekelijkse roostering
 
 Dit is de hoeveelheid tijd die je ongeveer per week kwijt bent aan dit vak:
