@@ -6,17 +6,23 @@ will design and write a simple Python program, test it, and hand it in. Be sure
 to read this problem set thoroughly.
 
 You may work with other students. However, each student should write up and
-hand in his or her assignment separately. Be sure to indicate with whom you
-have worked.
+hand in his or her assignment separately, so we can see that you are making progress and you learn what you need to learn.
 
 ## Preparation
 
 To be able to program a solution to this problem set, you will need to read up
-on the follow documentation:
+and practice using the follow documentation. This will take you at least a couple of hours but probably more. Start at home!
 
-* [Conditionals](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap04.html) up to section 4.8 from *How to think like a Computer Scientist*
-* [Conditional statements](http://en.wikibooks.org/wiki/Python_Programming/Conditional_Statements) from *Python Programming*
-* [Loops](http://en.wikibooks.org/wiki/Python_Programming/Loops) from *Python Programming*
+*Think Python* (for those more comfortable)
+
+* [The way of the program](http://www.greenteapress.com/thinkpython/html/thinkpython002.html)
+* [Variables, expressions and statements](http://www.greenteapress.com/thinkpython/html/thinkpython003.html)
+* [Conditionals](http://www.greenteapress.com/thinkpython/html/thinkpython006.html) sections 5.1--5.7 and 5.11-5.13
+* [Iteration](http://www.greenteapress.com/thinkpython/html/thinkpython006.html)
+
+*Learn Python the hard way* (for those less comfortable)
+
+* [Preface](http://learnpythonthehardway.org/book/preface.html), [Introduction](http://learnpythonthehardway.org/book/intro.html), [Exercises 0--12](http://learnpythonthehardway.org/book/) and [Exercises 27--33](http://learnpythonthehardway.org/book/ex27.html).
 
 ## Calculating primes in order
 
@@ -93,4 +99,4 @@ Write a program that computes the sum of the logarithms of all the primes from 2
 
 You should be able to make only some small changes to your solution to Problem 1 to solve this problem as well.
 
-**Hints**: while you should see the ratio of the sum of the logs of the primes to the value *n* slowly get closer to 1, it does not approach this limit monotonically.
+*Hints*: while you should see the ratio of the sum of the logs of the primes to the value *n* slowly get closer to 1, it does not approach this limit monotonically.
