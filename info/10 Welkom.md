@@ -103,7 +103,7 @@ De weging:
 
 Bij het leren van de beginselen van programmeren is het belangrijk dat je zelf ontdekkingen doet en een begrip opbouwt van hoe de programmeertaal werkt. Samenwerken is daarom niet toegestaan.
 
-Tijdens de practica is het natuurlijk prima als je de opgave bespreekt met de student die naast je zit. Het is echter **niet de bedoeling** om delen van code van je medestudenten, of van internet, over te nemen.
+Tijdens de practica is het natuurlijk prima als je de opgave bespreekt met de student die naast je zit. Het is echter *niet de bedoeling* om delen van code van je medestudenten, of van internet, over te nemen.
 
 Een belangrijk verschil dus: je kunt discussiëren over de manier waarop je een probleem aanpakt, maar kopieer geen code van anderen.
 
