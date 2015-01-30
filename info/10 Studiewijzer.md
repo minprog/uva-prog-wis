@@ -1,12 +1,12 @@
 # Studiewijzer
 
-*Versie: Februari 2015* (nog in bewerking)
+*Versie: Februari 2015*
 
 Welkom bij deze cursus Inleiding Programmeren. We gaan programmeren in Python, een eenvoudige taal met vele mogelijkheden. Je leert over de basis van het programmeren, maar je gaat ook kijken naar toepassingen in andere vakgebieden.
 
 ## Contact
 
-Voor ziekmelden, overleg over de voortgang en individuele afspraken, neem contact op met de docent van je groep.
+Voor ziekmelden, overleg over de voortgang en individuele afspraken, neem contact op met de docent van je groep -- zie Datanose voor je rooster en docent.
 
 André Heck (coördinator en docent)  
 <a.j.p.heck@uva.nl>
@@ -27,29 +27,29 @@ Thijs Coenen (docent)
 
 ## Onderwijsvorm
 
-Dit vak bestaat uit videocolleges, 11 computerpractica en één tentamen. Om de leerdoelen te kunnen halen is het bovenal belangrijk om heel veel te oefenen met programmeren.
+Dit vak bestaat uit leeswerk, computerpractica en één tentamen. Om de leerdoelen te kunnen halen is het bovenal belangrijk om heel veel te oefenen met programmeren.
 
 ## Verwachtingen: aanwezigheid en deadlines
 
-We verwachten dat je 12 uur per week aanwezig bent bij de computerpractica. In verband met ziekte is het mogelijk computerpractica de volgende week in te halen. Dit kan alleen als ziekte direct is gemeld.
+* We verwachten dat je 8 uur per week aanwezig bent bij de computerpractica. In geval van ziekte is het mogelijk computerpractica de volgende week in te halen. Dit gaat alleen lukken als je je direct netjes ziekmeldt.
 
-We verwachten dat je alle 13 problem sets maakt, elke problem set in de betreffende week afhebt en inlevert.
+* We verwachten dat je bij elk computerpracticum minstens één vraag stelt over de stof. Heb je het allemaal wel door, vraag dan hoe je het nog beter kan doen.
 
-Alle opdrachten moeten uiterlijk vrijdagavond 23:55 ingeleverd zijn. Elke week wordt één van de opdrachten aangewezen voor beoordeling. De assistent kijkt deze na en geeft de volgende week feedback.
+* We verwachten dat je alle problem sets maakt volgens het wekenschema.
 
-Mocht je in de problemen komen met het vak en het tempo, zorg dan dat je meteen contact opneemt. We zijn altijd bereid te zoeken naar oplossingen voor zover mogelijk met de hoeveelheid studenten in het vak.
+* Alle opdrachten moeten uiterlijk vrijdagavond 23:55 ingeleverd zijn. Elke week wordt één van de opdrachten aangewezen voor beoordeling. De assistent kijkt deze na en geeft de volgende week feedback.
 
-Spaar in ieder geval de opdrachten niet op gedurende de week, maar lever ze in zodra je klaar bent. De docenten kunnen het ingeleverde werk dan tussendoor met je bespreken en suggesties doen.
+* Mocht je in de problemen komen met het vak en het tempo, zorg dan dat je meteen contact opneemt. We zijn altijd bereid te zoeken naar oplossingen voor zover mogelijk met de hoeveelheid studenten in het vak.
 
-Een laatste verwachting van ons is dat je *buiten* de practicumuren de videocolleges bekijkt.
+* Spaar in ieder geval de opdrachten niet op gedurende de week, maar lever ze in zodra je klaar bent. De docenten kunnen het ingeleverde werk dan tussendoor met je bespreken en suggesties doen.
 
 ## Wekelijkse roostering
 
 Dit is de hoeveelheid tijd die je ongeveer per week kwijt bent aan dit vak:
 
-* 2 uur voorbereiding met behulp van video's en leeswerk
-* 3 computerpractica van 4 uur
-* eventueel thuis de programma's verder afmaken
+* 2-4 uur voorbereiding met behulp van leeswerk en oefeningen
+* 2 computerpractica van 4 uur
+* 1-2 uur thuis afmaken van je programma's
 
 Hou er rekening mee dat je vooral in de eerste weken best wat meer tijd kwijt kan zijn. Als je nog niet eerder geprogrammeerd hebt moet je even over een drempel heen voordat je het begint te begrijpen.
 
@@ -57,15 +57,15 @@ Hou er rekening mee dat je vooral in de eerste weken best wat meer tijd kwijt ka
 
 Je krijgt een eindcijfer voor dit vak als je:
 
-* 12 uur per week aanwezig bent geweest tijdens de practica;
-* alle benodigde programma's op tijd hebt ingeleverd;
+* 8 uur per week aanwezig bent geweest tijdens de practica;
+* alle vereiste programma's op tijd hebt ingeleverd;
 * een voldoende hebt gehaald voor het tentamen.
 
-Als je niet aan deze voorwaarden voldoet, krijg je geen cijfer voor het vak. Heb je niet alle practica ingeleverd, of het tentamen niet gehaald, dan krijg je een `NAV`. De ervaring leert dat we dat elke student deze cursus kan halen.
+Als je niet aan deze voorwaarden voldoet, krijg je geen cijfer voor het vak. Heb je niet alle practica ingeleverd, of het tentamen niet gehaald, dan krijg je een *NAV*. De ervaring leert dat we dat elke student deze cursus kan halen.
 
 ### Computerpractica
 
-Voor elk computerpracticum moet je minimaal een 5 gehaald hebben. Practica zijn helaas niet te herkansen.
+Voor elk computerpracticum moet je minimaal een 5 gehaald hebben. Practica zijn niet te herkansen.
 
 Elk ingeleverd programma wordt beoordeeld op de volgende factoren;
 
@@ -85,13 +85,6 @@ Omdat het mogelijk is bijna ongemerkt mee te liften met een medestudent tijdens 
 ### Eindcijfer
 
 Het eindcijfer is een gewogen gemiddelde van de problem sets. Het tentamen telt dus niet mee in de berekening, maar moet wel voldoende gemaakt worden.
-
-De weging:
-
-* problem set 3: factor 2
-* problem set 6: factor 2
-* problem set 9: factor 3
-* problem set 13: factor 3
 
 ## Samenwerken, fraude en plagiaat
 
