@@ -37,5 +37,3 @@ Onderschat het niet!
 > Als je het nog nooit gedaan hebt zal je in het begin langzaam gaan maar na een tijdje valt het kwartje en dan lukt het wel.
 
 Heb veel plezier.
-
-> Ga een weekend voor het programmeren begint zoveel mogelijk lesjes op codeacademy.com maken.
