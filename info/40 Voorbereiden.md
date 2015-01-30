@@ -8,6 +8,12 @@ Gebruik Dropbox of een ander systeem om te zorgen dat de programma's die je gaat
 
 ## Python Installeren
 
+| platform | python       | editor       |  
+| -------- | ------------ | ------------ |  
+| Windows  | via Anaconda | Notepad++    |  
+| Mac      | via Anaconda | Textwrangler |  
+| Linux    | via Anaconda | gedit        |  
+
 Gebruik *Anaconda* om Python op jouw systeem te installeren. Op sommige systemen staat al Python, maar we gaan later ook grafieken plotten, waarvoor je extra software nodig hebt die waarschijnlijk nog niet op je computer staat. Deze kun je later heel handig met Anaconda installeren.
 
 > <http://continuum.io/downloads>
