@@ -9,12 +9,16 @@ have worked.
 
 ## Preparation
 
-To be able to program a solution to this problem set, you need to read up on
-the follow documentation:
+To be able to program a solution to this problem set, you will need to read up
+and practice using the follow documentation. This will take you at least a couple of hours but probably more. Start at home!
 
-* [Loops](http://en.wikibooks.org/wiki/Python_Programming/Loops) from *Python Programming*
-* Tuples: [Tuples and sequences](http://docs.python.org/tutorial/datastructures.html) section of the Python Tutorial
-* More on traversing and slicing strings: [Chapter 7](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap07.html) of How to Think Like a Computer Scientist
+*Think Python* (for those more comfortable)
+
+* [Tuples](http://www.greenteapress.com/thinkpython/html/thinkpython013.html)
+
+*Learn Python the hard way* (for those less comfortable)
+
+* Read the same chapter as above :-)
 
 ## The problem at hand
 
@@ -47,6 +51,10 @@ combination of 6's, 9's and 20's adds up to 16. To determine if it is possible
 to buy exactly $$n$$ McNuggets, one has to solve a Diophantine equation: find
 non-negative integer values of $$a$$, $$b$$, and $$c$$, such that
 $$6*a+9*b+20*c=n$$.
+
+## Restrictions
+
+You cannot use lists for solving this problem. However, you can use *tuples*, as described in the preparatory materials.
 
 ## Problem a
 

@@ -39,6 +39,10 @@ potential solutions randomly or according to some probability distribution,
 often it is more efficient to devise a systematic method for generating all
 candidate solutions.
 
+## Restrictions
+
+To solve this problem, you will need variables, loops and conditionals. You cannot use lists or other Python structures.
+
 ## Problem a: primes
 
 Write a program that computes and prints the 1000th prime number.
