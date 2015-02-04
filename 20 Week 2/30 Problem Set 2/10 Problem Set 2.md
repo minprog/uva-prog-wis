@@ -71,12 +71,12 @@ derive solutions for $$56-65$$.
 
 ## Problem b
 
-**Theorem**: If it is possible to buy $$x, x+1, ..., x+5$$ sets of McNuggets,
+*Theorem*: If it is possible to buy $$x, x+1, ..., x+5$$ sets of McNuggets,
 for some $$x$$, then it is possible to buy any number of McNuggets $$>= x$$,
 given that McNuggets come in 6, 9 and 20 packs.
 
 Explain, in English or Dutch, why this theorem is true. Save your answers for
-problems *a* and *b* as `ps2.txt`.
+problems *a* and *b* as **ps2.txt**.
 
 ## Problem c: solving a diophantine equation
 
@@ -105,13 +105,15 @@ following format (where the correct number is provided in place of `n`):
 
     Largest number of McNuggets that cannot be bought in exact quantity: n
 
-**Hint**: your program should follow the outline above.
+### Hints
 
-**Hint**: think about what information you need to keep track of as you loop
-through possible ways of buying exactly `n` McNuggets. This will guide you in
-deciding what state variables you will need to utilize.
+* your program should follow the outline above
 
-Save your code for problem *c* in `ps2a.py`.
+* think about what information you need to keep track of as you loop through
+  possible ways of buying exactly `n` McNuggets. This will guide you in
+  deciding what state variables you will need to utilize.
+
+Save your code for problem *c* in **ps2a.py**.
 
 ## Problem d: generalize
 
@@ -137,4 +139,4 @@ Test your program on a variety of choices, by changing the value for packages.
 Include the case (6, 9, 20), as well as some other test cases of your own
 choosing.
 
-Save your code for problem *d* in `ps2b.py`.
+Save your code for problem *d* in **ps2b.py**.
