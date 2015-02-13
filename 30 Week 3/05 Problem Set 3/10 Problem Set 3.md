@@ -6,11 +6,22 @@ You may work with other students. However, each student should write up and hand
 
 ## Preparation
 
-To be able to program a solution to this problem set, you need to read up on the follow documentation:
+To be able to program a solution to this problem set, you will need to read up
+and practice using the follow documentation. This will take you at least a couple of hours but probably more. Start at home!
 
-* Functions, type conversion, and stack diagrams: [Chapter 3](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap03.html) of How to Think Like a Computer Scientist
-* More about functions: [Chapter 5](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap05.html) of How to Think Like a Computer Scientist (through section 5.4)
-* Recursion: [Chapter 4](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap04.html) of How to Think Like a Computer Scientist (from section 4.9 on), as well as [Chapter 5](http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap05.html) of How to Think Like a Computer Scientist (from section 5.5 on)
+*Think Python* (for those more comfortable)
+
+* [Functions](http://greenteapress.com/thinkpython/html/thinkpython004.html)
+* [Recursion](http://greenteapress.com/thinkpython/html/thinkpython006.html#toc59) (5.8--5.14)
+* [Fruitful functions](http://greenteapress.com/thinkpython/html/thinkpython007.html)
+* [Strings](http://greenteapress.com/thinkpython/html/thinkpython009.html)
+
+*Learn Python the hard way* (for those less comfortable)
+
+* [Exercises 18--19](http://learnpythonthehardway.org/book/ex18.html)
+* [Exercises 21--22](http://learnpythonthehardway.org/book/ex21.html)
+* [Exercises 24--26](http://learnpythonthehardway.org/book/ex21.html)
+* [Strings](http://greenteapress.com/thinkpython/html/thinkpython009.html) (from *Think Python*!)
 
 ## Strings and string searching
 
@@ -112,7 +123,7 @@ and
 
 	def countSubStringMatchRecursive (target, key):
 
-Place your answer in a file named `ps3a.py`
+Place your answer in a file named **ps3a.py**.
 
 ### Problem b: exact matching
 
@@ -134,7 +145,7 @@ at 0. Complete the definition for
 	def subStringMatchExact(target,key):
 
 For example, `subStringMatchExact("atgacatgcacaagtatgcat","atgc")` would return
-the tuple (5, 15). The file `ps3_template.py` ([download](ps3_template.py))
+the tuple (5, 15). The file **ps3_template.py** ([download](ps3_template.py))
 includes some test strings that you can use to test your function. In
 particular, we provide two target strings:
 
@@ -148,7 +159,7 @@ and four key strings:
 	key12 = 'atgc'
 	key13 = 'atgca'
 
-Test your function on each combination of key and target string, as well as other examples that you create. Place your answer in a file named `ps3b.py`.
+Test your function on each combination of key and target string, as well as other examples that you create. Place your answer in a file named **ps3b.py**.
 
 ## Problem c: substitution matches
 
@@ -216,10 +227,10 @@ string. This function will return a tuple of all starting points of matches of
 the key to the target, such that at most one element of the key is incorrectly
 matched to the target.
 
-This function is provided for you in the file `ps3_template.py`
+This function is provided for you in the file **ps3_template.py**
 ([download](ps3_template.py)) and invokes the function you are to write.
 
-Save your answers in a file named `ps3c.py`.
+Save your answers in a file named **ps3c.py**.
 
 ## Problem d: single substitution matches
 
@@ -241,4 +252,4 @@ the definition
 
 	def subStringMatchExactlyOneSub(target,key):
 
-Save your answers in a file named `ps3d.py`.
+Save your answers in a file named **ps3d.py**.
