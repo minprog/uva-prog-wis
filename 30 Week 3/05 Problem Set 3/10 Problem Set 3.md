@@ -79,7 +79,7 @@ it returns the value -1.
 We are going to explore some ideas in matching strings by looking at
 successively more complex tasks.
 
-**Note**: the solutions you are going to write will be tested on examples from
+*Note*: the solutions you are going to write will be tested on examples from
 DNA strings, but you should not assume that your solutions will only apply to
 DNA strings, i.e. do not assume that the strings consist of only 4 different
 characters, but rather that the strings could contain an arbitrary number of
@@ -112,16 +112,16 @@ string in a target string, how would you combine that result with invocation of
 the same function on a smaller target string. You may find the string slicing
 operation useful in getting substrings of a string.
 
-Write two functions, called `countSubStringMatch` and
-`countSubStringMatchRecursive` that take two arguments, a key string and a
+Write two functions, called `count_substring_match` and
+`count_substring_match_recursive` that take two arguments, a key string and a
 target string. These functions iteratively and recursively count the number of
 instances of the key in the target string. You should complete definitions for
 
-	def countSubStringMatch(target,key):
+	def count_substring_match(target,key):
 
 and
 
-	def countSubStringMatchRecursive (target, key):
+	def count_substring_match_recursive (target, key):
 
 Place your answer in a file named **ps3a.py**.
 
@@ -137,17 +137,17 @@ The next thing we want to do is write a function that generalizes find so that
 it returns a tuple of all starting points of a match of a key string in a
 target string, not just the first instance.
 
-Write the function subStringMatchExact. This function takes two arguments: a
+Write the function `substring_match_exact`. This function takes two arguments: a
 `target` string, and a `key` string. It should return a tuple of the starting
 points of matches of the key string in the target string, when indexing starts
 at 0. Complete the definition for
 
-	def subStringMatchExact(target,key):
+	def substring_match_exact(target,key):
 
-For example, `subStringMatchExact("atgacatgcacaagtatgcat","atgc")` would return
-the tuple (5, 15). The file **ps3_template.py** ([download](ps3_template.py))
-includes some test strings that you can use to test your function. In
-particular, we provide two target strings:
+For example, `substring_match_exact("atgacatgcacaagtatgcat","atgc")` would
+return the tuple (5, 15). The file **ps3_template.py**
+([download](ps3_template.py)) includes some test strings that you can use to
+test your function. In particular, we provide two target strings:
 
 	target1 = 'atgacatgcacaagtatgcat'
 	target2 = 'atgaatgcatggatgtaaatgcag'
@@ -182,18 +182,18 @@ call them `key1` and `key2`. For each part, use your function from
 Problem 2 to find the starting points of possible matches, that is, 
 invoke
 
-    starts1 = subStringMatchExact(target,key1)
+    starts1 = substring_match_exact(target,key1)
 
 and
 
-    starts2 = subStringMatchExact(target,key2)
+    starts2 = substring_match_exact(target,key2)
 
 The result of these two invocations should be two tuples, each indicating the
-starting points of matches of the two parts (key1 and key2) of the key string
-in the target. For example, if we consider the key `ATGC`, we could consider
-matching `A` and `GC` against a target, like `ATGACATGCA` --- in which case we
-would get as locations of matches for `A` the tuple `(0, 3, 5, 9)` and as
-locations of matches for `GC` the tuple `(7,)`. Of course, we would want to
+starting points of matches of the two parts (`key1` and `key2`) of the key
+string in the target. For example, if we consider the key `ATGC`, we could
+consider matching `A` and `GC` against a target, like `ATGACATGCA` --- in which
+case we would get as locations of matches for `A` the tuple `(0, 3, 5, 9)` and
+as locations of matches for `GC` the tuple `(7,)`. Of course, we would want to
 search over all possible choices of substrings with a missing element: the
 empty string and `TGC`; `A` and `GC`; `AT` and `C`; and `ATG` and the empty
 string. Note that we can use your solution for Problem 2 to find these values.
@@ -209,7 +209,7 @@ substring, there is a valid match with one substitution starting at *n*, if
 $$n+m+1=k$$, since this means that the second substring match starts one
 element beyond the end of the first substring.
 
-Write a function called `constrainedMatchPair` which takes three arguments: a
+Write a function called `constrained_match_pair` which takes three arguments: a
 tuple representing starting points for the first substring, a tuple
 representing starting points for the second substring, and the length of the
 first substring. The function should return a tuple of all members (call it
@@ -219,10 +219,10 @@ substring.
 
 Complete the definition
 
-	def constrainedMatchPair(firstMatch,secondMatch,length):
+	def constrained_match_pair(firstMatch,secondMatch,length):
 
 To test this function, we have provided a function called
-`subStringMatchOneSub`, which takes two arguments: a target string and a key
+`substring_match_one_sub`, which takes two arguments: a target string and a key
 string. This function will return a tuple of all starting points of matches of
 the key to the target, such that at most one element of the key is incorrectly
 matched to the target.
@@ -244,12 +244,12 @@ and matches with up to one substitution, respectively. If we keep only those
 elements of the second tuple that don't occur in the first tuple, we will have
 the matches with exactly one substitution.
 
-Write a function called `subStringMatchExactlyOneSub` which takes two
+Write a function called `substring_match_exactly_one_sub` which takes two
 arguments: a `target` string and a `key` string. This function should return a
 tuple of all starting points of matches of the key to the target, such that at
 exactly one element of the key is incorrectly matched to the target. Complete
 the definition
 
-	def subStringMatchExactlyOneSub(target,key):
+	def substring_match_exactly_one_sub(target,key):
 
 Save your answers in a file named **ps3d.py**.
