@@ -9,19 +9,10 @@ You may work with other students. However, each student should write up and hand
 To be able to program a solution to this problem set, you will need to read up
 and practice using the follow documentation. This will take you at least a couple of hours but probably more. Start at home!
 
-*Think Python* (for those more comfortable)
+*Think Python* (for all students!)
 
-* [Functions](http://greenteapress.com/thinkpython/html/thinkpython004.html)
 * [Recursion](http://greenteapress.com/thinkpython/html/thinkpython006.html#toc59) (5.8--5.14)
-* [Fruitful functions](http://greenteapress.com/thinkpython/html/thinkpython007.html)
 * [Strings](http://greenteapress.com/thinkpython/html/thinkpython009.html)
-
-*Learn Python the hard way* (for those less comfortable)
-
-* [Exercises 18--19](http://learnpythonthehardway.org/book/ex18.html)
-* [Exercises 21--22](http://learnpythonthehardway.org/book/ex21.html)
-* [Exercises 24--26](http://learnpythonthehardway.org/book/ex21.html)
-* [Strings](http://greenteapress.com/thinkpython/html/thinkpython009.html) (from *Think Python*!)
 
 ## Strings and string searching
 
@@ -123,7 +114,7 @@ and
 
 	def count_substring_match_recursive (target, key):
 
-Place your answer in a file named **ps3a.py**.
+Place your answer in a file named **ps5a.py**.
 
 ### Problem b: exact matching
 
@@ -145,8 +136,8 @@ at 0. Complete the definition for
 	def substring_match_exact(target,key):
 
 For example, `substring_match_exact("atgacatgcacaagtatgcat","atgc")` would
-return the tuple (5, 15). The file **ps3_template.py**
-([download](ps3_template.py)) includes some test strings that you can use to
+return the tuple (5, 15). The file **ps5_template.py**
+([download](ps5_template.py)) includes some test strings that you can use to
 test your function. In particular, we provide two target strings:
 
 	target1 = 'atgacatgcacaagtatgcat'
@@ -159,7 +150,7 @@ and four key strings:
 	key12 = 'atgc'
 	key13 = 'atgca'
 
-Test your function on each combination of key and target string, as well as other examples that you create. Place your answer in a file named **ps3b.py**.
+Test your function on each combination of key and target string, as well as other examples that you create. Place your answer in a file named **ps5b.py**.
 
 ## Problem c: substitution matches
 
@@ -227,10 +218,10 @@ string. This function will return a tuple of all starting points of matches of
 the key to the target, such that at most one element of the key is incorrectly
 matched to the target.
 
-This function is provided for you in the file **ps3_template.py**
-([download](ps3_template.py)) and invokes the function you are to write.
+This function is provided for you in the file **ps5_template.py**
+([download](ps5_template.py)) and invokes the function you are to write.
 
-Save your answers in a file named **ps3c.py**.
+Save your answers in a file named **ps5c.py**.
 
 ## Problem d: single substitution matches
 
@@ -252,4 +243,4 @@ the definition
 
 	def substring_match_exactly_one_sub(target,key):
 
-Save your answers in a file named **ps3d.py**.
+Save your answers in a file named **ps5d.py**.

@@ -130,8 +130,8 @@ We limit the number to be less than 200 (although this is an arbitrary choice)
 because in some cases there is no largest value that cannot be bought in exact
 quantity, and we don't want to search forever.
 
-Please use [ps2b_template.py](ps2b_template.py) to structure your code. Have
-your code print out its result in the following format:
+Use [ps2b_template.py](ps2b_template.py) to structure your code. Have your code
+print out its result in the following format:
 
     Given package sizes x, y, and z, the largest number of McNuggets that cannot be bought in exact quantity is: n
 
