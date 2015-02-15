@@ -1,6 +1,3 @@
-name: pset3
+name: pset6
 required:
-    - ps3a.py
-    - ps3b.py
-    - ps3c.py
-    - ps3d.py
+    - ps6.py
