@@ -15,12 +15,15 @@ and practice using the follow documentation. This will take you at least a coupl
 
 * [Functions](http://greenteapress.com/thinkpython/html/thinkpython004.html)
 * [Fruitful functions](http://greenteapress.com/thinkpython/html/thinkpython007.html)
+* [Lists](http://greenteapress.com/thinkpython/html/thinkpython011.html)
 
 *Learn Python the hard way* (for those less comfortable)
 
 * [Exercises 18--19](http://learnpythonthehardway.org/book/ex18.html)
 * [Exercises 21--22](http://learnpythonthehardway.org/book/ex21.html)
 * [Exercises 24--26](http://learnpythonthehardway.org/book/ex21.html)
+* [Exercise 34](http://learnpythonthehardway.org/book/ex34.html)
+* [Exercise 38](http://learnpythonthehardway.org/book/ex38.html)
 
 ## Description of the Coin Game
 
