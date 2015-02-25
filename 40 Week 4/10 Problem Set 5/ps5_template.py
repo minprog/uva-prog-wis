@@ -1,4 +1,4 @@
-from string import *
+import string
 
 target1 = 'atgacatgcacaagtatgcat'
 target2 = 'atgaatgcatggatgtaaatgcag'
