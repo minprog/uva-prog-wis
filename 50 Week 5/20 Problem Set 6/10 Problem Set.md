@@ -8,13 +8,13 @@ In this problem set only methods for the solution of a single nonlinear equation
 
 ## Bisection method
 
-The Bisection Method is a special case of a bracketing method. In a such method, one starts with the knowledge that a zero lies in some interval, so that it is only necessary to refine the knowledge of the interval so that the interval containing the zero has a length that is smaller than the required precision for the zero.
+The *bisection method* is a special case of a *bracketing* method. In a such method, one starts with the knowledge that a zero lies in some interval, so that it is only necessary to refine the knowledge of the interval so that the interval containing the zero has a length that is smaller than the required precision for the zero.
 
-The Bisection Method is based on repeated halving of subintervals of $$[a, b]$$ and, at each step, locating the half containing $$r$$. One starts with the given interval $$[a, b]$$ and first determines whether the number $$r$$ happens to be equal to $$(a+b)/2$$ and, if not, can be found in the subinterval $$[a, (a+b)/2]$$ or $$[(a+b)/2, b]$$. The choice depends on the value of $$f((a+b)/2)$$. One stops  the process of halving subintervals whenever a zero has been found or the length of the interval has become less than a specified tolerance. In the latter case, one takes the midpoint of the last found subinterval as an approximated value for the zero $$r$$.
+The bisection method is based on repeated halving of subintervals of $$[a, b]$$ and, at each step, locating the half containing $$r$$. One starts with the given interval $$[a, b]$$ and first determines whether the number $$r$$ happens to be equal to $$(a+b)/2$$ and, if not, can be found in the subinterval $$[a, (a+b)/2]$$ or $$[(a+b)/2, b]$$. The choice depends on the value of $$f((a+b)/2)$$. One stops  the process of halving subintervals whenever a zero has been found or the length of the interval has become less than a specified tolerance. In the latter case, one takes the midpoint of the last found subinterval as an approximated value for the zero $$r$$.
 
 ### Problem a
 
-Implement the Bisection method in Python, i.e., define a function
+Create a file called **ps6.py** to host the solutions to today's problems. Implement the bisection method in Python, i.e., define a function
 
     def bisection_solve(f, a, b, tolerance=0.001, iterations=100):
         """
@@ -112,7 +112,7 @@ The Newton iteration can be motivated geometrically in the following way. Suppos
 
 Now draw the tangent line to the graph of $$f$$ in the point $$(x_0, f(x_0))$$.
 
-**Exercise.** Prove that the tangent line to the graph of $$f$$ in the point   $$(x_0, f(x_0))$$ intersects the $$x$$-axis in the point
+*Exercise.* Prove that the tangent line to the graph of $$f$$ in the point   $$(x_0, f(x_0))$$ intersects the $$x$$-axis in the point
 
 $$(x_0 - f(x_0) / (f'(x_0)), 0)$$.
 
@@ -143,9 +143,13 @@ Implement the Newon-Raphson method in Python, i.e., define a function
 
 Define your function such that it also returns the number of iterations used to arrive at the solution within a given tolerance. Use your adapted function to generate a list of required iterations for tolerances $$0.1, 0.01, 0.001, ... 10^(-15)$$ starting at $$x_0 = 0.5$$. Verify that this method also works faster than the Bisection Method.
 
-##Aftermath
+## Aftermath
 
-In the field that is known as Numerical Mathematics researchers are busy with studying the behavior of approximate methods and smart adaptations of the method of Newton-Raphson have been developed that have a higher order of convergence. Here we mention some formulas of order 3 and 4, i.e., methods in which the number of correct digits triples and quadruples in each iteration steps. Note that the Normal-Raphson method has quadratic order. It is convenient to use the auxiliary function $$h(x) = (f(x)*f''(x)) / (f'(x))^2$$. All formulas are shaped like
+In the field that is known as numerical mathematics researchers are busy with studying the behavior of approximate methods and smart adaptations of the method of Newton-Raphson have been developed that have a higher order of convergence. Here we mention some formulas of order 3 and 4, i.e., methods in which the number of correct digits triples and quadruples in each iteration steps. Note that the Normal-Raphson method has quadratic order. It is convenient to use the auxiliary function
+
+$$h(x) = (f(x)*f''(x)) / (f'(x))^2$$.
+
+All formulas are shaped like
 
 $$x_(n+1) = x_n - f(x_n) / (f'(x_n)) * (1 + (h(x_n)) / (2(1-c(x_n)*h(x_n))))$$
 
