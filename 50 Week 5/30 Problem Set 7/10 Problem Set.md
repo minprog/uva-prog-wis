@@ -29,7 +29,7 @@ Paul Erdös, allegedly, once said about the Collatz problem: "Mathematics is not
 yet ripe enough for such problems". In other words, we recommend that you
 graduate before trying it.
 
-You should put your problems a--d in one file, for example `ps7.py`. Please make each problem into a function, e.g. `problem_a`, `problem_b`. Have each function print out the solution to the problem. Make sure each function clearly states its name when outputting solutions to the screen.
+You should put your problems a--d in one file: **ps7.py**. Please make each problem into a function, e.g. `problem_a`, `problem_b`. Have each function print out the solution to the problem. Make sure each function clearly states its name when outputting solutions to the screen.
 
 ## Problem a: one sequence
 
