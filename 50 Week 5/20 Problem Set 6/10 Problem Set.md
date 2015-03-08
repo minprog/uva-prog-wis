@@ -1,6 +1,6 @@
 # Finding roots to nonlinear equations
 
-One of the most basic mathematical tasks applied to scientific problem solving is that of finding the zeroes of a function, or equivalently, the roots of an equation. Many situations require the finding the roots of a system of equations or a single equation. For example, the location of the maxima and minima of a function describing some system requires finding the zeroes of the derivatives of that function.
+One of the most basic mathematical tasks applied to scientific problem solving is that of finding the zeroes of a function, or equivalently, the roots of an equation. Many situations require the finding of the roots of a system of equations or a single equation. For example, locating the maxima and minima of a function describing some system requires finding the zeroes of the derivatives of that function.
 
 The solution of a linear equation in one variable or a system of linear equations in more than one variables are taught at secondary school and in higher education during linear algebra courses. The solution of nonlinear systems of algebraic equations is frequently not possible using formal analytic methods, as it is in for linear systems. Hence it is necessary to resort to iterative numerical methods to solve such systems. 
 
@@ -31,7 +31,7 @@ Adjust your function so it also returns the number of iterations used to arrive 
 
 # Regula falsi method
 
-The Biection Method is very simple, but generally quite inefficient, in part because it only makes use of the sign of the function *f* (*x*) at each evaluation, while ignoring its magnitude. Thus it ignores significant information which could be used accelerate the finding of the root. A method based on interpolation makes use of this information by approximating the function on the interval $$[x_1, x_2]$$ by the chord joining the points $$(x_1,f(x_1))$$ and $$(x_2,f(x_2))$$, which is the straight line:
+The Bisection Method is very simple, but generally quite inefficient, in part because it only makes use of the sign of the function *f* (*x*) at each evaluation, while ignoring its magnitude. Thus it ignores significant information which could be used accelerate the finding of the root. A method based on interpolation makes use of this information by approximating the function on the interval $$[x_1, x_2]$$ by the chord joining the points $$(x_1,f(x_1))$$ and $$(x_2,f(x_2))$$, which is the straight line:
 
 $$(y-y_1)/(x-x_1) = (y_2-y_1)/(x_2-x_1)$$
 
@@ -99,7 +99,7 @@ Setting $$f(x) = 0$$ to find the next approximation, $$x_1$$, to the zero of $$f
 
 $$x_1 = x_0 - f(x_0) / (f'(x_0))$$.
 
-This provides an iteration scheme which may well converge on the zero of $$f(x)$$, under appropriate conditions. It can be shown that the Newton-Raphson method converges in the interval where
+This provides an iteration scheme which may well converge to the zero of $$f(x)$$, under appropriate conditions. It can be shown that the Newton-Raphson method converges in the interval where
 
 $$
 |(f(x)f''(x)) / (f'(x))^2 | < 1
@@ -125,7 +125,7 @@ $$x_(n+1) = x_n - f(x_n) / (f'(x_n))$$.
 
 This recursion formula can also be written as follows:
 
-$$x_(n+1) = g(x)$$, with $$g(x) = x - f(x) / (f'(x))$$.
+$$x_(n+1) = g(x_n)$$, with $$g(x) = x - f(x) / (f'(x))$$.
 
 Please note that the Newton-Raphson Method assumes that one has both the function and its derivative at one disposal.
 
