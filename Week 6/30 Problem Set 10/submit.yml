@@ -1,5 +1,0 @@
-name: pset10
-required:
-    - ps10.py
-optional:
-    - ps10_ghost.py
