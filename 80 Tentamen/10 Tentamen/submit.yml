@@ -1,4 +1,4 @@
-name: resit
+name: tent
 required:
-    - hertentamen.py
+    - tentamen.py
 
