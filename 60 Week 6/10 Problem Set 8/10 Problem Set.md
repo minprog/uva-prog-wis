@@ -68,23 +68,23 @@ Simpson's rule also corresponds to the so-called closed 3-point Newton-Cotes qua
 Taking an equidistant partition of the interval $$[a,b]$$ into $$n$$ subintervals $$\displaystyle dx = \frac{b-a}{n}$$, the trapezoidal rule corresponds with the following formula:
 
 $$\displaystyle \int_a^b f(x) dx =$$
-$$\displaystyle \sum_{i=0}^{n-1} \frac{1}{6}dx\cdot\Bigl(f(a+i\cdot dx)+4f\bigl(a+(i+\tfrac{1}{2})\cdot dx\bigr) + f(a+(i+1)\cdot dx)\bigr) =$$ 
-$$\displaystyle dx\cdot\biggl(\frac{1}{6}f(a)+\frac{2}{3}f(a+\frac{1}{2}dx)+(\sum_{i=1}^{n-1} \frac{1}{3}f(a+i\cdot dx)+\frac{2}{3}f(a+(i+\tfrac{1}{2})\cdot dx)\bigr)+\frac{1}{6} f(b)\biggr)$$
+$$\displaystyle \sum_{i=0}^{n-1} \frac{1}{6}dx\cdot\Bigl(f(a+i\cdot dx)+4f\bigl(a+(i+\tfrac{1}{2})\cdot dx\bigr) + f(a+(i+1)\cdot dx)\Bigr) =$$ 
+$$\displaystyle dx\cdot\left(\frac{1}{6}f(a)+\frac{2}{3}f(a+\frac{1}{2}dx)+\Bigl(\sum_{i=1}^{n-1} \frac{1}{3}f(a+i\cdot dx)+\frac{2}{3}f(a+(i+\tfrac{1}{2})\cdot dx)\Bigr)+\frac{1}{6} f(b)\right)$$
  
 ### Problem a
 
 Implement all previously discussed numerical integration methods in Python and apply them to compare the numerical approximation with a partition of the interval $$[0,1]$$ in 100 subintervals with the exact results for the following two cases:
 
 * $$\displaystyle  \int_0^1 \frac{4}{x^2+1}\,dx = \pi $$
-* $$\displaystyle  \int_0^{pi} sin(x)\,dx = 2 $$
+* $$\displaystyle  \int_0^{\pi} \sin(x)\,dx = 2 $$
 
 You can approximate $$\pi$$ in your Python program by the floating point number $$3.141592653589793$$ or use the variable `math.pi` from the imported  `math` module.
 
 ### Problem b
 
-1. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$\displaystyle  int_0^1 \frac{4}{x^2+1}\,dx  $$ within a precision of 0.1, 0.01, 0.001, and 0.0001.
+1. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$\displaystyle  \int_0^1 \frac{4}{x^2+1}\,dx  $$ within a precision of 0.1, 0.01, 0.001, and 0.0001.
 
-2. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$ \displaystyle  \int_0^pi sin(x)\,dx $$ within a precision of 1 up to 7 digits after the decimal point.
+2. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$ \displaystyle  \int_0^{\pi} \sin(x)\,dx $$ within a precision of 1 up to 7 digits after the decimal point.
 
 3. Answer in the comments at the top of your program: which method is certainly most efficient? Which one comes next?
 
