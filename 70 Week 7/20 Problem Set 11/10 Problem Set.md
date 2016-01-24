@@ -101,12 +101,12 @@ We only address the first question for the general Bernoulli walk when p is the 
 
 Let $$k$$ be the number of steps to the right. The probability $$P_n(k)$$ of taking $$k$$ such steps out of $$n$$ is given by the binomial formula
 
-$$P_n(k) = {n\choose k}p^k q^{n-k}$$.
+$$\displaystyle P_n(k) = {n\choose k}p^k q^{n-k}$$.
 
 
 If $$k$$ steps are to the right, then the horizontal position $$x$$ of this walk is equal to $$2k – n$$. So, the average horizontal position $$\langle x\rangle$$ after $$n$$ steps is
 
-$$\displaystyle \langle x\rangle = \sum_(k=0)^n (2k-n)P_n(k)$$.
+$$\displaystyle \langle x\rangle = \sum_{k=0}^{n} (2k-n)P_n(k)$$.
 
 This sum can be computed exactly and the result is $$\langle x\rangle = n(p-q)$$.
 
@@ -114,12 +114,12 @@ In the symmetric case, the expectation value of the horizontal position after $$
 
 $$\langle d^2\rangle=4pqn+(p-q)^2n^2$$.
 
-The variance in the final position of the random walker after $$n$$ steps can now be computed and turns out to be equal to $$sigma_x^2=4pqn$$.
+The variance in the final position of the random walker after $$n$$ steps can now be computed and turns out to be equal to $$\sigma_x^2=4pqn$$.
 
 The variance of the square distance can also be determined in the form of an exact formula (we leave out the details and the formula). We only mention that the formula specializes in the symmetric case as follows:
 
-* for the position: $$\langle x\rangle=0$$ and $$sigma_x^2=n$$;
-* for the square distance: $$\langle d^2\rangle = n$$ and $$(sigma_(d^2))^2 = 2(n-1)n$$.
+* for the position: $$\langle x\rangle=0$$ and $$\sigma_x^2=n$$;
+* for the square distance: $$\langle d^2\rangle = n$$ and $$\sigma_{d^2}^2 = 2(n-1)n$$.
 
 Task: Simulate $$n$$-step symmetric one-dimensional random walks and check what the mean position and the mean square distance from the endpoint of the walk to the origin are in this case. In other words, simulate a number of random walks, say 100 walks, and statistically analyze the results. For example, make a histogram of the computed end position and squared distance to the origin. Compute mean values and variances. Compare your results with the above theoretical results, and *describe the differences in clearly marked comments*.
 
