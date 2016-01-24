@@ -8,16 +8,16 @@ The Matplotlib module must be imported first. For example, one can import the ba
 	>>> import numpy as np
 	>>> x = np.linspace(1,3,10)
 	>>> y = x**2  # quadratic function values
-	>>> z = x**3  # cubic function values
+	>>> z = np.log(x)   # linear function values
 
 A plot of y vs. x can now be created as follows:
 
 	>>> plt.plot(x, y)
 	[<matplotlib.lines.Line2D object at 0x03D3F770>]
 
-Only a plot object is created; it is not immediately displayed in a figure. The reason is that one can add more plots to a figure and change styles. For example, one can add a plot of the cubic values as red open circles and make gridlines visible.
+Only a plot object is created; it is not immediately displayed in a figure. The reason is that one can add more plots to a figure and change styles. For example, one can add a plot of the logarithmic values as red circles and make gridlines visible.
 
-	>>> plt.plot(x, z, 'ro') # plot points are red open circles 
+	>>> plt.plot(x, z, 'ro') # plot points are red circles 
 	[<matplotlib.lines.Line2D object at 0x03D3FB70>]
 	>>> plt.grid(True) # display grid
 
@@ -40,7 +40,7 @@ $$\displaystyle y'_k = \frac{y_{k+1} - y_{k-1}}{2dx}$$, for $$k=1,2,...,n-1$$.
 
 It is based on averaging the following approximations of $$f(x)$$ for small values of $$h$$:
 
-$$\displaystyle f'(x) \approx \frac{f(x+h)+f(x)}{h}$$ and $$\displaystyle f'(x) \approx \frac{f(x) + f(x-h)}{h}$$.
+$$\displaystyle f'(x) \approx \frac{f(x+h)-f(x)}{h}$$ and $$\displaystyle f'(x) \approx \frac{f(x) - f(x-h)}{h}$$.
 
 At the endpoints of the interval one can apply the following formulas:
 
