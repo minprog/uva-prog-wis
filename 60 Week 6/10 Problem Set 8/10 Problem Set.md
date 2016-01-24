@@ -4,7 +4,7 @@ In numerical analysis one studies various methods to approximate definite integr
 
 ## Numerical quadrature
 
-Numerical quadrature is a basic method of numerical integration of a definite integral $$\displaystyle \int_a^bf(x)dx$$ of a function $$f(x)$$ on an interval $$[a,b]$$. It uses a partition of the interval $$[a,b]$$ in subintervals and a selection of one node in each subinterval. For a sequence of distinct nodes
+Numerical quadrature is a basic method of numerical integration of a definite integral $$\displaystyle \int_a^bf(x)\,dx$$ of a function $$f(x)$$ on an interval $$[a,b]$$. It uses a partition of the interval $$[a,b]$$ in subintervals and a selection of one node in each subinterval. For a sequence of distinct nodes
 
 $$a \le x_1 < x_2 < ... < x_n \le b$$
 
@@ -12,7 +12,7 @@ one creates a sum of the type
 
 $$\sum_{i=1}^n a_i\cdot f(x_i)$$
 
-to approximate $$\displaystyle \int_a^bf(x)dx$$. In other words, a weighted sum of function
+to approximate $$\displaystyle \int_a^bf(x)\,dx$$. In other words, a weighted sum of function
 values in a number of nodes in the interval approximates the definite integral.
 The exact formula depends on the numerical integration method chosen and can be
 specified by first explaining what approximation holds for an interval $$[a,b]$$
@@ -44,7 +44,7 @@ The trapezoidal rule, also known as the trapezoid rule or trapezium rule, can be
  
 The definite integral of the function $$f(x)$$ on the interval $$[a,b]$$ is now approximated by the definite integral of the linear function $$P(x)$$ on the interval $$[a,b]$$. The latter definite integral can be computed analytically and leads to the following approximation:
 
-$$\displaystyle \int_a^b f(x) dx \approx \frac{b-a}{2}\cdot\bigl(f(a)+f(b)\bigr)$$.
+$$\displaystyle \int_a^b f(x)\,dx \approx \frac{b-a}{2}\cdot\bigl(f(a)+f(b)\bigr)$$.
 
 This formula corresponds to the so-called closed 2-point Newton-Cotes quadrature rule.
 
