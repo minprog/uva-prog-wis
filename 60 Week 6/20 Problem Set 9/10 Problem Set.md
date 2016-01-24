@@ -125,7 +125,7 @@ NumPy contains a `linalg` subpackage for doing numeric linear algebra computatio
 
 ### Creating Vectors and Matrices
 
-There are some utility functions to create matrices and vectors. A few examples will illustrate constructions of matrices and vectors. The $$3 times 4$$-matrix $$M$$ with $$M_ij = i^j$$ can be created as follows:
+There are some utility functions to create matrices and vectors. A few examples will illustrate constructions of matrices and vectors. The $$3 \times 4$$-matrix $$M$$ with $$M_{ij} = i^j$$ can be created as follows:
 
 	>>> import numpy as np
 	>>> import numpy.linalg as la
@@ -232,7 +232,7 @@ Some utility functions to stack matrices horizontally or vertically:
 
 Also the Moore-Penrose inverse $$A^+$$ of a matrix $$A$$ can be computed. Recall that the Moore-Penrose inverse is defined as:
 
-$$A^+ = lim_(x->0)(A^t * A + x^2 I)^-1 * A^t$$
+$$\displaystyle A^{+} = \lim_(x->0)(A^T * A + x^2 I)^{-1} * A^T$$
 
 	>>> la.pinv(M)
 	>>> np.dot(M, la.pinv(M))
@@ -255,9 +255,9 @@ The linear system of equations $${x+y+z = 6, 2x-y = 7, 2y-z = 8}$$ can be solved
 
 ### Standard Forms of Matrices
 
-The singular value decomposition (SVD) of a matrix $$A$$ is a factorization of $$A$$ as $$A=U*D*V^t$$, where $$U$$ and $$V$$ are orthogonal matrices and $$D$$ is a diagonal matrix with non-negative entries. The singular value decomposition of the matrix
+The singular value decomposition (SVD) of a matrix $$A$$ is a factorization of $$A$$ as $$A=U\cdot D\cdot V^T$$, where $$U$$ and $$V$$ are orthogonal matrices and $$D$$ is a diagonal matrix with non-negative entries. The singular value decomposition of the matrix
 
-$$((0,-1,-3),(4,5,1),(1,4,-1))$$
+$$\left(\matrix{0&-1&-3\cr 4&5&1\cr 1&4&-1\cr}\right)$$
 
 can be computed as follows:
 
