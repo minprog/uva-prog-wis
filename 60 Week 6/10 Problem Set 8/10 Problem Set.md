@@ -10,7 +10,7 @@ $$a \le x_1 < x_2 < ... < x_n \le b$$
 
 one creates a sum of the type
 
-$$sum_{i=1}^n a_i\cdot f(x_i)$$
+$$\sum_{i=1}^n a_i\cdot f(x_i)$$
 
 to approximate $$\displaystyle \int_a^bf(x)dx$$. In other words, a weighted sum of function
 values in a number of nodes in the interval approximates the definite integral.
@@ -30,11 +30,11 @@ The following three choices for selecting  a node in a subinterval are distingui
 2. Always the right endpoint of the subinterval (Right Riemann sum)
 3. Always the midpoint of the subinterval (Middle Riemann sum)
 
-Taking $$dx =\frac{b-a}{n}$$, the choices correspond with the following formulas, respectively:
+Taking $$\displaystyle dx =\frac{b-a}{n}$$, the choices correspond with the following formulas, respectively:
 
-1. Left Riemann sum: $$sum_{i=0}^{n-1}\,dx\cdot f(a+i\cdot dx)$$
-2. Right Riemann sum: $$sum_{i=1}^n dx\cdot f(a+i\cdot dx)$$
-3. Middle Riemann sum: $$sum_{i=0}^{n-1} dx\cdot f(a+(i+1/2)\cdot dx)$$
+1. Left Riemann sum: $$\sum_{i=0}^{n-1}\,dx\cdot f(a+i\cdot dx)$$
+2. Right Riemann sum: $$\sum_{i=1}^n dx\cdot f(a+i\cdot dx)$$
+3. Middle Riemann sum: $$\sum_{i=0}^{n-1} dx\cdot f(a+(i+1/2)\cdot dx)$$
 
 ## Trapezoidal Rule
 
@@ -48,10 +48,10 @@ $$\int_a^b f(x) dx \approx \frac{b-a}{2}\cdot\bigl(f(a)+f(b)\bigr)$$.
 
 This formula corresponds to the so-called closed 2-point Newton-Cotes quadrature rule.
 
-Taking an equidistant partition of the interval $$[a,b]$$ into $$n$$ subintervals $$dx = \frac{b-a}{n}$$, the trapezoidal rule corresponds with the following formula:
+Taking an equidistant partition of the interval $$[a,b]$$ into $$n$$ subintervals $$\displaystyle dx = \frac{b-a}{n}$$, the trapezoidal rule corresponds with the following formula:
 
 $$\int_a^b f(x)\, dx =$$
-$$sum_{i=0}^{n-1} \frac{1}{2} dx\cdot\bigl(f(a+i*dx)+f(a+(i+1)*dx)\bigr) =$$ $$dx\cdot\biggl\frac{1}{2}f(a)+\bigl(sum_{i=1}^{n-1}f(a+i\cdot dx)\bigr)+\frac{1}{2}f(b)\biggr)$$
+$$\sum_{i=0}^{n-1} \frac{1}{2} dx\cdot\bigl(f(a+i\cdot dx)+f(a+(i+1)\cdot dx)\bigr) =$$ $$dx\cdot\biggl(\frac{1}{2}f(a)+\bigl(sum_{i=1}^{n-1}f(a+i\cdot dx)\bigr)+\frac{1}{2}f(b)\biggr)$$
  
 ## Simpson's Rule
 
