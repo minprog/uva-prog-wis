@@ -82,7 +82,7 @@ You can approximate $$\pi$$ in your Python program by the floating point number 
 
 ### Problem b
 
-1. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$\displaystyle  \int_0^1 \frac{4}{x^2+1}\,dx  $$ within a precision of 0.1, 0.01, 0.001$$, and $$0.0001$$.
+1. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$\displaystyle  \int_0^1 \frac{4}{x^2+1}\,dx  $$ within a precision of $$0.1, 0.01, 0.001$$, and $$0.0001$$.
 
 2. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$ \displaystyle  \int_0^{\pi} \sin(x)\,dx $$ within a precision of 1 up to 7 digits after the decimal point.
 
