@@ -304,7 +304,7 @@ $$M = A$$, $$M = B$$ and $$M = C$$.
 
 ### Problem b
 
-The Cholesky decomposition of a positive-definite symmetric matrix $$A$$ is a factorization of $$A$$ as $$A=L\cdot L^T$$, where $$L$$ is a lower triangular matrix. The QR decomposition of a matrix $$A$$ is a factorization of $$A$$ as $$A=Q\cdot R$$, where $$Q$$ is an orthogonal matrix and $$R$$ is a upper-triangular.
+The Cholesky decomposition of a positive-definite symmetric matrix $$A$$ is a factorization of $$A$$ as $$A=L\cdot L^T$$, where $$L$$ is a lower triangular matrix. The QR decomposition of a matrix $$A$$ is a factorization of $$A$$ as $$A=Q\cdot R$$, where $$Q$$ is an orthogonal matrix and $$R$$ is an upper-triangular matrix.
 
 Compute with Python the Cholesky and QR decomposition of the following matrix:
 
