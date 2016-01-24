@@ -51,7 +51,7 @@ This formula corresponds to the so-called closed 2-point Newton-Cotes quadrature
 Taking an equidistant partition of the interval $$[a,b]$$ into $$n$$ subintervals $$\displaystyle dx = \frac{b-a}{n}$$, the trapezoidal rule corresponds with the following formula:
 
 $$\displaystyle \int_a^b f(x)\, dx =$$
-$$\displaystyle \sum_{i=0}^{n-1} \frac{1}{2} dx\cdot\biggl(f(a+i\cdot dx)+f\bigl(a+(i+1)\cdot dx\bigr)\biggr)$$ $$\displaystyle \phantom{\int_a^b f(x)\, dx} = dx\cdot\left(\frac{1}{2}f(a)+\biggl(\sum_{i=1}^{n-1}f(a+i\cdot dx)\biggr)+\tfrac{1}{2}f(b)\right)$$
+$$\displaystyle \sum_{i=0}^{n-1} \frac{1}{2} dx\cdot\Bigl(f(a+i\cdot dx)+f\bigl(a+(i+1)\cdot dx\bigr)\Bigr)$$ $$\displaystyle \phantom{\int_a^b f(x)\, dx} = dx\cdot\left(\frac{1}{2}f(a)+\Bigl(\sum_{i=1}^{n-1}f(a+i\cdot dx)\Bigr)+\tfrac{1}{2}f(b)\right)$$
  
 ## Simpson's Rule
 
@@ -61,22 +61,22 @@ Simpson's rule can be derived by approximating, as shown in Figure,  the integra
 
 The definite integral of the function $$f(x)$$ in the interval $$[a,b]$$ is now approximated by the definite integral of the quadratic function $$P(x)$$ in the interval $$[a,b]$$. The latter definite integral can be computed analytically and leads to the following approximation:
 
-$$\displaystyle \int_a^b f(x) dx \approc \frac{b-a}{6}\cdot \bigl(f(a)+4f(\frac{a+b}{2})+f(b)\bigr)$$
+$$\displaystyle \int_a^b f(x) dx \approx \frac{b-a}{6}\cdot \Bigl(f(a)+4f\bigl(\frac{a+b}{2}\bigr)+f(b)\Bigr)$$
 
 Simpson's rule also corresponds to the so-called closed 3-point Newton-Cotes quadrature rule.  
 
 Taking an equidistant partition of the interval $$[a,b]$$ into $$n$$ subintervals $$\displaystyle dx = \frac{b-a}{n}$$, the trapezoidal rule corresponds with the following formula:
 
 $$\displaystyle \int_a^b f(x) dx =$$
-$$\displaystyle \sum_{i=0}^{n-1} \frac{1}{6}dx\cdot\bigl(f(a+i\cdot dx)+4f(a+(i+\frac{1}{2})\cdot dx) + f(a+(i+1)\cdot dx)\bigr) =$$ 
-$$\displaystyle dx\cdot\biggl(\frac{1}{6}f(a)+\frac{2}{3}f(a+\frac{1}{2}dx)+(sum_{i=1}^{n-1} \frac{1}{3}f(a+i\cdot dx)+\frac{2}{3}f(a+(i+\frac{1}{2})\cdot dx)\bigr)+\frac{1}{6} f(b)\biggr)$$
+$$\displaystyle \sum_{i=0}^{n-1} \frac{1}{6}dx\cdot\Bigl(f(a+i\cdot dx)+4f\bigl(a+(i+\tfrac{1}{2})\cdot dx\bigr) + f(a+(i+1)\cdot dx)\bigr) =$$ 
+$$\displaystyle dx\cdot\biggl(\frac{1}{6}f(a)+\frac{2}{3}f(a+\frac{1}{2}dx)+(\sum_{i=1}^{n-1} \frac{1}{3}f(a+i\cdot dx)+\frac{2}{3}f(a+(i+\tfrac{1}{2})\cdot dx)\bigr)+\frac{1}{6} f(b)\biggr)$$
  
 ### Problem a
 
 Implement all previously discussed numerical integration methods in Python and apply them to compare the numerical approximation with a partition of the interval $$[0,1]$$ in 100 subintervals with the exact results for the following two cases:
 
 * $$\displaystyle  \int_0^1 \frac{4}{x^2+1}\,dx = \pi $$
-* $$\displaystyle  \int_0^pi sin(x)\,dx = 2 $$
+* $$\displaystyle  \int_0^{pi} sin(x)\,dx = 2 $$
 
 You can approximate $$\pi$$ in your Python program by the floating point number $$3.141592653589793$$ or use the variable `math.pi` from the imported  `math` module.
 
