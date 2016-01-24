@@ -232,7 +232,7 @@ Some utility functions to stack matrices horizontally or vertically:
 
 Also the Moore-Penrose inverse $$A^{+}$$ of a matrix $$A$$ can be computed. Recall that the Moore-Penrose inverse is defined as:
 
-$$\displaystyle A^{+} = \lim_{x\mapsto 0}(A^T \cdot  A + x^2 I)^{-1}\cdot  A^T$$
+$$\displaystyle A^{+} = \lim_{x\rightarrow 0}(A^T \cdot  A + x^2 I)^{-1}\cdot  A^T$$
 
 	>>> la.pinv(M)
 	>>> np.dot(M, la.pinv(M))
