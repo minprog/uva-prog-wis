@@ -37,7 +37,7 @@ $$\frac{y-f(x_1)}{x-x_1} = \frac{f(x_2)-f(x_1)}{x_2-x_1}$$
 
 The intersection of this line with the horizontal axis yields the new interval endpoint within the interval $$[x_1, x_2]$$:
 
-$$x_3 = x_2 - f(x_2)(x_2-x_1)/(f(x_2)-f(x_1))$$.
+$$x_3 = x_2 - f(x_2)\cdot \frac{x_2-x_1}{f(x_2)-f(x_1)}$$.
 
 If $$x_3$$ is a zero of the function $$f$$ you are ready. Otherwise, you split the interval $$[x_1, x_2]$$ into two intervals in which you might search a zero of the function. The choice between the two intervals $$[x_1, x_3]$$ and $$[x_3, x_2]$$ is decided by evaluating $$f(x_3)$$ and discarding the interval whose endpoints have the same sign, as was done in the Bisection method. This iteration process is repeated, but it will converge more quickly than the Bisection method, since the information about the magnitude of $$f(x)$$ pushes the $$x_3$$ value more quickly towards the actual root. The iteration is continued until the end points of the interval show no change to the required precision in subsequent iterations or a zero has been found.
 
@@ -60,11 +60,11 @@ The Secant method closely resembles the Regula Falsi method in using a linear ap
 
 In the secant method, the function $$f(x)$$ is being approximated by a straight line which is an extrapolation based on the two points $$x_0$$ and $$x_1$$. The line passing through the points $$(x_0, f(x_0))$$ and $$(x_1, f(x_1))$$ can be seen to be given by
 
-$$y-f(x_1) = (x-x_1)(f(x_1)-f(x_0)/(x_1-x_0)$$.
+$$y-f(x_1) = (x-x_1)\cdot \frac{f(x_1)-f(x_0)}{x_1-x_0}$$.
 
 Solving for the value of $$x$$ for which $$y=0$$ for this line, gives the two-point iteration formula
 
-$$x_{k+1}=x_k-f(x_k)(x_k-x_{k-1})/(f(x_k)-f(x_{k-1})$$.
+$$x_{k+1}=x_k-f(x_k)\cdot \frac{x_k-x_{k-1}}{f(x_k)-f(x_{k-1})}$$.
 
 Thus, starting with the two initial approximations $$x_0$$ and $$x_1$$, the approximation $$x_2$$ is the $$x$$-intercept of the line joining $$(x_0, f(x_0))$$ and $$(x_1, f(x_1))$$. The approximation $$x_3$$ is the $$x$$-intercept of the line joining $$(x_1, f(x_1))$$ and $$(x_2, f(x_2))$$, and so on.
 
@@ -97,12 +97,12 @@ $$f(x)\approx f(x_0)+f'(x_0)(x-x_0)$$
 
 Setting $$f(x) = 0$$ to find the next approximation, $$x_1$$, to the zero of $$f(x)$$, one finds
 
-$$x_1 = x_0 - f(x_0) / (f'(x_0))$$.
+$$x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}$$.
 
 This provides an iteration scheme which may well converge to the zero of $$f(x)$$, under appropriate conditions. It can be shown that the Newton-Raphson method converges in the interval where
 
 $$
-|(f(x)f''(x)) / (f'(x))^2 | < 1
+|\frac{f(x)\cdot f''(x)}{\bigl(f'(x)\bigr)^2} | < 1
 $$
 
 The Newton iteration can be motivated geometrically in the following way. Suppose that $$f$$ is a function of which we want to find a zero. Start with an initial guess $$x_0$$ for the zero (see Figure 1).
@@ -114,18 +114,18 @@ Now draw the tangent line to the graph of $$f$$ in the point $$(x_0, f(x_0))$$.
 
 *Exercise.* Prove that the tangent line to the graph of $$f$$ in the point   $$(x_0, f(x_0))$$ intersects the $$x$$-axis in the point
 
-$$(x_0 - f(x_0) / (f'(x_0)), 0)$$.
+$$(x_0 - \frac{f(x_0)}{f'(x_0), 0)$$.
 
 The $$x$$-coordinate of the intersection point just found we denote by $$x_0$$.
 
 Thus: $$x_1 = x_0 - f(x_0) / (f'(x_0))$$. Figure 1 suggests that where $$x$$ is close to a zero of $$f$$, $$x$$ is a much better approximation of the root. When you apply the previous tangent line technique to $$x_1$$ instead of to $$x_0$$,
 then you may expect a much-improved approximation $$x_2 = x_1 - f(x_1) / (f'(x_1))$$. And you may continue in this way. In step $$n+1$$ you use the formula
 
-$$x_(n+1) = x_n - f(x_n) / (f'(x_n))$$.
+$$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$$.
 
 This recursion formula can also be written as follows:
 
-$$x_(n+1) = g(x_n)$$, with $$g(x) = x - f(x) / (f'(x))$$.
+$$x_{n+1} = g(x_n)$$, with $$g(x) = x - \frac{f(x)}{f'(x)}$$.
 
 Please note that the Newton-Raphson Method assumes that one has both the function and its derivative at one disposal.
 
@@ -141,28 +141,28 @@ Implement the Newon-Raphson method in Python, i.e., define a function
         iterations (default: 1000)
         """
 
-Define your function such that it also returns the number of iterations used to arrive at the solution within a given tolerance. Use your adapted function to generate a list of required iterations for tolerances $$0.1, 0.01, 0.001, ... 10^(-15)$$ starting at $$x_0 = 0.5$$. Verify that this method also works faster than the Bisection Method.
+Define your function such that it also returns the number of iterations used to arrive at the solution within a given tolerance. Use your adapted function to generate a list of required iterations for tolerances $$0.1, 0.01, 0.001, ... 10^{-15}$$ starting at $$x_0 = 0.5$$. Verify that this method also works faster than the Bisection Method.
 
 ## Aftermath
 
 In the field that is known as numerical mathematics researchers are busy with studying the behavior of approximate methods and smart adaptations of the method of Newton-Raphson have been developed that have a higher order of convergence. Here we mention some formulas of order 3 and 4, i.e., methods in which the number of correct digits triples and quadruples in each iteration steps. Note that the Normal-Raphson method has quadratic order. It is convenient to use the auxiliary function
 
-$$h(x) = (f(x)*f''(x)) / (f'(x))^2$$.
+$$h(x) = \frac{f(x)\cdot f''(x)}{\bigl(f'(x)\bigr)^2}$$.
 
 All formulas are shaped like
 
-$$x_(n+1) = x_n - f(x_n) / (f'(x_n)) * (1 + (h(x_n)) / (2(1-c(x_n)*h(x_n))))$$
+$$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \cdot \left(1 + \frac{h(x_n)}{2\bigl(1-c(x_n)\cdot h(x_n)\bigr)}\right)$$
 
 for some function $$c(x)$$ and we assume that all needed derivatives in the approximated zero of $$f$$ are unequal to zero so that division by zero does not occur in the formulas.
 
 ### Order of convergence $$ = 3$$
 
-$$c(x) = 0$$: formula of Chebyshev $$x_(n+1) = x_n - f(x_n) / (f'(x_n)) * (1 + (h(x_n)) / 2)$$
+$$c(x) = 0$$: formula of Chebyshev $$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \cdot \left(1 + \frac{h(x_n)}{2}\right)$$
 
-$$c(x) = (1/2)$$: formula of Halley $$x_(n+1) = x_n - f(x_n) / (f'(x_n) * (1 - (h(x_n)) / 2))$$
+$$c(x) = (1/2)$$: formula of Halley $$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)\cdot\left(1 - \frac{h(x_n)}{2}\right)}$$
 
 ### Order of convergence $$ = 4$$
 
-$$c(x) = 1 - (f'''(x)*f'(x)) / (3(f''(x))^2)$$
+$$c(x) = 1 - \frac{f'''(x)\cdot f'(x)}{3\bigl(f''(x)\bigr)^2}$$
 
 
