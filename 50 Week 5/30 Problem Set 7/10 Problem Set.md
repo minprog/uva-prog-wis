@@ -19,7 +19,7 @@ starts with, one will always eventually reach 1.
 
 ## Example
 
-An example of a Collatz sequence is: $$7 -> 22 -> 11 -> 34 -> 17 -> 52 -> 26 -> 13 -> 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1$$.
+An example of a Collatz sequence is: $$7 \rightarrow 22 \rightarrow 11 \rightarrow 34 \rightarrow 17 \rightarrow 52 \rightarrow 26 \rightarrow 13 \rightarrow 40 \rightarrow 20 \rightarrow 10 \rightarrow 5 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow 2 \rightarrow 1$$.
 
 The challenge of proving this conjecture is well characterized by the title of
 the following paper: Guy, R. (1983), *Don't try to solve these problems*,
