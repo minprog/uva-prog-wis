@@ -45,12 +45,11 @@ Element-wise vector-computation makes it easy to generate data graphs of functio
 	>>> x
 	array([ 1.        , 1.22222222, 1.44444444, 1.66666667, 1.88888889,
 	        2.11111111, 2.33333333, 2.55555556, 2.77777778, 3.        ])
-	array([ 0.        , 0.22222222, 0.44444444, 0.66666667, 0.88888889,
-	        1.11111111, 1.33333333, 1.55555556, 1.77777778, 2.        ])
 	>>> y = x**2 # quadratic function values
 	>>> y
-	array([ 0.        , 0.04938272, 0.19753086, 0.44444444, 0.79012346,
-	        1.2345679 , 1.77777778, 2.41975309, 3.16049383, 4.        ])
+	array([ 1.        , 1.49382716, 2.08641975, 2.77777778, 3.56790123,
+	        4.45679012, 5.44444444, 6.5308642 , 7.71694938, 9.        ])
+	
 	>>> z = np.log(x) # logarithmic function values
 	>>> z
 	array([ 0.        , 0.2006707 , 0.36772478, 0.51082562, 0.63598877,
@@ -106,7 +105,7 @@ A 1-dimensional array can be treated as either column or row vector. It is the r
 	ValueError: matrices are not aligned
 	>>> np.dot(v[:2], A)
 	    array([ 5.,  7.,  9.])
-	    >>> w = np.cumsum(v)
+	>>> np.cumsum(v)  
 	>>> w
 	array([ 1.,  2.,  3.])
 	>>> v+w
