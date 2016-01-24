@@ -121,7 +121,7 @@ Implement Monte Carlo integration in Python and apply it to compare the numerica
 
 You can approximate $$\pi$$ in your Python program by the floating point number $$3.141592653589793$$.
 
-To generate within Python a uniformly random number in $$[0, 1]$$, you can import the `random` module and generate a number by the function call `random.random()`.  To generate within Python a uniformly random number in the interval $$[a, b]$$, you can import the `random` module and generate a number by the function call $$\mathth{random.uniform(}a,b\mathtt{)}$$.
+To generate within Python a uniformly random number in $$[0, 1]$$, you can import the `random` module and generate a number by the function call `random.random()`.  To generate within Python a uniformly random number in the interval $$[a, b]$$, you can import the `random` module and generate a number by the function call $$\mathtt{random.uniform(}a,b\mathtt{)}$$.
 
 ### Problem d
 
