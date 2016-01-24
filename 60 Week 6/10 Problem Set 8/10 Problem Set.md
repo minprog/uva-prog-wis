@@ -34,7 +34,7 @@ Taking $$\displaystyle dx =\frac{b-a}{n}$$, the choices correspond with the foll
 
 1. Left Riemann sum: $$\displaystyle \sum_{i=0}^{n-1}\,dx\cdot f(a+i\cdot dx)$$
 2. Right Riemann sum: $$\displaystyle \sum_{i=1}^n dx\cdot f(a+i\cdot dx)$$
-3. Middle Riemann sum: $$\displaystyle \sum_{i=0}^{n-1} dx\cdot f(a+(i+\frac{1}{2})\cdot dx)$$
+3. Middle Riemann sum: $$\displaystyle \sum_{i=0}^{n-1} dx\cdot f\bigl(a+(i+\tfrac{1}{2})\cdot dx\bigr)$$
 
 ## Trapezoidal Rule
 
