@@ -232,7 +232,7 @@ Some utility functions to stack matrices horizontally or vertically:
 
 Also the Moore-Penrose inverse $$A^+$$ of a matrix $$A$$ can be computed. Recall that the Moore-Penrose inverse is defined as:
 
-$$\displaystyle A^{+} = \lim_(x->0)(A^T * A + x^2 I)^{-1} * A^T$$
+$$\displaystyle A^{+} = \lim_(x\mapsto 0)(A^T \cdot  A + x^2 I)^{-1}\cdot  A^T$$
 
 	>>> la.pinv(M)
 	>>> np.dot(M, la.pinv(M))
@@ -257,7 +257,7 @@ The linear system of equations $${x+y+z = 6, 2x-y = 7, 2y-z = 8}$$ can be solved
 
 The singular value decomposition (SVD) of a matrix $$A$$ is a factorization of $$A$$ as $$A=U\cdot D\cdot V^T$$, where $$U$$ and $$V$$ are orthogonal matrices and $$D$$ is a diagonal matrix with non-negative entries. The singular value decomposition of the matrix
 
-$$\left(\matrix{0&-1&-3\cr 4&5&1\cr 1&4&-1\cr}\right)$$
+$$\left(\matrix{0&1&-3\cr 4&5&1\cr 1&4&-1\cr}\right)$$
 
 can be computed as follows:
 
@@ -293,19 +293,19 @@ The final check of the answer illustrates that the singular value decomposition 
 
 Consider the following three matrices:
 
-$$ A = ((-3,-1,0),(4,7,-10),(4,3,-3)), B = ((-2,2,-5),(12,-7,20),(6,-4,11)), C = ((-2,14,8),(-1,10,6),(1,-13,-8)) $$
+$$ A=\left(\begin{array}{rrr} -3 & -1 & 0 \\ 4 & 7 & -10 \\ 4 & 3 & -3 \end{array}\right), \quad B=\left(\begin{array}{rrr} -2 & 2 & -5 \\ 12 & -7 & 20 \\ 6 & -4 & 11 \end{array}\right), \quad C=\left(\begin{array}{rrr} -2 & 14 & 8 \\ -1 & 10 & 6 \\ 1 & -13 & -8 \end{array}\right)$$
 
 These matrices have the following properties:
 
-$$ A^(n+4) = A^n, B^n = B, C^(n+2) = 0$$, for all $$n = 1,2,3,4$$
+$$ A^(4n+1) = A^n, B^n = B, C^(n+2) = 0$$, for all $$n = 1,2,3,4$$
 
 Verify these properties by computing $$M^2, M^3, M^4$$ and $$M^5$$ for
 $$M = A$$, $$M = B$$ and $$M = C$$.
 
 ### Problem b
 
-The Cholesky decomposition of a positive-definite symmetric matrix $$A$$ is a factorization of $$A$$ as $$A=L*L^t$$, where $$L$$ is a lower triangular matrix. The QR decomposition of a matrix $$A$$ is a factorization of $$A$$ as $$A=Q*R$$, where $$Q$$ is an orthogonal matrix and $$R$$ is a upper-triangular.
+The Cholesky decomposition of a positive-definite symmetric matrix $$A$$ is a factorization of $$A$$ as $$A=L\cdot L^T$$, where $$L$$ is a lower triangular matrix. The QR decomposition of a matrix $$A$$ is a factorization of $$A$$ as $$A=Q\cdot R$$, where $$Q$$ is an orthogonal matrix and $$R$$ is a upper-triangular.
 
 Compute with Python the Cholesky and QR decomposition of the following matrix:
 
-$$ A = ((5,-2,2),(-2,5,1),(2,1,2)) $$
+$$ A=\left(\begin{array}{ccc} 5 & -2 & 2 \\ -2 & 5 & 1 \\ 2 & 1 & 2 \end{array}\right)$$
