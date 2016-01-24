@@ -114,7 +114,7 @@ Now draw the tangent line to the graph of $$f$$ in the point $$(x_0, f(x_0))$$.
 
 *Exercise.* Prove that the tangent line to the graph of $$f$$ in the point   $$(x_0, f(x_0))$$ intersects the $$x$$-axis in the point
 
-$$(x_0 - \frac{f(x_0)}{f'(x_0)}, 0)$$.
+$$\displaystyle (x_0 - \frac{f(x_0)}{f'(x_0)}, 0)$$.
 
 The $$x$$-coordinate of the intersection point just found we denote by $$x_1$$.
 
@@ -125,7 +125,7 @@ $$\displaystyle x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$$.
 
 This recursion formula can also be written as follows:
 
-$$\displaystyle x_{n+1} = g(x_n)$$, with $$g(x) = x - \frac{f(x)}{f'(x)}$$.
+$$\displaystyle x_{n+1} = g(x_n)$$, with $$\displaystyle g(x) = x - \frac{f(x)}{f'(x)}$$.
 
 Please note that the Newton-Raphson Method assumes that one has both the function and its derivative at one disposal.
 
@@ -159,7 +159,7 @@ for some function $$c(x)$$ and we assume that all needed derivatives in the appr
 
 $$c(x) = 0$$: formula of Chebyshev $$\displaystyle x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \cdot \left(1 + \frac{h(x_n)}{2}\right)$$
 
-$$c(x) =\frac{1}{2}$$: formula of Halley $$\displaystyle x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)\cdot\left({\displaystyle 1 - \frac{h(x_n)}{2}\}right)}$$
+$$c(x) =\frac{1}{2}$$: formula of Halley $$\displaystyle x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)\cdot\left({\displaystyle 1 - \frac{h(x_n)}{2}}right)}$$
 
 ### Order of convergence $$ = 4$$
 
