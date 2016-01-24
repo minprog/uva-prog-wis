@@ -46,6 +46,7 @@ At the endpoints of the interval one can apply the following formulas:
 
 $$\displaystyle y'_0 = \frac{-3y_0+4y_1-y_2}{2dx}$$ and $$\displaystyle y'_n = \frac{3y_n-4y_{n-1}+y_{n-2}}{2dx}$$.
 
+
 #### Assignment
 
 Use the `NumPy` and `Matplotlib` modules to implement the above numerical differentiation in Python and to apply the algorithm for the sine function approximated by function values calculated for 25 equally spaced points in the interval $$[0,2\pi]$$ (Hint: use the NumPy function roll to rotate arrays). Draw data plots of $$y$$ and $$y'$$ in one figure. What do you think of the result? Does it improve when more data points are available, say 101 equally spaced points? Does your code still works fine when you use 1000001 equally spaced points in the interval $$[0,2\pi]$$?
