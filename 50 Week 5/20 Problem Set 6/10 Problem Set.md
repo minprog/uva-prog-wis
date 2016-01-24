@@ -37,7 +37,7 @@ $$\frac{y-f(x_1)}{x-x_1} = \frac{f(x_2)-f(x_1)}{x_2-x_1}$$
 
 The intersection of this line with the horizontal axis yields the new interval endpoint within the interval $$[x_1, x_2]$$:
 
-$$x_3 = x_2 - f(x_2)\cdot \frac{x_2-x_1}{f(x_2)-f(x_1)}$$.
+$$\displaystyle x_3 = x_2 - f(x_2)\cdot \frac{x_2-x_1}{f(x_2)-f(x_1)}$$.
 
 If $$x_3$$ is a zero of the function $$f$$ you are ready. Otherwise, you split the interval $$[x_1, x_2]$$ into two intervals in which you might search a zero of the function. The choice between the two intervals $$[x_1, x_3]$$ and $$[x_3, x_2]$$ is decided by evaluating $$f(x_3)$$ and discarding the interval whose endpoints have the same sign, as was done in the Bisection method. This iteration process is repeated, but it will converge more quickly than the Bisection method, since the information about the magnitude of $$f(x)$$ pushes the $$x_3$$ value more quickly towards the actual root. The iteration is continued until the end points of the interval show no change to the required precision in subsequent iterations or a zero has been found.
 
