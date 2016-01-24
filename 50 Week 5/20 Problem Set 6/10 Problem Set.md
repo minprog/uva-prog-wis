@@ -60,11 +60,11 @@ The Secant method closely resembles the Regula Falsi method in using a linear ap
 
 In the secant method, the function $$f(x)$$ is being approximated by a straight line which is an extrapolation based on the two points $$x_0$$ and $$x_1$$. The line passing through the points $$(x_0, f(x_0))$$ and $$(x_1, f(x_1))$$ can be seen to be given by
 
-$$y-f(x_1) = (x-x_1)\cdot \frac{f(x_1)-f(x_0)}{x_1-x_0}$$.
+$$\displaystyle y-f(x_1) = (x-x_1)\cdot \frac{f(x_1)-f(x_0)}{x_1-x_0}$$.
 
 Solving for the value of $$x$$ for which $$y=0$$ for this line, gives the two-point iteration formula
 
-$$x_{k+1}=x_k-f(x_k)\cdot \frac{x_k-x_{k-1}}{f(x_k)-f(x_{k-1})}$$.
+$$\displaystyle x_{k+1}=x_k-f(x_k)\cdot \frac{x_k-x_{k-1}}{f(x_k)-f(x_{k-1})}$$.
 
 Thus, starting with the two initial approximations $$x_0$$ and $$x_1$$, the approximation $$x_2$$ is the $$x$$-intercept of the line joining $$(x_0, f(x_0))$$ and $$(x_1, f(x_1))$$. The approximation $$x_3$$ is the $$x$$-intercept of the line joining $$(x_1, f(x_1))$$ and $$(x_2, f(x_2))$$, and so on.
 
@@ -93,7 +93,7 @@ $$f(x)=f(x_0)+f'(x_0)(x-x_0)+\frac{1}{2!}f''(x_0)(x-x_0)^2+...$$.
 
 Dropping the terms of this expansion beyond the first order term, one gets:
 
-$$f(x)\approx f(x_0)+f'(x_0)(x-x_0)$$
+$$\displaystyle f(x)\approx f(x_0)+f'(x_0)(x-x_0)$$
 
 Setting $$f(x) = 0$$ to find the next approximation, $$x_1$$, to the zero of $$f(x)$$, one finds
 
@@ -102,7 +102,7 @@ $$x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}$$.
 This provides an iteration scheme which may well converge to the zero of $$f(x)$$, under appropriate conditions. It can be shown that the Newton-Raphson method converges in the interval where
 
 $$
-|\frac{f(x)\cdot f''(x)}{\bigl(f'(x)\bigr)^2} | < 1
+\left|\frac{f(x)\cdot f''(x)}{\bigl(f'(x)\bigr)^2} \right| < 1
 $$
 
 The Newton iteration can be motivated geometrically in the following way. Suppose that $$f$$ is a function of which we want to find a zero. Start with an initial guess $$x_0$$ for the zero (see Figure 1).
@@ -114,18 +114,18 @@ Now draw the tangent line to the graph of $$f$$ in the point $$(x_0, f(x_0))$$.
 
 *Exercise.* Prove that the tangent line to the graph of $$f$$ in the point   $$(x_0, f(x_0))$$ intersects the $$x$$-axis in the point
 
-$$(x_0 - \frac{f(x_0)}{f'(x_0), 0)$$.
+$$(x_0 - \frac{f(x_0)}{f'(x_0)}, 0)$$.
 
 The $$x$$-coordinate of the intersection point just found we denote by $$x_0$$.
 
 Thus: $$x_1 = x_0 - f(x_0) / (f'(x_0))$$. Figure 1 suggests that where $$x$$ is close to a zero of $$f$$, $$x$$ is a much better approximation of the root. When you apply the previous tangent line technique to $$x_1$$ instead of to $$x_0$$,
 then you may expect a much-improved approximation $$x_2 = x_1 - f(x_1) / (f'(x_1))$$. And you may continue in this way. In step $$n+1$$ you use the formula
 
-$$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$$.
+$$\displaystyle x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$$.
 
 This recursion formula can also be written as follows:
 
-$$x_{n+1} = g(x_n)$$, with $$g(x) = x - \frac{f(x)}{f'(x)}$$.
+$$\displaystyle x_{n+1} = g(x_n)$$, with $$g(x) = x - \frac{f(x)}{f'(x)}$$.
 
 Please note that the Newton-Raphson Method assumes that one has both the function and its derivative at one disposal.
 
@@ -147,7 +147,9 @@ Define your function such that it also returns the number of iterations used to 
 
 In the field that is known as numerical mathematics researchers are busy with studying the behavior of approximate methods and smart adaptations of the method of Newton-Raphson have been developed that have a higher order of convergence. Here we mention some formulas of order 3 and 4, i.e., methods in which the number of correct digits triples and quadruples in each iteration steps. Note that the Normal-Raphson method has quadratic order. It is convenient to use the auxiliary function
 
-$$h(x) = \frac{f(x)\cdot f''(x)}{\bigl(f'(x)\bigr)^2}$$.
+$$
+h(x) = \frac{f(x)\cdot f''(x)}{\bigl(f'(x)\bigr)^2}
+$$.
 
 All formulas are shaped like
 
@@ -157,9 +159,9 @@ for some function $$c(x)$$ and we assume that all needed derivatives in the appr
 
 ### Order of convergence $$ = 3$$
 
-$$c(x) = 0$$: formula of Chebyshev $$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \cdot \left(1 + \frac{h(x_n)}{2}\right)$$
+$$c(x) = 0$$: formula of Chebyshev $$\displaystyle x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \cdot \left(1 + \frac{h(x_n)}{2}\right)$$
 
-$$c(x) = (1/2)$$: formula of Halley $$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)\cdot\left(1 - \frac{h(x_n)}{2}\right)}$$
+$$c(x) = (1/2)$$: formula of Halley $$\displaystyle x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)\cdot\left(1 - \frac{h(x_n)}{2}\right)}$$
 
 ### Order of convergence $$ = 4$$
 
