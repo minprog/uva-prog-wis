@@ -20,26 +20,26 @@ Create a file called **ps6.py** to host the solutions to today's problems. Imple
         """
         Find the zero of a function f between a and b using the
         Bisection Method with tolerance (default: 0.001) and 
-        maximum number of iterations (default: 1000)
+        maximum number of iterations (default: 100)
         """
 
-Apply your function `bisection_solve` to the function $$f(x)=x^3 + 2x - 1$$ and the interval $$[0,1]$$ with the default tolerance and a tolerance of 0.00001.
+Apply your function `bisection_solve` to the function $$f(x)=x^3 + 2x - 1$$ and the interval $$[0,1]$$, once with the default tolerance and once with a tolerance of 0.00001.
 
 ### Problem b
 
-Adjust your function so it also returns the number of iterations used to arrive at the solution within a given tolerance.  Use your adapted function to generate a list of required iterations for tolerances $$0.1, 0.01, 0.001, ..., 10^-15$$.
+Adjust your function so it also returns the number of iterations used to arrive at the solution within a given tolerance.  Use your adapted function to generate a list of required iterations for tolerances $$0.1, 0.01, 0.001, ..., 10^{-15}$$. Verify that there is a linear relationship between the number of needed iterations $$i_n$$ and the natural number $$n$$ for a tolerance of $$10^{-n}$$ 
 
 # Regula falsi method
 
 The Bisection Method is very simple, but generally quite inefficient, in part because it only makes use of the sign of the function *f* (*x*) at each evaluation, while ignoring its magnitude. Thus it ignores significant information which could be used accelerate the finding of the root. A method based on interpolation makes use of this information by approximating the function on the interval $$[x_1, x_2]$$ by the chord joining the points $$(x_1,f(x_1))$$ and $$(x_2,f(x_2))$$, which is the straight line:
 
-$$(y-y_1)/(x-x_1) = (y_2-y_1)/(x_2-x_1)$$
+$$\bigl(y-f(x_1)\bigr)/(x-x_1) = \bigl(f(x_2)-f(x_1)\bigr)/(x_2-x_1)$$
 
-Solving this linear equation for $$y=0$$ yields the new interval endpoint within the interval $$[x_1, x_2]$$:
+The intersection of this line with the horizontal axis yields the new interval endpoint within the interval $$[x_1, x_2]$$:
 
-$$x_3 = x_1 - f(x_1)(x_2-x_1)/(f(x_2)-f(x_1))$$.
+$$x_3 = x_2 - f(x_2)(x_2-x_1)/(f(x_2)-f(x_1))$$.
 
-The choice between the two intervals $$[x_1, x_3]$$ and $$[x_3, x_2]$$ is decided by evaluating $$f(x_3)$$ and discarding the interval whose endpoints have the same sign, as was done in the Bisection method. This iteration process is repeated, but it will converge more quickly than the Bisection method, since the information about the magnitude of $$f(x)$$ pushes the $$x_3$$ value more quickly towards the actual root. The iteration is continued until the end points of the interval show no change to the required precision in subsequent iterations.
+If $$x_3$$ is a zero of the function $$f$$ you are ready. Otherwise, you split the interval $$[x_1, x_2]$$ into two intervals in which you might search a zero of the function. The choice between the two intervals $$[x_1, x_3]$$ and $$[x_3, x_2]$$ is decided by evaluating $$f(x_3)$$ and discarding the interval whose endpoints have the same sign, as was done in the Bisection method. This iteration process is repeated, but it will converge more quickly than the Bisection method, since the information about the magnitude of $$f(x)$$ pushes the $$x_3$$ value more quickly towards the actual root. The iteration is continued until the end points of the interval show no change to the required precision in subsequent iterations or a zero has been found.
 
 ### Problem c
 
@@ -49,10 +49,10 @@ Implement the Regula Falsi method in Python, i.e., define a function
         """
         Find the zero of a function f between x1 and x2 using the Regula 
         Falsi Method with tolerance (default: 0.001) and maximum
-        number of iterations (default: 1000)
+        number of iterations (default: 100)
         """  
 
-Define your function such that it also returns the number of iterations         used to arrive at the solution within a given tolerance.  Use your adapted function to generate a list of required iterations for tolerances $$0.1, 0.01, 0.001, ..., 10^-15$$. Verify that this method works indeed faster than the Bisection Method.
+Define your function such that it also returns the number of iterations         used to arrive at the solution within a given tolerance.  Use your adapted function to generate a list of required iterations for tolerances $$0.1, 0.01, 0.001, ..., 10^{-15}$$. Verify that this method works indeed faster than the Bisection Method.
 
 ## Secant method
 
@@ -60,15 +60,15 @@ The Secant method closely resembles the Regula Falsi method in using a linear ap
 
 In the secant method, the function $$f(x)$$ is being approximated by a straight line which is an extrapolation based on the two points $$x_0$$ and $$x_1$$. The line passing through the points $$(x_0, f(x_0))$$ and $$(x_1, f(x_1))$$ can be seen to be given by
 
-$$y-f(x_1) = (x-x_1)(f(x_1)-f_0)/(x_1-x_0)$$.
+$$y-f(x_1) = (x-x_1)(f(x_1)-f(x_0)/(x_1-x_0)$$.
 
 Solving for the value of $$x$$ for which $$y=0$$ for this line, gives the two-point iteration formula
 
-$$x_(k+1)=x_k-f(x_k)(x_k-x_(k-1))/(f(x_k)-f(x_(k-1))$$.
+$$x_{k+1}=x_k-f(x_k)(x_k-x_{k-1})/(f(x_k)-f(x_{k-1})$$.
 
 Thus, starting with the two initial approximations $$x_0$$ and $$x_1$$, the approximation $$x_2$$ is the $$x$$-intercept of the line joining $$(x_0, f(x_0))$$ and $$(x_1, f(x_1))$$. The approximation $$x_3$$ is the $$x$$-intercept of the line joining $$(x_1, f(x_1))$$ and $$(x_2, f(x_2))$$, and so on.
 
-While both the regula falsi and secant methods use the idea of a linear approximation to the function based on its values at two points, the regula falsi method depends on the fact that those two points enclose a zero, with the consequent sign change for $$f(x)$$, while the secant method simply extrapolates using these two points to find the next approximation to the zero. The regula falsi method is sure to find the zero, since it keeps it bracketed, while the secant method can sometimes fail to find a zero that does exist. The secant method has the advantage that we do not need to have prior knowledge of the interval in $$x$$ in which each zero of $$f(x)$$ lies.
+While both the Regula Falsi method and the secant method use the idea of a linear approximation to the function based on its values at two points, the regula falsi method depends on the fact that those two points enclose a zero, with the consequent sign change for $$f(x)$$, while the secant method simply extrapolates using these two points to find the next approximation to the zero. The Regula Falsi method is sure to find the zero, since it keeps it bracketed, while the secant method can sometimes fail to find a zero that does exist. The secant method has the advantage that we do not need to have prior knowledge of the interval in $$x$$ in which each zero of $$f(x)$$ lies.
 
 ### Problem d
 
@@ -78,22 +78,22 @@ Implement the secant method in Python, i.e., define a function
         """
         Find the zero of a function f with initial approximations x0 and
         x1 using the Secant Method with tolerance (default: 0.001)
-        and maximum number of iterations (default: 1000)
+        and maximum number of iterations (default: 100)
         """
 
-Define your function such that it also returns the number of iterations used to arrive at the solution within a given tolerance. Use your adapted function to generate a list of required iterations for tolerances $$0.1, 0.01, 0.001, ..., 10^-15$$. Verify that this method also works faster than the Bisection Method.
+Define your function such that it also returns the number of iterations used to arrive at the solution within a given tolerance. Use your adapted function to generate a list of required iterations for tolerances $$0.1, 0.01, 0.001, ..., 10^-15$$. Verify that this method also works faster than the Bisection method.
 
-## Newton-Rhapson method
+## Newton-Raphson method
 
 Bracketing methods are useful when one has a well-established interval in which a sign change takes place for a continuous function. If the function is monotonic on that interval, one knows that the zero is unique and methods such as bisection and regula falsi are sure to find it. If the function is not monotonic, it is difficult to ensure that all the zeroes on the interval are found. In addition, these bracketing methods are somewhat slow in their convergence to the zero, since they do not make much use of local knowledge of the function $$f(x)$$. In contrast, the Newton-Raphson method makes explicit use of the derivative of the function of which we wish to find the zero.
 
 Suppose one has reason to believe that there is a zero of $$f(x)$$ near the point $$x_0$$. The Taylor expansion for $$f(x)$$ about $$x_0$$ can then be written as
 
-$$f(x)=f(x_0)+f'(x_0)(x-x_0)+(f''(x_0))/(2!)(x-x_0)^2+...$$.
+$$f(x)=f(x_0)+f'(x_0)(x-x_0)+\frac{1}{2!}f''(x_0)(x-x_0)^2+...$$.
 
 Dropping the terms of this expansion beyond the first order term, one gets:
 
-$$f(x)~~f(x_0)+f'(x_0)(x-x_0)$$
+$$f(x)\approx f(x_0)+f'(x_0)(x-x_0)$$
 
 Setting $$f(x) = 0$$ to find the next approximation, $$x_1$$, to the zero of $$f(x)$$, one finds
 
