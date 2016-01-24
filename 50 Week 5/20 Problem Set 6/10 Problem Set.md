@@ -33,7 +33,7 @@ Adjust your function so it also returns the number of iterations used to arrive 
 
 The Bisection Method is very simple, but generally quite inefficient, in part because it only makes use of the sign of the function *f* (*x*) at each evaluation, while ignoring its magnitude. Thus it ignores significant information which could be used accelerate the finding of the root. A method based on interpolation makes use of this information by approximating the function on the interval $$[x_1, x_2]$$ by the chord joining the points $$(x_1,f(x_1))$$ and $$(x_2,f(x_2))$$, which is the straight line:
 
-$$\bigl(y-f(x_1)\bigr)/(x-x_1) = \bigl(f(x_2)-f(x_1)\bigr)/(x_2-x_1)$$
+$$\frac{y-f(x_1)}{x-x_1} = \frac{f(x_2)-f(x_1)}{x_2-x_1}$$
 
 The intersection of this line with the horizontal axis yields the new interval endpoint within the interval $$[x_1, x_2]$$:
 
