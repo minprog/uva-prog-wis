@@ -82,7 +82,7 @@ You can approximate $$\pi$$ in your Python program by the floating point number 
 
 ### Problem b
 
-1. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$\displaystyle  \int_0^1 \frac{4}{x^2+1}\,dx  $$ within a precision of 0.1, 0.01, 0.001, and 0.0001.
+1. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$\displaystyle  \int_0^1 \frac{4}{x^2+1}\,dx  $$ within a precision of 0.1, 0.01, 0.001$$, and $$0.0001$$.
 
 2. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$ \displaystyle  \int_0^{\pi} \sin(x)\,dx $$ within a precision of 1 up to 7 digits after the decimal point.
 
@@ -125,11 +125,11 @@ To generate within Python a uniformly random number in $$[0, 1]$$, you can impor
 
 ### Problem d
 
-Explore how many sample points are on average needed to approximate $$\displaystyle \int_0^1 \frac{4}{x^2+1}\,dx $$ within a precision of $$0.1, 0.01, 0.001, and 0.0001$$.
+Explore how many sample points are on average needed to approximate $$\displaystyle \int_0^1 \frac{4}{x^2+1}\,dx $$ within a precision of $$0.1, 0.01, 0.001$$, and $$0.0001$$.
 
 ### Problem e
 
-Compare the result of the previous problem d with the following probabilistic algorithm for approximating $$\displaystyle int_a^b f(x)\; dx$$ on the interval $$[a,b]$$: Uniformly sample points on the interval $$[a,b]$$. Compute the average function value of these sample point and multiply by $$(b-a)$$. The value found is for a large sample of point near the value of the definite integral.
+Compare the result of the previous problem d with the following probabilistic algorithm for approximating $$\displaystyle \int_a^b f(x)\; dx$$ on the interval $$[a,b]$$: Uniformly sample points on the interval $$[a,b]$$. Compute the average function value of these sample point and multiply by $$(b-a)$$. The value found is for a large sample of point near the value of the definite integral.
 
 ## Vectorized Implementation
 
