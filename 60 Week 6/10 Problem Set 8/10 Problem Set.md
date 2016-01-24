@@ -32,9 +32,9 @@ The following three choices for selecting  a node in a subinterval are distingui
 
 Taking $$\displaystyle dx =\frac{b-a}{n}$$, the choices correspond with the following formulas, respectively:
 
-1. Left Riemann sum: $$\sum_{i=0}^{n-1}\,dx\cdot f(a+i\cdot dx)$$
-2. Right Riemann sum: $$\sum_{i=1}^n dx\cdot f(a+i\cdot dx)$$
-3. Middle Riemann sum: $$\sum_{i=0}^{n-1} dx\cdot f(a+(i+1/2)\cdot dx)$$
+1. Left Riemann sum: $$\displaystyle \sum_{i=0}^{n-1}\,dx\cdot f(a+i\cdot dx)$$
+2. Right Riemann sum: $$\displaystyle \sum_{i=1}^n dx\cdot f(a+i\cdot dx)$$
+3. Middle Riemann sum: $$\displaystyle \sum_{i=0}^{n-1} dx\cdot f(a+(i+\frac{1}{2})\cdot dx)$$
 
 ## Trapezoidal Rule
 
@@ -44,14 +44,14 @@ The trapezoidal rule, also known as the trapezoid rule or trapezium rule, can be
  
 The definite integral of the function $$f(x)$$ on the interval $$[a,b]$$ is now approximated by the definite integral of the linear function $$P(x)$$ on the interval $$[a,b]$$. The latter definite integral can be computed analytically and leads to the following approximation:
 
-$$\int_a^b f(x) dx \approx \frac{b-a}{2}\cdot\bigl(f(a)+f(b)\bigr)$$.
+$$\displaystyle \int_a^b f(x) dx \approx \frac{b-a}{2}\cdot\bigl(f(a)+f(b)\bigr)$$.
 
 This formula corresponds to the so-called closed 2-point Newton-Cotes quadrature rule.
 
 Taking an equidistant partition of the interval $$[a,b]$$ into $$n$$ subintervals $$\displaystyle dx = \frac{b-a}{n}$$, the trapezoidal rule corresponds with the following formula:
 
-$$\int_a^b f(x)\, dx =$$
-$$\sum_{i=0}^{n-1} \frac{1}{2} dx\cdot\bigl(f(a+i\cdot dx)+f(a+(i+1)\cdot dx)\bigr) =$$ $$dx\cdot\biggl(\frac{1}{2}f(a)+\bigl(sum_{i=1}^{n-1}f(a+i\cdot dx)\bigr)+\frac{1}{2}f(b)\biggr)$$
+$$\displaystyle \int_a^b f(x)\, dx =$$
+$$\displaystyle \sum_{i=0}^{n-1} \frac{1}{2} dx\cdot\bigl(f(a+i\cdot dx)+f(a+(i+1)\cdot dx)\bigr) =$$ $$dx\cdot\biggl(\frac{1}{2}f(a)+\bigl(sum_{i=1}^{n-1}f(a+i\cdot dx)\bigr)+\frac{1}{2}f(b)\biggr)$$
  
 ## Simpson's Rule
 
@@ -61,30 +61,30 @@ Simpson's rule can be derived by approximating, as shown in Figure,  the integra
 
 The definite integral of the function $$f(x)$$ in the interval $$[a,b]$$ is now approximated by the definite integral of the quadratic function $$P(x)$$ in the interval $$[a,b]$$. The latter definite integral can be computed analytically and leads to the following approximation:
 
-$$int_a^b f(x) dx ~~ (b-a)/6[f(a)+4f((a+b)/2)+f(b)]$$
+$$\displaystyle \int_a^b f(x) dx \approc \frac{b-a}{6}\cdot \bigl(f(a)+4f(\frac{a+b}{2})+f(b)\bigr)$$
 
 Simpson's rule also corresponds to the so-called closed 3-point Newton-Cotes quadrature rule.  
 
-Taking an equidistant partition of the interval $$[a,b]$$ into $$n$$ subintervals $$dx = (b-a)/n$$, the trapezoidal rule corresponds with the following formula:
+Taking an equidistant partition of the interval $$[a,b]$$ into $$n$$ subintervals $$\displaystyle dx = \frac{b-a}{n}$$, the trapezoidal rule corresponds with the following formula:
 
-$$int_a^b f(x) dx =$$
-$$sum_(i=0)^(n-1) 1/6 dx*[f(a+i*dx)+4f(a+(i+1/2)*dx) + f(a+(i+1)*dx)] =$$ 
-$$dx*[1/6f(a)+2/3f(a+1/2dx)+(sum_(i=1)^(n-1) 1/3f(a+i*dx)+2/3f(a+(i+1/2)*dx))+1/6 f(b)]$$
+$$\displaystyle \int_a^b f(x) dx =$$
+$$\displaystyle \sum_{i=0}^{n-1} \frac{1}{6}dx\cdot\bigl(f(a+i\cdot dx)+4f(a+(i+\frac{1}{2})\cdot dx) + f(a+(i+1)\cdot dx)\bigr) =$$ 
+$$\displaystyle dx\cdot\biggl(\frac{1}{6}f(a)+\frac{2}{3}f(a+\frac{1}{2}dx)+(sum_{i=1}^{n-1} \frac{1}{3}f(a+i\cdot dx)+\frac{2}{3}f(a+(i+\frac{1}{2})\cdot dx)\bigr)+\frac{1}{6} f(b)\biggr)$$
  
 ### Problem a
 
 Implement all previously discussed numerical integration methods in Python and apply them to compare the numerical approximation with a partition of the interval $$[0,1]$$ in 100 subintervals with the exact results for the following two cases:
 
-* $$ int_0^1 4/(x^2+1) dx = pi $$
-* $$ int_0^pi sin(x) dx = 2 $$
+* $$\displaystyle  \int_0^1 \frac{4}{x^2+1}\,dx = \pi $$
+* $$\displaystyle  \int_0^pi sin(x)\,dx = 2 $$
 
-You can approximate $$pi$$ in your Python program by the floating point number $$3.141592653589793$$ or use the variable `math.pi` from the imported  `math` module.
+You can approximate $$\pi$$ in your Python program by the floating point number $$3.141592653589793$$ or use the variable `math.pi` from the imported  `math` module.
 
 ### Problem b
 
-1. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$ int_0^1 4/(x^2+1) dx $$ within a precision of 0.1, 0.01, 0.001, and 0.0001.
+1. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$\displaystyle  int_0^1 \frac{4}{x^2+1}\,dx  $$ within a precision of 0.1, 0.01, 0.001, and 0.0001.
 
-2. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$ int_0^pi sin(x) dx$$ within a precision of 1 up to 7 digits after the decimal point.
+2. For each previously defined numerical integration method, explore how many subintervals are needed to approximate $$ \displaystyle  \int_0^pi sin(x)\,dx $$ within a precision of 1 up to 7 digits after the decimal point.
 
 3. Answer in the comments at the top of your program: which method is certainly most efficient? Which one comes next?
 
