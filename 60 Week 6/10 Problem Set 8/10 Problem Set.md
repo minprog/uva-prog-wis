@@ -4,7 +4,7 @@ In numerical analysis one studies various methods to approximate definite integr
 
 ## Numerical quadrature
 
-Numerical quadrature is a basic method of numerical integration of a definite integral $$int_a^bf(x)dx$$ of a function $$f(x)$$ on an interval $$[a,b]$$. It uses a partition of the interval $$[a,b]$$ in subintervals and a selection of one node in each subinterval. For a sequence of distinct nodes
+Numerical quadrature is a basic method of numerical integration of a definite integral $$\displaystyle \int_a^bf(x)dx$$ of a function $$f(x)$$ on an interval $$[a,b]$$. It uses a partition of the interval $$[a,b]$$ in subintervals and a selection of one node in each subinterval. For a sequence of distinct nodes
 
 $$a \le x_1 < x_2 < ... < x_n \le b$$
 
