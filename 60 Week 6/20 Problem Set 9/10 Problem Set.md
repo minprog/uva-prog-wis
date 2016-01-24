@@ -73,7 +73,7 @@ Multidimensional arrays are also well-supported by Python. The focus in this tut
     >>> B.shape
     (3, 3)
 
-The display of the 2-dimensional arrays suggest that they can be interpreted as matrices. Indeed with the dot function or method one can compute the matrix product of A and B.
+The display of the 2-dimensional arrays suggest that they can be interpreted as matrices. Indeed with the dot function or method one can compute the matrix product of $$A$$ and $$B$$.
 
     >>> np.dot(A, B)
     array([[ 1,  4,  9],
@@ -230,9 +230,9 @@ Some utility functions to stack matrices horizontally or vertically:
 
     >>> la.inv(N)
 
-Also the Moore-Penrose inverse $$A^+$$ of a matrix $$A$$ can be computed. Recall that the Moore-Penrose inverse is defined as:
+Also the Moore-Penrose inverse $$A^{+}$$ of a matrix $$A$$ can be computed. Recall that the Moore-Penrose inverse is defined as:
 
-$$\displaystyle A^{+} = \lim_(x\mapsto 0)(A^T \cdot  A + x^2 I)^{-1}\cdot  A^T$$
+$$\displaystyle A^{+} = \lim_{x\mapsto 0}(A^T \cdot  A + x^2 I)^{-1}\cdot  A^T$$
 
 	>>> la.pinv(M)
 	>>> np.dot(M, la.pinv(M))
@@ -240,7 +240,7 @@ $$\displaystyle A^{+} = \lim_(x\mapsto 0)(A^T \cdot  A + x^2 I)^{-1}\cdot  A^T$$
 
 ### Solving linear Equations
 
-The linear system of equations $${x+y+z = 6, 2x-y = 7, 2y-z = 8}$$ can be solved as follows:
+The linear system of equations $$\{x+y+z = 6, 2x-y = 7, 2y-z = 8\}$$ can be solved as follows:
 
     >>> A = np.array([[1,1,1], [2,-1,0], [0,2,-1]]); A
     array([[ 1,  1,  1],
@@ -287,7 +287,7 @@ can be computed as follows:
            [-0.,  0.,  0.],
            [ 0.,  0., -0.]])
 
-The final check of the answer illustrates that the singular value decomposition implemented in the `numpy.linalg` package strangely enough does not follow the convention to write $$V^t$$ instead of $$V$$ in this decomposition. This means that one still has to transpose the computed $$V$$ to arrive at the result according to the conventional definition of the SVD.
+The final check of the answer illustrates that the singular value decomposition implemented in the `numpy.linalg` package strangely enough does not follow the convention to write $$V^T$$ instead of $$V$$ in this decomposition. This means that one still has to transpose the computed $$V$$ to arrive at the result according to the conventional definition of the SVD.
 
 ### Problem a
 
@@ -297,7 +297,7 @@ $$ A=\left(\begin{array}{rrr} -3 & -1 & 0 \\ 4 & 7 & -10 \\ 4 & 3 & -3 \end{arra
 
 These matrices have the following properties:
 
-$$ A^(4n+1) = A^n, B^n = B, C^(n+2) = 0$$, for all $$n = 1,2,3,4$$
+$$ A^{4n+1} = A^n, B^n = B, C^{n+2} = 0$$, for all $$n = 1,2,3,4$$
 
 Verify these properties by computing $$M^2, M^3, M^4$$ and $$M^5$$ for
 $$M = A$$, $$M = B$$ and $$M = C$$.
