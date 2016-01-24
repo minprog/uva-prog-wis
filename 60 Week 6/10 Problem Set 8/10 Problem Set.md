@@ -51,7 +51,7 @@ This formula corresponds to the so-called closed 2-point Newton-Cotes quadrature
 Taking an equidistant partition of the interval $$[a,b]$$ into $$n$$ subintervals $$\displaystyle dx = \frac{b-a}{n}$$, the trapezoidal rule corresponds with the following formula:
 
 $$\displaystyle \int_a^b f(x)\, dx =$$
-$$\displaystyle \sum_{i=0}^{n-1} \frac{1}{2} dx\cdot\bigl(f(a+i\cdot dx)+f(a+(i+1)\cdot dx)\bigr) =$$ $$dx\cdot\biggl(\frac{1}{2}f(a)+\bigl(sum_{i=1}^{n-1}f(a+i\cdot dx)\bigr)+\frac{1}{2}f(b)\biggr)$$
+$$\displaystyle \sum_{i=0}^{n-1} \frac{1}{2} dx\cdot\bigl(f(a+i\cdot dx)+f(a+(i+1)\cdot dx)\bigr) =$$ $$dx\cdot\biggl(\frac{1}{2}f(a)+\bigl(\sum_{i=1}^{n-1}f(a+i\cdot dx)\bigr)+\tfrac{1}{2}f(b)\biggr)$$
  
 ## Simpson's Rule
 
