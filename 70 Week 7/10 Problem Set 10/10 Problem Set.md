@@ -44,7 +44,7 @@ $$\displaystyle f'(x) \approx \frac{f(x+h)+f(x)}{h}$$ and $$\displaystyle f'(x) 
 
 At the endpoints of the interval one can apply the following formulas:
 
-$$\displaystyle y'_0 = \frac{-3y_0+4y_1-y_2}{2dx)}$$ and $$\displaystyle y'_n = \frac{3y_n-4y_{n-1}+y_{n-2}}{2dx}$$.
+$$\displaystyle y'_0 = \frac{-3y_0+4y_1-y_2}{2dx}$$ and $$\displaystyle y'_n = \frac{3y_n-4y_{n-1}+y_{n-2}}{2dx}$$.
 
 #### Assignment
 
