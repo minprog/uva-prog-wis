@@ -69,7 +69,7 @@ Taking an equidistant partition of the interval $$[a,b]$$ into $$n$$ subinterval
 
 $$\displaystyle \int_a^b f(x) dx =$$
 $$\displaystyle \sum_{i=0}^{n-1} \frac{1}{6}dx\cdot\Bigl(f(a+i\cdot dx)+4f\bigl(a+(i+\tfrac{1}{2})\cdot dx\bigr) + f(a+(i+1)\cdot dx)\Bigr) =$$ 
-$$\displaystyle dx\cdot\left(\frac{1}{6}f(a)+\frac{2}{3}f(a+\frac{1}{2}dx)+\Bigl(\sum_{i=1}^{n-1} \frac{1}{3}f(a+i\cdot dx)+\frac{2}{3}f(a+(i+\tfrac{1}{2})\cdot dx)\Bigr)+\frac{1}{6} f(b)\right)$$
+$$\displaystyle dx\cdot\left(\frac{1}{6}f(a)+\frac{2}{3}f(a+\tfrac{1}{2}dx)+\Bigl(\sum_{i=1}^{n-1} \frac{1}{3}f(a+i\cdot dx)+\frac{2}{3}f(a+(i+\tfrac{1}{2})\cdot dx)\Bigr)+\frac{1}{6} f(b)\right)$$
  
 ### Problem a
 
@@ -96,40 +96,40 @@ Thus, once the search area $$A$$ has been chosen, the Monte Carlo method consist
 
 * uniformly sample points in region $$A$$;
 * calculate the proportion $$p$$ of points in the region of interest, i.e. within $$A_f$$;
-* area under the curve = $$ p x * "area of A" $$.
+* area under the curve = $$ p \times \mathrm{area\;of\;}A $$.
 
 ![Figure 3](fig3.png)
 
-The above picture suggest that one chooses a region $$A$$ as closely around $$A_f$$ as possible, but this is not necessary. The steps of the algorithm of numerically approximating $$int_a^b f(x) dx$$ on the interval $$[a,b]$$ for a nonnegative function can be written down as follows:
+The above picture suggest that one chooses a region $$A$$ as closely around $$A_f$$ as possible, but this is not necessary. The steps of the algorithm of numerically approximating $$\displaystyle \int_a^b f(x)\, dx$$ on the interval $$[a,b]$$ for a nonnegative function can be written down as follows:
 
-1. Define a region around the area of interest, i.e., define $$x_min$$, $$x_max$$, $$y_min$$, $$y_max$$ such that $$a<=x_min, x_max<=b$$ and also $$y_min<=f(x)<=y_max$$ for all $$x$$ within $$[a,b]$$.
+1. Define a region around the area of interest, i.e., define $$x_{\min}$$, $$x_{\max}$$, $$y_{\min}$$, $$y_{\max}$$ such that $$a\le x_{\min}, x_{\max}\le b$$ and also $$y_{\min}\le f(x)\le y_{\max}$$ for all $$x$$ within $$[a,b]$$.
 
-2. Uniformly sample points in the chosen rectangular region and determine how many are within the area of interest. The sampling of point is done by repeated random generation of a point $$(x,y)$$ by random generation of $$x$$ in $$[xmin, xmax]$$ and by random generation of $$y$$ in $$[ymin, ymax]$$. The generated point is good, i.e., within the region of interest , when $$y<=f(x)$$.
+2. Uniformly sample points in the chosen rectangular region and determine how many are within the area of interest. The sampling of point is done by repeated random generation of a point $$(x,y)$$ by random generation of $$x$$ in $$[x_{\min}, x_{\max}]$$ and by random generation of $$y$$ in $$[y_{\min}, y_{\max}]$$. The generated point is good, i.e., within the region of interest , when $$y\le f(x)$$.
 
 	Note that this definition of goodness of a point depends on the property of being a positive function; for negative functions the definition of goodness is just opposite. One can also implement the general case in which area under the $$x$$-axis is considered negative.
 
-3. The numerical approximation of the integral $$int_a^b f(x) dx$$ is equal to the fraction of the points in the search region times the area of the search region. In this case:
+3. The numerical approximation of the integral $$\displaystyle \int_a^b f(x)\, dx$$ is equal to the fraction of the points in the search region times the area of the search region. In this case:
 
-	$$int_a^b f(x) dx = 	N_"good"/(N_"good"+N_"wrong")(x_max-x_min)(y_max-y_min)$$.
+	$$\displaystyle \int_a^b f(x) dx = \frac{N_\mathrm{good}}{N_\mathrm{good}+N_\mathrm{wrong}}(x_{\max}-x_{\min})(y_{\max}-y_{\min})$$.
  
 ### Problem c
 
 Implement Monte Carlo integration in Python and apply it to compare the numerical approximation for a sample of 100000 points with the exact results for the following two cases:
 
-* $$ int_0^1 4/(x^2+1) dx = pi $$
-* $$ int_0^pi sin(x) dx = 2 $$
+* $$\displaystyle  \int_0^1 \frac{4}{x^2+1}\,dx = \pi $$
+* $$\displaystyle  \int_0^{\pi} \sin(x)\,dx = 2 $$
 
-You can approximate $$pi$$ in your Python program by the floating point number $$3.141592653589793$$.
+You can approximate $$\pi$$ in your Python program by the floating point number $$3.141592653589793$$.
 
-To generate within Python a uniformly random number in $$[0, 1]$$, you can import the `random` module and generate a number by the function call `random.random()`.  To generate within Python a uniformly random number in the interval $$[a, b]$$, you can import the `random` module and generate a number by the function call $$random.uniform(a,b)$$.
+To generate within Python a uniformly random number in $$[0, 1]$$, you can import the `random` module and generate a number by the function call `random.random()`.  To generate within Python a uniformly random number in the interval $$[a, b]$$, you can import the `random` module and generate a number by the function call $$\mathth{random.uniform(}a,b\mathtt{)}$$.
 
 ### Problem d
 
-Explore how many sample points are on average needed to approximate $$int_0^1 4/(x^2+1) dx$$ within a precision of $$0.1, 0.01, 0.001, and 0.0001$$.
+Explore how many sample points are on average needed to approximate $$\displaystyle \int_0^1 \frac{4}{x^2+1}\,dx $$ within a precision of $$0.1, 0.01, 0.001, and 0.0001$$.
 
 ### Problem e
 
-Compare the result of the previous problem d with the following probabilistic algorithm for approximating $$int_a^b f(x) dx$$ on the interval $$[a,b]$$: Uniformly sample points on the interval $$[a,b]$$. Compute the average function value of these sample point and multiply by $$(b-a)$$. The value found is for a large sample of point near the value of the definite integral.
+Compare the result of the previous problem d with the following probabilistic algorithm for approximating $$\displaystyle int_a^b f(x)\; dx$$ on the interval $$[a,b]$$: Uniformly sample points on the interval $$[a,b]$$. Compute the average function value of these sample point and multiply by $$(b-a)$$. The value found is for a large sample of point near the value of the definite integral.
 
 ## Vectorized Implementation
 
