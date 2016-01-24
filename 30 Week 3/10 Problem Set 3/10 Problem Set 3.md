@@ -1,7 +1,7 @@
 # Gambler's ruin
 
 In problem sets 3 and 4 you will simulate two kind of games of flipping coins
-*Gamblers's ruin* and *Penney Ante*. These problems will illustrate how you can
+*Gambler's ruin* and *Penney Ante*. These problems will illustrate how you can
 group commands, possibly found in an interactive session, into functions so
 that a Python program to simulate the game under consideration is gradually
 developed. You practice the use of loops, conditionals and lists in Python.
@@ -108,8 +108,8 @@ previous program as **ps5d.py** and add the following functionality:
 Compare your results with the theoretical answers to the following questions.
 If John and Sarah start with $$m$$ and $$n$$ coins, respectively
 
-* What is the average game length? Answer: $$m*n$$
-* What is the variance of the game length? Answer: $$m*n*(m^2+n^2-2)/3$$
+* What is the average game length? Answer: $$m\times n$$
+* What is the variance of the game length? Answer: $$m\times n\times (m^2+n^2-2)/3$$
 * What is the chance that Sarah wins?  Answer: $$n/(m+n)$$
 * What is the average length of games won by Sarah when she 
   starts with 10 coins and John with 5 coins? 
