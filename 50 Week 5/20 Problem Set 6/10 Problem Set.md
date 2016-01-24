@@ -159,7 +159,7 @@ for some function $$c(x)$$ and we assume that all needed derivatives in the appr
 
 $$c(x) = 0$$: formula of Chebyshev $$\displaystyle x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \cdot \left(1 + \frac{h(x_n)}{2}\right)$$
 
-$$c(x) =\frac{1}{2}$$: formula of Halley $$\displaystyle x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)\cdot\left({\displaystyle 1 - \frac{h(x_n)}{2}}right)}$$
+$$c(x) =\frac{1}{2}$$: formula of Halley $$\displaystyle x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)\cdot\left({\displaystyle 1 - \frac{h(x_n)}{2}}\right)}$$
 
 ### Order of convergence $$ = 4$$
 
