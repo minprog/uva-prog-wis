@@ -36,7 +36,7 @@ Waarschijnlijk heb je in eerdere vakken al iets met programmeren gedaan. Dat zal
 
 Heb je dus al iets van programmeerervaring? Dan ga je je wekelijks voorbereiden met de materialen uit het boek *Think Python* van Allan Downey. Dit boek bevat meer theorie dan voorbeelden. Lees de hoofdstukken en tik tijdens het lezen de voorbeelden over en probeer ze uit (niet kopiëren en plakken maar echt overtikken, anders leer je veel minder!). 
 
-Onderstaande link verwijst naar een boekversie met Python 2.7. De code hieruit zal meestal ook goed werken in Python versie 3, behalve dat print opdrachten waarin nu haakjes gebruikt worden om argumenten mee te geven. Dus, waar in Python 2.7 de opdracht print "Hello World" geschreven wordt, is dat in versie 3 print("Hello World") geworden. Op Blackboard is een pdf-versie van dit boeok met Python 3 code.
+Onderstaande link verwijst naar een boekversie met Python 2.7. De code hieruit zal meestal ook goed werken in Python versie 3, behalve dat print opdrachten waarin nu haakjes gebruikt worden om argumenten mee te geven. Dus, waar in Python 2.7 de opdracht print "Hello World" geschreven wordt, is dat in versie 3 print("Hello World") geworden. Op Blackboard is een pdf-versie van dit boek met Python 3 code (onder Course Information); raadpleeg dit boek.
 
 > <http://www.greenteapress.com/thinkpython/html/index.html>
 
