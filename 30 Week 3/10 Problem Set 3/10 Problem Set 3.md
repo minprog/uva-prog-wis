@@ -66,11 +66,11 @@ Write a short program that does this:
 * do some bookkeeping to store the amount of coins John 
   and Sarah have afterwards.
 
-Save your program in **ps5a.py**.
+Save your program in **ps3a.py**.
 
 ## Problem b: repetition
 
-Save your previous program as **ps5b.py** and add statements that
+Save your previous program as **ps3b.py** and add statements that
 implement a loop that stops when one of the players is broke.
 
 Repeat the previous step until the gambling game is over. The game goes on if
@@ -88,14 +88,14 @@ initial amounts of money of the players as actual arguments. It should `return`
 the number of tosses needed for the game to finish because one of the players
 is broke and the name of the winner.
 
-So, save your previous program as **ps5c.py**. Now incorporate your previous
+So, save your previous program as **ps3c.py**. Now incorporate your previous
 program in a function called `game`. Call the function several times with the
 same arguments to make sure that your function really implements a random game.
 
 ## Problem d: simulation of Gambler's Ruin
 
 You can now play any number of games and analyze the results. Save your
-previous program as **ps5d.py** and add the following functionality:
+previous program as **ps3d.py** and add the following functionality:
 
 * Make a list of 10 games and extract from this a list of game lengths and the
   number of time Sarah wins.
