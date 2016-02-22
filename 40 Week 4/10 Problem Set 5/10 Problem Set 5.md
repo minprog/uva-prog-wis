@@ -46,24 +46,19 @@ In this problem set, we won't ask you to build a practically useful tool, but
 hope to give you a sense of some of the issues involved, by exploring some
 simple matching schemes.
 
-## Importing the `find` function
+## Udsing the `find` function
 
-To get started, we are going to use some built-in Python functions. To use
-these functions, include the statement
-
-    from string import *
-
-at the beginning of your file. This will allow you to use Python string
-functions. In particular, if you want to find the starting point of the first
+To get started, we are going to use some built-in Python functions. 
+If you want to find the starting point of the first
 match of a keyword string key in a target string target you could use the find
 function. Try running find on some examples, such as
 
-	find("atgacatgcacaagtatgcat","atgc")
+	"atgacatgcacaagtatgcat".find("atgc")
 
 Note how it returns the index of the first instance of the key in the target.
 Also note that if no instance of the key exists in the target, e.g,
 
-    find("atgacatgcacaagtatgcat","ggcc")
+    "atgacatgcacaagtatgcat".find("ggcc")
 
 it returns the value -1.
 
@@ -86,11 +81,11 @@ should read up on its specifications to see how to provide optional arguments
 to start the search for a match at a location other than the beginning of the
 string. For example,
 
-    find("atgacatgcacaagtatgcat","atgc")
+    "atgacatgcacaagtatgcat".find("atgc")
 
 returns the value 5, while
 
-    find("atgacatgcacaagtatgcat","atgc",6)
+    "atgacatgcacaagtatgcat".find("atgc",6)
 
 returns the value 15, meaning that by starting the search at index 6, the next
 match is found at location 15.
