@@ -131,12 +131,12 @@ Please note that the Newton-Raphson Method assumes that one has both the functio
 
 ### Problem e
 
-Implement the Newon-Raphson method in Python, i.e., define a function
+Implement the Newton-Raphson method in Python, i.e., define a function
 
     def NewtonRaphson_solve(f, fp, x0, tolerance=0.001, iterations=100):
         """
         Find the zero of a function f with derivative fp starting
-        With initial approximation x0 using the Secant Method with
+        with initial approximation x0 using the Newton-Rahpson method with
         tolerance (default: 0.001) and maximum number of
         iterations (default: 1000)
         """
