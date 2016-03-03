@@ -136,7 +136,7 @@ Implement the Newon-Raphson method in Python, i.e., define a function
     def NewtonRaphson_solve(f, fp, x0, tolerance=0.001, iterations=100):
         """
         Find the zero of a function f with derivative fp starting
-        With initial approximation x0 using the Secant Method with
+        With initial approximation x0 using the Newton-Raphson Method with
         tolerance (default: 0.001) and maximum number of
         iterations (default: 1000)
         """
