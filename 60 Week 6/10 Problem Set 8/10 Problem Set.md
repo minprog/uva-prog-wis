@@ -65,7 +65,7 @@ $$\displaystyle \int_a^b f(x) dx \approx \frac{b-a}{6}\cdot \Bigl(f(a)+4f\bigl(\
 
 Simpson's rule also corresponds to the so-called closed 3-point Newton-Cotes quadrature rule.  
 
-Taking an equidistant partition of the interval $$[a,b]$$ into $$n$$ subintervals $$\displaystyle dx = \frac{b-a}{n}$$, the trapezoidal rule corresponds with the following formula:
+Taking an equidistant partition of the interval $$[a,b]$$ into $$n$$ subintervals $$\displaystyle dx = \frac{b-a}{n}$$, Simpson's rule corresponds with the following formula:
 
 $$\displaystyle \int_a^b f(x) dx =$$
 $$\displaystyle \sum_{i=0}^{n-1} \frac{1}{6}dx\cdot\Bigl(f(a+i\cdot dx)+4f\bigl(a+(i+\tfrac{1}{2})\cdot dx\bigr) + f(a+(i+1)\cdot dx)\Bigr) =$$ 
